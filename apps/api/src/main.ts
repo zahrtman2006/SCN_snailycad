@@ -1,3 +1,7 @@
+import dotenv from "dotenv";
+dotenv.config();
+console.log("[ENV] DATABASE_URL =", process.env.DATABASE_URL);
+
 import "reflect-metadata";
 import "./instrument";
 

@@ -11,10 +11,6 @@ generator client {
   previewFeatures = []
 }
 
-generator types {
-  provider = "prisma-generator-redundant-types"
-  output   = "../../../packages/types/src/prisma"
-}
 
 model cad {
   id                      String                 @id @default(cuid())
