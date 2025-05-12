@@ -1,6 +1,6 @@
 {
   "name": "@snailycad/types",
-  "version": "1.80.2-SCN.1",
+  "version": "1.80.3-SCN",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",

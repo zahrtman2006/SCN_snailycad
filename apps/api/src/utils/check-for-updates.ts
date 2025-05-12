@@ -5,7 +5,7 @@ import { underline, bold, green } from "colorette";
 async function fetchLatestVersion(): Promise<string | null> {
   try {
     const response = await request(
-      "https://raw.githubusercontent.com/SnailyCAD/snaily-cadv4/main/package.json",
+      "https://raw.githubusercontent.com/zahrtman2006/SCN_snailycad/main/package.json",
       {
         headers: {
           "cache-control": "no-cache",

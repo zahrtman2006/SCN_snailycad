@@ -50,7 +50,7 @@ function getCurrentGitHash() {
 async function getLatestReleaseVersion() {
   try {
     const response = await fetch(
-      "https://api.github.com/repos/SnailyCAD/snaily-cadv4/releases/latest",
+      "https://api.github.com/repos/zahrtman2006/SCN_snailycad/releases/latest",
       {
         headers: { Accept: "application/vnd.github+json" },
       },
