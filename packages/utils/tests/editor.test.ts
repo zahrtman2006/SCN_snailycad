@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import { describe, expect, test } from "vitest";
 import { slateDataToString } from "../src/editor/slate-data-to-string";
 import type { Descendant } from "slate";

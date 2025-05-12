@@ -203,7 +203,6 @@ export type Value = Prisma.Value & {
   _count?: ValueCounts;
 };
 
-// eslint-disable-next-line @typescript-eslint/consistent-indexed-object-style
 export interface ValueCounts {
   [key: string]: number;
 }

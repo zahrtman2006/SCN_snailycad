@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import { useListener } from "@casperiv/use-socket.io";
 import { SocketEvents } from "@snailycad/config";
 import { Button } from "@snailycad/ui";

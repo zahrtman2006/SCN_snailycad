@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import { BadRequest } from "@tsed/exceptions";
 import { expect, test } from "vitest";
 import {

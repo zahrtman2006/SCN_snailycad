@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import { expect, test } from "vitest";
 import { generateCallsign } from "../src/callsign";
 

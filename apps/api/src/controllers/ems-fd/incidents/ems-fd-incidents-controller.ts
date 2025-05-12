@@ -24,7 +24,7 @@ import { ActiveDeputy } from "middlewares/active-deputy";
 import { AuditLogActionType, createAuditLogEntry } from "@snailycad/audit-logger/server";
 import { _leoProperties, assignedUnitsInclude, unitProperties } from "utils/leo/includes";
 import { sendDiscordWebhook } from "~/lib/discord/webhooks";
-import { User } from "@snailycad/types";
+import { type User } from "@snailycad/types";
 import type { APIEmbed } from "discord-api-types/v10";
 import { getTranslator } from "~/utils/get-translator";
 import { slateDataToString } from "@snailycad/utils/editor";

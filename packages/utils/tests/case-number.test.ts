@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import { describe, expect, test } from "vitest";
 import { formatCaseNumber } from "../src/case-number";
 import { prefixNumber } from "../src/utils/prefix-number";

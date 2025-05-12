@@ -44,10 +44,7 @@ export function LicenseFields() {
         <ul className="mt-5">
           <li className="my-1.5 text-base">
             - <b>None:</b>{" "}
-            {
-              /* eslint-disable-next-line quotes */
-              'Type is both a "License" and "Registration Status". Both can be used anywhere.'
-            }
+            {'Type is both a "License" and "Registration Status". Both can be used anywhere.'}
           </li>
           <li className="my-1.5 text-base ">
             - <b>License:</b> can only be used as a license when setting a citizen drivers license,

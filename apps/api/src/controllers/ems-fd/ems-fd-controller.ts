@@ -24,7 +24,7 @@ import {
   type Prisma,
   WhatPages,
 } from "@prisma/client";
-import { EmsFdDeputy } from "@snailycad/types";
+import { type EmsFdDeputy } from "@snailycad/types";
 import { type AllowedFileExtension, allowedFileExtensions } from "@snailycad/config";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { ActiveDeputy } from "middlewares/active-deputy";

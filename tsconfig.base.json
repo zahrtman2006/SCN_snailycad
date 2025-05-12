@@ -1,7 +1,9 @@
 {
   "exclude": ["dist", "node_modules", ".dev-data", ".data"],
+  "include": ["apps/**/*", "packages/**/*", "scripts/**/*", "packages/ui/**/*"],
   "compilerOptions": {
     /* Basic Options */
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "target": "es2022",
@@ -21,6 +23,8 @@
     "alwaysStrict": true,
     "pretty": true,
     "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
 
     /* Additional Checks */
     "noUnusedLocals": true /* Report errors on unused locals. */,
@@ -33,6 +37,10 @@
 
     /* Monorepo options */
     "composite": true,
-    "declarationMap": true
+    "declarationMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@snailycad/*": ["packages/*"]
+    }
   }
 }

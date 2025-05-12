@@ -24,7 +24,7 @@ export function canSecureCookiesBeEnabled() {
   /**
    * dotenv parses "" (empty string) weirdly.
    */
-  // eslint-disable-next-line quotes
+
   const parsedEnvDomain = process.env.DOMAIN?.replace('""', "");
   if (!parsedEnvDomain) return undefined;
 
@@ -52,7 +52,7 @@ export function getEnvironmentVariableDOMAIN() {
   /**
    * dotenv parses "" (empty string) weirdly.
    */
-  // eslint-disable-next-line quotes
+
   const parsedEnvDomain = process.env.DOMAIN?.replace('""', "");
   if (parsedEnvDomain?.trim()) {
     domain = process.env.DOMAIN;

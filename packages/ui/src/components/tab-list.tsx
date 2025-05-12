@@ -99,7 +99,7 @@ export function TabsContent({ tabName, ...props }: Tabs.TabsContentProps & { tab
 
   React.useEffect(() => {
     ctx.upsertTabTitle(props.value, tabName);
-  }, [props.value, tabName]); // eslint-disable-line
+  }, [props.value, tabName]);
 
   return <Tabs.Content {...props}>{props.children}</Tabs.Content>;
 }

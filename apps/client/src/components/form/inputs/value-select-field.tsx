@@ -28,7 +28,7 @@ export function ValueSelectField<T extends AnyValue>(props: Props<T>) {
   const getDefaultSearchValue = React.useCallback(() => {
     const value = props.values.find((v) => v.id === values[props.fieldName]);
     return value ? getValueStrFromValue(value) : "";
-  }, [props.fieldName, props.values]); // eslint-disable-line
+  }, [props.fieldName, props.values]);
 
   const [search, setSearch] = React.useState<string>(() => getDefaultSearchValue());
 

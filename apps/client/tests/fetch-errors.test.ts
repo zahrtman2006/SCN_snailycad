@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import { AxiosError, AxiosHeaders } from "axios";
 import { describe, expect, test } from "vitest";
 import { getErrorObj, isAxiosError, parseError, isErrorKey } from "../src/lib/fetch/errors";

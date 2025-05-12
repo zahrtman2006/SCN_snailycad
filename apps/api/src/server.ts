@@ -90,7 +90,7 @@ if (process.env.NODE_ENV === "development") {
   },
 })
 export class Server {
-  @Inject()
+  @Inject(PlatformApplication)
   app!: PlatformApplication;
 
   @Configuration()

@@ -43,7 +43,7 @@ export function Layout({
     if (!socket?.connected) {
       socket?.connect();
     }
-  }, [socket?.connected]); // eslint-disable-line
+  }, [socket?.connected]);
 
   if (forbidden) {
     return <Loader />;

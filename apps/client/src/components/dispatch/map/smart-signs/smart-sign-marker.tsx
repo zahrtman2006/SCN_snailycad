@@ -31,7 +31,6 @@ export function SmartSignsMarker({ marker }: Props) {
 
   const pos = React.useMemo(() => convertToMap(marker.x, marker.y, map), [marker.x, marker.y]); // eslint-disable-line react-hooks/exhaustive-deps
   const playerIcon = React.useMemo(() => {
-    // eslint-disable-next-line prefer-destructuring
     const icon = markerTypes[780];
 
     if (icon) {

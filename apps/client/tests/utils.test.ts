@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import { ValueLicenseType, WhitelistStatus } from "@snailycad/types";
 import { describe, expect, test } from "vitest";
 import {

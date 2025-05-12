@@ -38,7 +38,6 @@ export function SmartMotorwaySignsMarker({ marker }: Props) {
     [marker.position], // eslint-disable-line react-hooks/exhaustive-deps
   );
   const markerIcon = React.useMemo(() => {
-    // eslint-disable-next-line prefer-destructuring
     const icon = markerTypes[781];
 
     if (icon) {

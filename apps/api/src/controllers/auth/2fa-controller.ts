@@ -1,4 +1,4 @@
-import { User } from "@prisma/client";
+import { type User } from "@prisma/client";
 import process from "node:process";
 import { authenticator } from "otplib";
 import { BodyParams, Context, UseBeforeEach } from "@tsed/common";

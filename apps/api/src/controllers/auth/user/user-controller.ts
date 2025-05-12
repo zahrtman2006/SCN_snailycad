@@ -27,7 +27,7 @@ import { Socket } from "services/socket-service";
 import { handleStartEndOfficerLog } from "lib/leo/handleStartEndOfficerLog";
 import { setUserPreferencesCookies } from "lib/auth/setUserPreferencesCookies";
 import type * as APITypes from "@snailycad/types/api";
-import { User } from "@snailycad/types";
+import { type User } from "@snailycad/types";
 import { getActiveOfficer } from "~/lib/leo/activeOfficer";
 import { getActiveDeputy } from "~/lib/get-active-ems-fd-deputy";
 

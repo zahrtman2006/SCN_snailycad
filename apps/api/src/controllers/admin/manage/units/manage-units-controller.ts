@@ -50,7 +50,12 @@ import {
 import { getTranslator } from "~/utils/get-translator";
 import { type APIEmbed } from "discord-api-types/v10";
 import { sendRawWebhook, sendDiscordWebhook } from "~/lib/discord/webhooks";
-import { type Citizen, type EmsFdDeputy, type LeoWhitelistStatus, User } from "@snailycad/types";
+import {
+  type Citizen,
+  type EmsFdDeputy,
+  type LeoWhitelistStatus,
+  type User,
+} from "@snailycad/types";
 import { generateCallsign } from "@snailycad/utils";
 import { hasPermission } from "@snailycad/permissions";
 

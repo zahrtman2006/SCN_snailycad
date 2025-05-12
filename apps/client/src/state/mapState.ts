@@ -1,6 +1,6 @@
 import type { CombinedEmsFdUnit, CombinedLeoUnit, EmsFdDeputy, Officer } from "@snailycad/types";
 import { type ConnectionStatus } from "@snailycad/ui";
-import { type Socket } from "socket.io-client";
+import { Socket } from "socket.io-client";
 import type { SmartMotorwaySignMarker, SmartSignMarker } from "types/map";
 import { persist, createJSONStorage } from "zustand/middleware";
 import { shallow } from "zustand/shallow";

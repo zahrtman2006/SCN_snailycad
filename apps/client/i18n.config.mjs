@@ -1,7 +1,7 @@
 export const i18n = {
   locales: [
-    "en-US",
-    "en-GB",
+    "en",
+    "en-gb",
     "ru",
     "cn",
     "tc",
@@ -13,5 +13,5 @@ export const i18n = {
     "zh-CN",
     "sv",
   ],
-  defaultLocale: "en-US",
+  defaultLocale: "en",
 };

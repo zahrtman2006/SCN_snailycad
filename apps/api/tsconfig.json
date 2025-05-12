@@ -6,13 +6,14 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "verbatimModuleSyntax": false,
-
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "allowSyntheticDefaultImports": true,
-    "outDir": "dist",
 
+    "outDir": "dist",
+    "rootDir": "./src",
     "baseUrl": "./src",
+
     "paths": {
       "~/*": ["./*"],
       "utils/*": ["./utils/*"],
@@ -27,6 +28,7 @@
     "inlineSources": true,
     "sourceRoot": "/"
   },
+  "include": ["src/**/*"],
   "ts-node": {
     "transpileOnly": true,
     "swc": true,

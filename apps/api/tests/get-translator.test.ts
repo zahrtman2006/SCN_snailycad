@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import { describe, expect, test } from "vitest";
 import { getTranslator } from "../src/utils/get-translator";
 

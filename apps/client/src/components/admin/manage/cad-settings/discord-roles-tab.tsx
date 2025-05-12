@@ -41,7 +41,7 @@ export function DiscordRolesTab() {
 
   React.useEffect(() => {
     refreshRoles();
-  }, []); // eslint-disable-line
+  }, []);
 
   const INITIAL_VALUES = {
     adminRoles: makeRoleValues(discordRoles.adminRoles),

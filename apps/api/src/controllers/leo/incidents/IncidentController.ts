@@ -22,7 +22,7 @@ import { getUserOfficerFromActiveOfficer, getInactivityFilter } from "lib/leo/ut
 import type * as APITypes from "@snailycad/types/api";
 import { getNextIncidentId } from "lib/incidents/get-next-incident-id";
 import { assignUnitsInvolvedToIncident } from "lib/incidents/handle-involved-units";
-import { User, type cad } from "@snailycad/types";
+import { type User, type cad } from "@snailycad/types";
 import { AuditLogActionType, createAuditLogEntry } from "@snailycad/audit-logger/server";
 import { createIncidentWebhookData } from "~/controllers/ems-fd/incidents/ems-fd-incidents-controller";
 import { sendDiscordWebhook } from "~/lib/discord/webhooks";

@@ -13,7 +13,7 @@ import { UsePermissions } from "middlewares/use-permissions";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
 import { getImageWebPPath } from "lib/images/get-image-webp-path";
 import { AuditLogActionType, createAuditLogEntry } from "@snailycad/audit-logger/server";
-import { User } from "@snailycad/types";
+import { type User } from "@snailycad/types";
 import { resolve } from "node:path";
 import { existsSync } from "node:fs";
 import sharp from "sharp";
