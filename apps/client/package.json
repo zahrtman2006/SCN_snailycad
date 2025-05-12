@@ -1,6 +1,6 @@
 {
   "name": "@snailycad/client",
-  "version": "1.80.2",
+  "version": "1.80.2-SCN.1",
   "sideEffects": false,
   "scripts": {
     "dev": " pnpm next dev",
@@ -17,6 +17,10 @@
     "test": "pnpm vitest run",
     "create-images-domain": "node ../../scripts/create-images-domain.mjs"
   },
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=9.0.0"
+  },
   "dependencies": {
     "@casperiv/use-socket.io": "6.0.1",
     "@casperiv/useful": "^3.0.0",
@@ -29,7 +33,7 @@
     "@react-aria/ssr": "^3.9.4",
     "@react-types/shared": "^3.23.1",
     "@sentry/browser": "^7.81.1",
-    "@sentry/nextjs": "^7.81.1",
+    "@sentry/nextjs": "^7.120.3",
     "@sentry/tracing": "^7.81.1",
     "@snailycad/audit-logger": "workspace:*",
     "@snailycad/config": "workspace:*",
@@ -62,7 +66,7 @@
     "leaflet": "^1.9.4",
     "mdast-util-find-and-replace": "^3.0.1",
     "mxcn": "^2.0.0",
-    "next": "14.0.3",
+    "next": "15.3.2",
     "next-intl": "2.22.1",
     "nookies": "^2.5.2",
     "nprogress": "^0.2.0",
@@ -103,7 +107,7 @@
     "sass": "^1.77.4",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.3.2",
-    "vite": "^5.2.13",
+    "vite": "^6.3.5",
     "vitest": "^0.34.6"
   }
 }

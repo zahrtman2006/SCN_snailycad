@@ -7,7 +7,7 @@ import { ErrorMessage } from "../error-message";
 import { Label } from "../label";
 import { PasswordInputButton } from "../inputs/password-input-button";
 
-interface Props extends AriaTextFieldOptions<"input"> {
+interface Props extends AriaTextFieldOptions<"input" | "textarea"> {
   label: React.ReactNode;
   isTextarea?: boolean;
   isOptional?: boolean;
@@ -17,7 +17,7 @@ interface Props extends AriaTextFieldOptions<"input"> {
   errorMessage?: string | null;
   name?: string;
   children?: React.ReactNode;
-  inputRef?: React.RefObject<HTMLInputElement>;
+  inputRef?: React.RefObject<HTMLInputElement | HTMLTextAreaElement>;
 }
 
 export function TextField(props: Props) {

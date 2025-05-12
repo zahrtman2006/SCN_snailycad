@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "snailycad",
-  "version": "1.80.2",
+  "version": "1.80.2-SCN.1",
   "scripts": {
     "start": "pnpm concurrently \"pnpm --filter \"@snailycad/client\" start\" \"pnpm --filter \"@snailycad/api\" generate && pnpm --filter \"@snailycad/api\" start\"",
     "full-start": "git stash && git pull && pnpm install && node scripts/copy-env.mjs --client --api && pnpm run build && pnpm run start",
@@ -21,27 +21,30 @@
     "@casperiv/eslint-config": "8.0.0",
     "@casperiv/eslint-config-next": "8.0.0",
     "@casperiv/eslint-config-react": "8.0.0",
-    "eslint": "9.26.0",
+    "eslint": "8.57.0",
     "eslint-plugin-deprecation": "^3.0.0",
     "lerna": "^8.2.2",
     "lint-staged": "^16.0.0",
-    "prisma": "^5.15.0"
+    "prisma": "^6.7.0"
   },
   "lint-staged": {
     "*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\"": "prettier --write --ignore-path .prettierignore"
   },
   "engines": {
-    "node": ">=18.16.0"
+    "node": ">=22.0.0",
+    "pnpm": ">=9.0.0"
   },
   "dependencies": {
     "@faker-js/faker": "^9.7.0",
-    "@prisma/client": "^5.15.0",
+    "@prisma/client": "^6.7.0",
     "colorette": "2.0.20",
     "concurrently": "^9.1.2",
     "copy": "^0.3.2",
     "dotenv": "^16.5.0",
     "husky": "^9.1.7",
     "prettier": "3.5.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "turbo": "2.5.3"
   },
   "pnpm": {

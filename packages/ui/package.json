@@ -1,7 +1,7 @@
 {
   "name": "@snailycad/ui",
   "type": "module",
-  "version": "1.80.2",
+  "version": "1.80.2-SCN.1",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,14 +20,14 @@
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^7.5.3",
-    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-essentials": "^7.6.20",
     "@storybook/addon-interactions": "^7.5.3",
     "@storybook/addon-links": "^7.5.3",
     "@storybook/addon-themes": "^7.5.3",
     "@storybook/blocks": "^7.5.3",
     "@storybook/jest": "^0.2.3",
     "@storybook/react": "^7.5.3",
-    "@storybook/react-vite": "^7.5.3",
+    "@storybook/react-vite": "^7.6.20",
     "@storybook/test-runner": "^0.15.2",
     "@storybook/testing-library": "^0.2.2",
     "autoprefixer": "^10.4.19",
@@ -38,7 +38,7 @@
     "tailwindcss": "^3.4.4",
     "tsup": "6.6.2",
     "typescript": "^5.3.2",
-    "vite": "^5.2.13"
+    "vite": "^6.3.5"
   },
   "tsup": {
     "entry": [
@@ -59,8 +59,6 @@
     ]
   },
   "dependencies": {
-    "next-intl": "2.22.1",
-    "use-intl": "2.22.1",
     "@casperiv/useful": "^3.0.0",
     "@internationalized/date": "^3.5.4",
     "@monaco-editor/react": "^4.6.0",
@@ -112,21 +110,27 @@
     "class-variance-authority": "^0.7.0",
     "formik": "^2.4.6",
     "mxcn": "^2.0.0",
+    "next-intl": "2.22.1",
     "react-bootstrap-icons": "^1.11.4",
     "react-dnd": "16.0.1",
     "react-dnd-html5-backend": "16.0.1",
     "react-use": "^17.5.0",
     "rimraf": "^5.0.7",
     "tailwind-merge": "^2.3.0",
-    "tslib": "^2.6.3"
+    "tslib": "^2.6.3",
+    "use-intl": "2.22.1"
   },
   "peerDependencies": {
     "date-fns": ">=2.30.0",
     "next": "*",
     "next-intl": "2.22.1",
-    "react": ">=18.3.1",
-    "react-dom": ">=18.3.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "use-intl": "2.22.1"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=9.0.0"
+  }
 }
