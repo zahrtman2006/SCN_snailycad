@@ -14,7 +14,8 @@
     "bump-version": "node scripts/bump-version.mjs",
     "create-images-domain": "node scripts/create-images-domain.mjs",
     "postinstall": "husky install",
-    "typecheck": "pnpm turbo run typecheck"
+    "typecheck": "pnpm turbo run typecheck",
+    "clean": "rimraf dist .turbo .tsbuildinfo node_modules/.cache"
   },
   "license": "MIT",
   "devDependencies": {
@@ -34,6 +35,8 @@
     "lerna": "^8.2.2",
     "lint-staged": "^16.0.0",
     "prisma": "^6.7.0",
+    "rimraf": "^5.0.10",
+    "tsup": "6.6.2",
     "typescript": "^5.3.2"
   },
   "lint-staged": {
@@ -46,6 +49,9 @@
   "dependencies": {
     "@faker-js/faker": "^9.7.0",
     "@prisma/client": "^6.7.0",
+    "@snailycad/config": "^1.74.0",
+    "@snailycad/types": "^1.74.0",
+    "@snailycad/utils": "^1.74.0",
     "colorette": "2.0.20",
     "concurrently": "^9.1.2",
     "copy": "^0.3.2",

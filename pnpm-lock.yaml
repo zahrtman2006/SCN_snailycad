@@ -24,6 +24,15 @@ importers:
       "@prisma/client":
         specifier: ^6.7.0
         version: 6.7.0(prisma@6.7.0(typescript@5.8.3))(typescript@5.8.3)
+      "@snailycad/config":
+        specifier: ^1.74.0
+        version: 1.74.0
+      "@snailycad/types":
+        specifier: ^1.74.0
+        version: 1.74.0
+      "@snailycad/utils":
+        specifier: ^1.74.0
+        version: 1.74.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       colorette:
         specifier: 2.0.20
         version: 2.0.20
@@ -100,6 +109,12 @@ importers:
       prisma:
         specifier: ^6.7.0
         version: 6.7.0(typescript@5.8.3)
+      rimraf:
+        specifier: ^5.0.10
+        version: 5.0.10
+      tsup:
+        specifier: 6.6.2
+        version: 6.6.2(@swc/core@1.11.24(@swc/helpers@0.5.17))(postcss@8.5.3)(ts-node@10.9.2(@swc/core@1.11.24(@swc/helpers@0.5.17))(@types/node@20.17.46)(typescript@5.8.3))(typescript@5.8.3)
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -490,7 +505,7 @@ importers:
         version: 15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.88.0)
       next-intl:
         specifier: 2.22.1
-        version: 2.22.1(next@15.3.2(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.88.0))(react@18.3.1)
+        version: 2.22.1(next@15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.88.0))(react@18.3.1)
       nookies:
         specifier: ^2.5.2
         version: 2.5.2
@@ -895,7 +910,7 @@ importers:
         version: 15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.88.0)
       next-intl:
         specifier: 2.22.1
-        version: 2.22.1(next@15.3.2(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.88.0))(react@18.3.1)
+        version: 2.22.1(next@15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.88.0))(react@18.3.1)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -6646,10 +6661,22 @@ packages:
         integrity: sha512-V4BG07kuYSUkTCSBHG8G8TNhM+F19jXFWnQtzj+we8DrkpSBCee9Z3Ms8yiGer/dlmhe35/Xdgyo3/0rQKg7YA==,
       }
 
+  "@snailycad/config@1.74.0":
+    resolution:
+      {
+        integrity: sha512-6zwBe0b55k2t/HARTbEr3zzz5OzGbZKxyoOl0gfGLaYuN2I7nFUOFYC2A7yKPQ9T6nt+RUHGIV0m0exDOOvQlA==,
+      }
+
   "@snailycad/image-data-uri@3.2.0":
     resolution:
       {
         integrity: sha512-ycyCSRadnEqODCIcR/2eihDdAqlg+edR68l5jD5ELuxOEMyLAtqKMT1WQqfHFWaLa+TJs67EhJds2f6ohb2YCw==,
+      }
+
+  "@snailycad/permissions@1.74.0":
+    resolution:
+      {
+        integrity: sha512-Ka6ne3Yz/cLSNP7/8wizy3YptyK8BtWWsjdROpTmBetp753slgS0KCxAjML4v7jAQkP0+FyPOqa99z2dLtxX5A==,
       }
 
   "@snailycad/prisma-generator-redundant-types@2.1.1":
@@ -6659,6 +6686,18 @@ packages:
       }
     engines: { node: ">=18.0" }
     hasBin: true
+
+  "@snailycad/types@1.74.0":
+    resolution:
+      {
+        integrity: sha512-Nx4Sb9f83jRwpibJgphlfpa3U8mZk+S8dHd3eyl8j73NzV1D22VZXpbAklJN4xL6OOl6wpdUHBWszuh/gKhpZA==,
+      }
+
+  "@snailycad/utils@1.74.0":
+    resolution:
+      {
+        integrity: sha512-lgYlPGHUri6IBLfplmmoD4p7ELZH9vkppJqS8IyEgBaZK0eHNi6logPIZxWaMojZDS5Izp+grvtmNH6846u+kw==,
+      }
 
   "@socket.io/component-emitter@3.1.2":
     resolution:
@@ -10057,6 +10096,12 @@ packages:
       }
     engines: { node: ">= 0.8.0" }
 
+  compute-scroll-into-view@1.0.20:
+    resolution:
+      {
+        integrity: sha512-UCB0ioiyj8CRjtrvaceBLqqhZCVP+1B8+NWQhmdsm0VXOJtobBCf1dBQmebCCo34qZmUwZfIH2MZLqNHazrfjg==,
+      }
+
   compute-scroll-into-view@3.1.1:
     resolution:
       {
@@ -12951,6 +12996,12 @@ packages:
         integrity: sha512-s2MPrmjovJcoMaHtx6K11Ra7oD05NT97w1IC5zpMkT6Atjr7H8LjaDd81iIxUYpMKSRRNMJE703M1Fhr/TctHw==,
       }
 
+  immer@9.0.21:
+    resolution:
+      {
+        integrity: sha512-bc4NBHqOqSfRW7POMkHd51LvClaeMXpm8dx0e8oE2GORbq5aRK7Bxl4FyzVLdGtLmvLKL7BTDBG5ACQm4HWjTA==,
+      }
+
   immutable@5.1.2:
     resolution:
       {
@@ -13362,6 +13413,12 @@ packages:
     resolution:
       {
         integrity: sha512-DgZQp241c8oO6cA1SbTEWiXeoxV42vlcJxgH+B3hi1AiqqKruZR3ZGF8In3fj4+/y/7rHvlOZLZtgJ/4ttYGZg==,
+      }
+
+  is-hotkey@0.1.8:
+    resolution:
+      {
+        integrity: sha512-qs3NZ1INIS+H+yeo7cD9pDfwYV/jqRh1JG9S9zYrNudkoUQg7OL7ziXqRKu+InFjUIDoP2o6HIkLYMh1pcWgyQ==,
       }
 
   is-hotkey@0.2.0:
@@ -17838,6 +17895,12 @@ packages:
       }
     engines: { node: ">=0.10.0" }
 
+  scroll-into-view-if-needed@2.2.31:
+    resolution:
+      {
+        integrity: sha512-dGCXy99wZQivjmjIqihaBQNjryrz5rueJY7eHfTdyWEiR4ttYpsajb14rn9s5d4DY4EcY6+4+U/maARBXJedkA==,
+      }
+
   scroll-into-view-if-needed@3.1.0:
     resolution:
       {
@@ -18131,6 +18194,14 @@ packages:
     peerDependencies:
       slate: ">=0.65.3"
 
+  slate-history@0.93.0:
+    resolution:
+      {
+        integrity: sha512-Gr1GMGPipRuxIz41jD2/rbvzPj8eyar56TVMyJBvBeIpQSSjNISssvGNDYfJlSWM8eaRqf6DAcxMKzsLCYeX6g==,
+      }
+    peerDependencies:
+      slate: ">=0.65.3"
+
   slate-react@0.101.6:
     resolution:
       {
@@ -18151,6 +18222,16 @@ packages:
       react-dom: ">=18.2.0"
       slate: ">=0.99.0"
 
+  slate-react@0.99.0:
+    resolution:
+      {
+        integrity: sha512-E+mU87L5epS/Cj9Z35aRkTEMrBXdX8URbFh8B2zTq2DDQKn+MT6/ag41g1InMdRoQ/kipGsbtcrM8dEicY8o/Q==,
+      }
+    peerDependencies:
+      react: ">=16.8.0"
+      react-dom: ">=16.8.0"
+      slate: ">=0.65.3"
+
   slate@0.100.0:
     resolution:
       {
@@ -18161,6 +18242,12 @@ packages:
     resolution:
       {
         integrity: sha512-eCUOVqUpADYMZ59O37QQvUdnFG+8rin0OGQAXNHvHbQeVJ67Bu0spQbcy621vtf8GQUXTEQBlk6OP9atwwob4w==,
+      }
+
+  slate@0.94.1:
+    resolution:
+      {
+        integrity: sha512-GH/yizXr1ceBoZ9P9uebIaHe3dC/g6Plpf9nlUwnvoyf6V1UOYrRwkabtOCd3ZfIGxomY4P7lfgLr7FPH8/BKA==,
       }
 
   slice-ansi@5.0.0:
@@ -18977,6 +19064,12 @@ packages:
     resolution:
       {
         integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==,
+      }
+
+  tiny-invariant@1.0.6:
+    resolution:
+      {
+        integrity: sha512-FOyLWWVjG+aC0UqG76V53yAWdXfH8bO6FNmyZOuUrzDzK8DI3/JRY25UD7+g49JWM1LXwymsKERB+DzI0dTEQA==,
       }
 
   tiny-invariant@1.2.0:
@@ -24789,17 +24882,39 @@ snapshots:
     dependencies:
       "@sinonjs/commons": 3.0.1
 
+  "@snailycad/config@1.74.0": {}
+
   "@snailycad/image-data-uri@3.2.0":
     dependencies:
       fs-extra: 10.1.0
       mime-types: 2.1.35
       undici: 6.18.2
 
+  "@snailycad/permissions@1.74.0": {}
+
   "@snailycad/prisma-generator-redundant-types@2.1.1":
     dependencies:
       "@prisma/generator-helper": 5.6.0
     transitivePeerDependencies:
       - supports-color
+
+  "@snailycad/types@1.74.0":
+    dependencies:
+      "@snailycad/permissions": 1.74.0
+      discord-api-types: 0.37.58
+
+  "@snailycad/utils@1.74.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)":
+    dependencies:
+      "@snailycad/types": 1.74.0
+      date-fns: 2.30.0
+      slate: 0.94.1
+      slate-history: 0.93.0(slate@0.94.1)
+      slate-react: 0.99.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.94.1)
+      tslib: 2.8.1
+      undici: 6.18.2
+    transitivePeerDependencies:
+      - react
+      - react-dom
 
   "@socket.io/component-emitter@3.1.2": {}
 
@@ -27356,6 +27471,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  compute-scroll-into-view@1.0.20: {}
+
   compute-scroll-into-view@3.1.1: {}
 
   concat-map@0.0.1: {}
@@ -28241,7 +28358,7 @@ snapshots:
       eslint: 9.26.0(jiti@1.21.7)
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.31.0)(eslint@9.26.0(jiti@1.21.7))
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.32.1(eslint@9.26.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.26.0(jiti@1.21.7))
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@6.21.0(eslint@9.26.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.26.0(jiti@1.21.7))
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.26.0(jiti@1.21.7))
       eslint-plugin-react: 7.37.5(eslint@9.26.0(jiti@1.21.7))
       eslint-plugin-react-hooks: 5.0.0-canary-7118f5dd7-20230705(eslint@9.26.0(jiti@1.21.7))
@@ -28303,6 +28420,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@6.21.0(eslint@9.26.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.31.0)(eslint@9.26.0(jiti@1.21.7)))(eslint@9.26.0(jiti@1.21.7)):
+    dependencies:
+      debug: 3.2.7
+    optionalDependencies:
+      "@typescript-eslint/parser": 6.21.0(eslint@9.26.0(jiti@1.21.7))(typescript@5.8.3)
+      eslint: 9.26.0(jiti@1.21.7)
+      eslint-import-resolver-node: 0.3.9
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.31.0)(eslint@9.26.0(jiti@1.21.7))
+    transitivePeerDependencies:
+      - supports-color
+
   eslint-module-utils@2.12.0(@typescript-eslint/parser@8.32.1(eslint@9.26.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.31.0)(eslint@9.26.0(jiti@1.21.7)))(eslint@9.26.0(jiti@1.21.7)):
     dependencies:
       debug: 3.2.7
@@ -28322,6 +28450,35 @@ snapshots:
       tslib: 2.8.1
       typescript: 5.8.3
     transitivePeerDependencies:
+      - supports-color
+
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@6.21.0(eslint@9.26.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.26.0(jiti@1.21.7)):
+    dependencies:
+      "@rtsao/scc": 1.1.0
+      array-includes: 3.1.8
+      array.prototype.findlastindex: 1.2.6
+      array.prototype.flat: 1.3.3
+      array.prototype.flatmap: 1.3.3
+      debug: 3.2.7
+      doctrine: 2.1.0
+      eslint: 9.26.0(jiti@1.21.7)
+      eslint-import-resolver-node: 0.3.9
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@6.21.0(eslint@9.26.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.31.0)(eslint@9.26.0(jiti@1.21.7)))(eslint@9.26.0(jiti@1.21.7))
+      hasown: 2.0.2
+      is-core-module: 2.16.1
+      is-glob: 4.0.3
+      minimatch: 3.1.2
+      object.fromentries: 2.0.8
+      object.groupby: 1.0.3
+      object.values: 1.2.1
+      semver: 6.3.1
+      string.prototype.trimend: 1.0.9
+      tsconfig-paths: 3.15.0
+    optionalDependencies:
+      "@typescript-eslint/parser": 6.21.0(eslint@9.26.0(jiti@1.21.7))(typescript@5.8.3)
+    transitivePeerDependencies:
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
       - supports-color
 
   eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.32.1(eslint@9.26.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.26.0(jiti@1.21.7)):
@@ -29451,6 +29608,8 @@ snapshots:
 
   immer@10.1.1: {}
 
+  immer@9.0.21: {}
+
   immutable@5.1.2: {}
 
   import-fresh@3.3.1:
@@ -29693,6 +29852,8 @@ snapshots:
   is-gzip@1.0.0: {}
 
   is-hexadecimal@2.0.1: {}
+
+  is-hotkey@0.1.8: {}
 
   is-hotkey@0.2.0: {}
 
@@ -31417,7 +31578,7 @@ snapshots:
 
   netmask@2.0.2: {}
 
-  next-intl@2.22.1(next@15.3.2(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.88.0))(react@18.3.1):
+  next-intl@2.22.1(next@15.3.2(@babel/core@7.27.1)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.88.0))(react@18.3.1):
     dependencies:
       "@formatjs/intl-localematcher": 0.2.32
       negotiator: 0.6.4
@@ -33058,6 +33219,10 @@ snapshots:
 
   screenfull@5.2.0: {}
 
+  scroll-into-view-if-needed@2.2.31:
+    dependencies:
+      compute-scroll-into-view: 1.0.20
+
   scroll-into-view-if-needed@3.1.0:
     dependencies:
       compute-scroll-into-view: 3.1.1
@@ -33313,6 +33478,11 @@ snapshots:
       is-plain-object: 5.0.0
       slate: 0.103.0
 
+  slate-history@0.93.0(slate@0.94.1):
+    dependencies:
+      is-plain-object: 5.0.0
+      slate: 0.94.1
+
   slate-react@0.101.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.100.0):
     dependencies:
       "@juggle/resize-observer": 3.4.0
@@ -33343,6 +33513,21 @@ snapshots:
       slate: 0.103.0
       tiny-invariant: 1.3.1
 
+  slate-react@0.99.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.94.1):
+    dependencies:
+      "@juggle/resize-observer": 3.4.0
+      "@types/is-hotkey": 0.1.10
+      "@types/lodash": 4.17.16
+      direction: 1.0.4
+      is-hotkey: 0.1.8
+      is-plain-object: 5.0.0
+      lodash: 4.17.21
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      scroll-into-view-if-needed: 2.2.31
+      slate: 0.94.1
+      tiny-invariant: 1.0.6
+
   slate@0.100.0:
     dependencies:
       immer: 10.1.1
@@ -33352,6 +33537,12 @@ snapshots:
   slate@0.103.0:
     dependencies:
       immer: 10.1.1
+      is-plain-object: 5.0.0
+      tiny-warning: 1.0.3
+
+  slate@0.94.1:
+    dependencies:
+      immer: 9.0.21
       is-plain-object: 5.0.0
       tiny-warning: 1.0.3
 
@@ -33911,6 +34102,8 @@ snapshots:
       xtend: 4.0.2
 
   through@2.3.8: {}
+
+  tiny-invariant@1.0.6: {}
 
   tiny-invariant@1.2.0: {}
 

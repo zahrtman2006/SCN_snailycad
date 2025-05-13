@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "pnpm tsup",
+    "build": "pnpm tsup src/index.tsx --format esm,cjs --dts --tsconfig tsconfig.build.json",
     "watch": "pnpm tsup --watch --silent=false",
     "typecheck": "pnpm tsc --noEmit",
     "storybook": "storybook dev -p 6006",
