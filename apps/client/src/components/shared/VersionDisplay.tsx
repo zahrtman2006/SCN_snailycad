@@ -11,8 +11,8 @@ export function VersionDisplay({ cad }: Props) {
     return null;
   }
 
-  const releaseURL = `https://github.com/SnailyCAD/snaily-cadv4/releases/tag/${cad.version.currentVersion}`;
-  const commitURL = `https://github.com/SnailyCAD/snaily-cadv4/commit/${cad.version.currentCommitHash}`;
+  const releaseURL = `https://github.com/zahrtman2006/SCN_snailycad/releases/tag/${cad.version.currentVersion}`;
+  const commitURL = `https://github.com/zahrtman2006/SCN_snailycad/commit/${cad.version.currentCommitHash}`;
   return (
     <div className="text-gray-900 dark:text-gray-200 block mt-3 text-base z-50">
       <Link href={releaseURL}>v{cad.version.currentVersion}</Link> {"—"}{" "}
