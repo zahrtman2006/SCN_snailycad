@@ -1,7 +1,7 @@
 {
   "name": "@snailycad/ui",
   "type": "module",
-  "version": "1.80.3-SCN",
+  "version": "1.80.4-SCN",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
