@@ -1,5 +1,5 @@
-import type * as Prisma from "../prisma/index";
-import type * as Types from "../index.js";
+import type * as Prisma from "@prisma/client";
+import type * as Types from "../index";
 import type { APITextChannel } from "discord-api-types/v10";
 
 /**
