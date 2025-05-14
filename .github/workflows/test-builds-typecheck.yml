@@ -44,7 +44,7 @@ jobs:
         run: pnpm install
 
       - name: Generate Prisma Client
-        run: pnpm --filter "@snailycad/api" generate && pnpm tsup
+        run: pnpm --filter "@snailycad/api" generate
         
       - name: Build packages
         run: pnpm turbo run build --filter="{packages/*}"
