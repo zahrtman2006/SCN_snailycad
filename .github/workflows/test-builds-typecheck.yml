@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
-        node-version: [18.x, 20.x]
+        node-version: [20.x, 22.0]
 
     steps:
       - uses: actions/checkout@v4
@@ -43,11 +43,14 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Generate Prisma Client
+        run: pnpm --filter "@snailycad/api" prisma generate
+        
       - name: Build packages
         run: pnpm turbo run build --filter="{packages/*}"
         env:
           NODE_OPTIONS: --max-old-space-size=6144
-
+        
       - name: Run turbo typecheck
         run: pnpm turbo run typecheck
 
