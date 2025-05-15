@@ -10,12 +10,12 @@ import {
 import { ModalIds } from "types/modal-ids";
 import { useModal } from "state/modalState";
 import { useDownload } from "@casperiv/useful";
-import type { ValueType } from "@snailycad/types";
+import { ValueType } from "@snailycad/types";
 import { isPenalCodeValue, isDivisionValue, isStatusValue } from "@snailycad/utils";
 import format from "date-fns/format";
 import { omit } from "lib/utils";
 import useFetch from "lib/useFetch";
-import type { GetValuesExportData } from "@snailycad/types/api";
+import { GetValuesExportData } from "@snailycad/types/api";
 
 interface Props {
   type: ValueType;

@@ -1,6 +1,6 @@
 import { useAuth } from "context/AuthContext";
-import { formatCaseNumber, type _Record } from "@snailycad/utils/case-number";
-import type { Warrant } from "@snailycad/types";
+import { formatCaseNumber, _Record } from "@snailycad/utils/case-number";
+import { Warrant } from "@snailycad/types";
 
 export function useFormatCaseNumber() {
   const { cad } = useAuth();

@@ -1,4 +1,4 @@
-import type { Value } from "@snailycad/types";
+import { Value } from "@snailycad/types";
 import { Button, SelectField } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
@@ -7,7 +7,7 @@ import { Form, Formik } from "formik";
 import useFetch from "lib/useFetch";
 import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
-import type { PutSearchActionsWeaponFlagsData } from "@snailycad/types/api";
+import { PutSearchActionsWeaponFlagsData } from "@snailycad/types/api";
 import { useWeaponSearch } from "state/search/weapon-search-state";
 
 export function ManageWeaponFlagsModal() {

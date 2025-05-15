@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { Unit } from "src/pages/admin/manage/units";
+import { Unit } from "src/pages/admin/manage/units";
 import Link from "next/link";
 import { formatOfficerDepartment, makeUnitName } from "lib/utils";
 import { useTranslations } from "use-intl";
@@ -10,7 +10,7 @@ import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import { Permissions, usePermission } from "hooks/usePermission";
-import type { GetManageUnitsData } from "@snailycad/types/api";
+import { GetManageUnitsData } from "@snailycad/types/api";
 import { SearchArea } from "components/shared/search/search-area";
 import dynamic from "next/dynamic";
 import { useValues } from "context/ValuesContext";
@@ -102,7 +102,7 @@ export function CallsignsTab({ units }: Props) {
                     {unit.user.username}
                   </Link>
                 ) : (
-                  unit.user?.username ?? t("Leo.temporaryUnit")
+                  (unit.user?.username ?? t("Leo.temporaryUnit"))
                 ),
               callsign1: unit.callsign,
               callsign2: unit.callsign2,

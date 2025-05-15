@@ -8,8 +8,8 @@ import useFetch from "lib/useFetch";
 import { ModalIds } from "types/modal-ids";
 import { useTranslations } from "use-intl";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
-import type { GetTruckLogsData, PostTruckLogsData, PutTruckLogsData } from "@snailycad/types/api";
-import type { RegisteredVehicle } from "@snailycad/types";
+import { GetTruckLogsData, PostTruckLogsData, PutTruckLogsData } from "@snailycad/types/api";
+import { RegisteredVehicle } from "@snailycad/types";
 
 interface Props {
   log: GetTruckLogsData["logs"][number] | null;

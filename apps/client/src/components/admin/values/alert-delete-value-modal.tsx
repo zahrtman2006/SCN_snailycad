@@ -3,11 +3,11 @@ import useFetch from "lib/useFetch";
 import { ModalIds } from "types/modal-ids";
 import { useTranslations } from "use-intl";
 import { hasValueObj, isBaseValue } from "@snailycad/utils/typeguards";
-import type { DeleteValueByIdData } from "@snailycad/types/api";
+import { DeleteValueByIdData } from "@snailycad/types/api";
 import { useModal } from "state/modalState";
-import type { AnyValue, ValueType } from "@snailycad/types";
-import type { useAsyncTable } from "components/shared/Table";
-import type { useTemporaryItem } from "hooks/shared/useTemporaryItem";
+import { AnyValue, ValueType } from "@snailycad/types";
+import { useAsyncTable } from "components/shared/Table";
+import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import { toastMessage } from "lib/toastMessage";
 import { getValueStrFromValue } from "lib/admin/values/utils";
 

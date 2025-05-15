@@ -3,7 +3,7 @@ import { Title } from "components/shared/Title";
 import { handleRequest } from "lib/fetch";
 import { getTranslations } from "lib/getTranslation";
 import { useTranslations } from "next-intl";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 
 export default function FourOhFour() {
   const t = useTranslations("Errors");

@@ -6,7 +6,7 @@ import { IsAuth } from "middlewares/auth/is-auth";
 import { CREATE_PENAL_CODE_GROUP_SCHEMA } from "@snailycad/schemas";
 import { validateSchema } from "lib/data/validate-schema";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 
 @Controller("/admin/penal-code-group")
 @UseBeforeEach(IsAuth)

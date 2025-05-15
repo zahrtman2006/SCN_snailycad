@@ -1,7 +1,7 @@
-import { type EmsFdDeputy, type Officer, ShouldDoType } from "@prisma/client";
+import { EmsFdDeputy, Officer, ShouldDoType } from "@prisma/client";
 import { incidentInclude } from "controllers/leo/incidents/IncidentController";
 import { prisma } from "lib/data/prisma";
-import type { Socket } from "services/socket-service";
+import { Socket } from "services/socket-service";
 import { callInclude } from "~/utils/leo/includes";
 
 interface Options<Type extends "leo" | "ems-fd"> {

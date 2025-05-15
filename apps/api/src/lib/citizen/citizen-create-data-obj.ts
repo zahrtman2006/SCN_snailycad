@@ -1,5 +1,5 @@
-import { type Prisma, type cad, Feature, type MiscCadSettings } from "@prisma/client";
-import type { CREATE_CITIZEN_SCHEMA } from "@snailycad/schemas";
+import { Prisma, cad, Feature, MiscCadSettings } from "@prisma/client";
+import { CREATE_CITIZEN_SCHEMA } from "@snailycad/schemas";
 import { generateString } from "utils/generate-string";
 import generateBlurPlaceholder from "lib/images/generate-image-blur-data";
 import { validateImageURL } from "lib/images/validate-image-url";

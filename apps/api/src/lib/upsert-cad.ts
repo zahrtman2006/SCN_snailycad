@@ -1,5 +1,5 @@
-import type { Feature } from "@prisma/client";
-import type { createFeaturesObject } from "middlewares/is-enabled";
+import { Feature } from "@prisma/client";
+import { createFeaturesObject } from "middlewares/is-enabled";
 import { prisma } from "./data/prisma";
 
 interface FindOrCreateCADOptions {

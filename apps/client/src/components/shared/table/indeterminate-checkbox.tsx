@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { ColumnDef, RowData } from "@tanstack/react-table";
+import { ColumnDef, RowData } from "@tanstack/react-table";
 import { CheckboxField } from "@snailycad/ui";
 
 interface IndeterminateCheckbox {

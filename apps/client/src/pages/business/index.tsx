@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
 import { useBusinessState } from "state/business-state";
@@ -13,7 +13,7 @@ import dynamic from "next/dynamic";
 import { requestAll } from "lib/utils";
 import { Title } from "components/shared/Title";
 import { usePermission, Permissions } from "hooks/usePermission";
-import type { GetBusinessesData } from "@snailycad/types/api";
+import { GetBusinessesData } from "@snailycad/types/api";
 
 const CreateBusinessModal = dynamic(
   async () => (await import("components/business/create-business-modal")).CreateBusinessModal,

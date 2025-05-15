@@ -5,27 +5,22 @@ import { QueryParams, BodyParams, Context, PathParams } from "@tsed/platform-par
 import { prisma } from "lib/data/prisma";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { EMS_FD_INCIDENT_SCHEMA } from "@snailycad/schemas";
-import {
-  type Officer,
-  type MiscCadSettings,
-  type CombinedLeoUnit,
-  DiscordWebhookType,
-} from "@prisma/client";
+import { Officer, MiscCadSettings, CombinedLeoUnit, DiscordWebhookType } from "@prisma/client";
 import { validateSchema } from "lib/data/validate-schema";
 import { Socket } from "services/socket-service";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
 import { officerOrDeputyToUnit } from "lib/leo/officerOrDeputyToUnit";
 import { findUnit } from "lib/leo/findUnit";
 import { getUserOfficerFromActiveOfficer } from "lib/leo/utils";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { getNextIncidentId } from "lib/incidents/get-next-incident-id";
 import { assignUnitsInvolvedToIncident } from "lib/incidents/handle-involved-units";
 import { ActiveDeputy } from "middlewares/active-deputy";
 import { AuditLogActionType, createAuditLogEntry } from "@snailycad/audit-logger/server";
 import { _leoProperties, assignedUnitsInclude, unitProperties } from "utils/leo/includes";
 import { sendDiscordWebhook } from "~/lib/discord/webhooks";
-import { type User } from "@snailycad/types";
-import type { APIEmbed } from "discord-api-types/v10";
+import { User } from "@snailycad/types";
+import { APIEmbed } from "discord-api-types/v10";
 import { getTranslator } from "~/utils/get-translator";
 import { slateDataToString } from "@snailycad/utils/editor";
 

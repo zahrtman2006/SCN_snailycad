@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
 import { useVehicleSearch } from "state/search/vehicle-search-state";
 import { useNameSearch } from "state/search/name-search-state";
-import type { PostSearchActionsCreateVehicle } from "@snailycad/types/api";
+import { PostSearchActionsCreateVehicle } from "@snailycad/types/api";
 import { handleValidate } from "lib/handleValidate";
 import { IMPOUND_VEHICLE_SCHEMA } from "@snailycad/schemas";
 import { ValueSelectField } from "components/form/inputs/value-select-field";

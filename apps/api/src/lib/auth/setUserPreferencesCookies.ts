@@ -1,4 +1,4 @@
-import type { Res } from "@tsed/common";
+import { Res } from "@tsed/common";
 import { setCookie } from "utils/set-cookie";
 
 interface Options {

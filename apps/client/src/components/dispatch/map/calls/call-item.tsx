@@ -10,7 +10,7 @@ import {
   Infofield,
 } from "@snailycad/ui";
 import { useModal } from "state/modalState";
-import type { Full911Call } from "state/dispatch/dispatch-state";
+import { Full911Call } from "state/dispatch/dispatch-state";
 import { useTranslations } from "next-intl";
 import { isUnitCombined } from "@snailycad/utils";
 import { useCall911State } from "state/dispatch/call-911-state";

@@ -1,8 +1,5 @@
 import { defaultPermissions } from "@snailycad/permissions";
-import type {
-  GetManageExpungementRequests,
-  GetManageNameChangeRequests,
-} from "@snailycad/types/api";
+import { GetManageExpungementRequests, GetManageNameChangeRequests } from "@snailycad/types/api";
 import { AdminLayout } from "components/admin/AdminLayout";
 import { ExpungementRequestsTab } from "components/admin/manage/courthouse/expungement-requests-tab";
 import { NameChangeRequestsTab } from "components/admin/manage/courthouse/name-change-requests-tab";
@@ -13,7 +10,7 @@ import { Permissions, usePermission } from "hooks/usePermission";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
 import { requestAll } from "lib/utils";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { useTranslations } from "next-intl";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { CourthouseType } from "@snailycad/types";

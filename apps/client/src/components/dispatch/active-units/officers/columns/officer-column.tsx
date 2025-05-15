@@ -1,12 +1,12 @@
 import * as React from "react";
-import type { CombinedLeoUnit, Officer } from "@snailycad/types";
+import { CombinedLeoUnit, Officer } from "@snailycad/types";
 import { useImageUrl } from "hooks/useImageUrl";
 import { useValues } from "context/ValuesContext";
 import useFetch from "lib/useFetch";
 import { useUnitStatusChange } from "hooks/shared/useUnitsStatusChange";
 import { isUnitCombined, isUnitOfficer } from "@snailycad/utils";
 import { useActiveOfficers } from "hooks/realtime/useActiveOfficers";
-import { type ActiveOfficer, useLeoState } from "state/leo-state";
+import { ActiveOfficer, useLeoState } from "state/leo-state";
 import { ArrowRight } from "react-bootstrap-icons";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
@@ -25,7 +25,7 @@ import { DndActions } from "types/dnd-actions";
 import { useActiveDispatchers } from "hooks/realtime/use-active-dispatchers";
 import { classNames } from "lib/classNames";
 import { ActiveUnitsQualificationsCard } from "components/leo/qualifications/ActiveUnitsQualificationsCard";
-import type { PostDispatchStatusUnmergeUnitById } from "@snailycad/types/api";
+import { PostDispatchStatusUnmergeUnitById } from "@snailycad/types/api";
 import { useDispatchState } from "state/dispatch/dispatch-state";
 import { darkenColor, generateContrastColor } from "lib/table/get-contrasting-text-color";
 import { ImageWrapper } from "components/shared/image-wrapper";
@@ -129,7 +129,7 @@ export function OfficerColumn({
       : dispatchCodes),
   ];
 
-  const canContextMenuBeOpened = isEligiblePage ? canBeOpened ?? false : false;
+  const canContextMenuBeOpened = isEligiblePage ? (canBeOpened ?? false) : false;
 
   return (
     <ContextMenu>

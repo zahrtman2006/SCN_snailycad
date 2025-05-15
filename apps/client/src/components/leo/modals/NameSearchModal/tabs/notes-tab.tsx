@@ -1,16 +1,16 @@
 import * as React from "react";
-import type { Note } from "@snailycad/types";
+import { Note } from "@snailycad/types";
 import { Button, FullDate, TabsContent } from "@snailycad/ui";
 import { Table, useTableState } from "components/shared/Table";
 import { useTranslations } from "next-intl";
 import { useModal } from "state/modalState";
-import type { NameSearchResult } from "state/search/name-search-state";
-import type { VehicleSearchResult } from "state/search/vehicle-search-state";
+import { NameSearchResult } from "state/search/name-search-state";
+import { VehicleSearchResult } from "state/search/vehicle-search-state";
 import { ModalIds } from "types/modal-ids";
 import { ManageNoteModal } from "../ManageNoteModal";
 import { AlertModal } from "components/modal/AlertModal";
 import useFetch from "lib/useFetch";
-import type { DeleteNotesData } from "@snailycad/types/api";
+import { DeleteNotesData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import { CallDescription } from "components/dispatch/active-calls/CallDescription";
 

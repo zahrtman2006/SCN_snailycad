@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { Permissions } from "hooks/usePermission";
+import { Permissions } from "hooks/usePermission";
 import { useRoleplayStopped } from "hooks/global/useRoleplayStopped";
 import { Nav } from "./shared/nav/Nav";
 import { useHasPermissionForLayout } from "hooks/auth/useHasPermissionForLayout";

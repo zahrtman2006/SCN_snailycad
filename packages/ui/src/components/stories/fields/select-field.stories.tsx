@@ -1,9 +1,9 @@
 import * as React from "react";
-import type { Meta, StoryObj } from "@storybook/react";
-import { SelectField, type SelectFieldProps } from "../../fields/select-field";
+import { Meta, StoryObj } from "@storybook/react";
+import { SelectField, SelectFieldProps } from "../../fields/select-field";
 import { within, userEvent } from "@storybook/testing-library";
 import { expect } from "@storybook/jest";
-import type { Key } from "@react-types/shared";
+import { Key } from "@react-types/shared";
 
 const meta = {
   title: "Inputs/SelectField",

@@ -1,7 +1,7 @@
-import type { REGISTER_SCHEMA } from "@snailycad/schemas";
+import { REGISTER_SCHEMA } from "@snailycad/schemas";
 import { prisma } from "lib/data/prisma";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
-import type { z } from "zod";
+import { z } from "zod";
 
 export async function validateDiscordAndSteamId(data: z.infer<typeof REGISTER_SCHEMA>) {
   const hasDiscordOrSteamId = Boolean(data.discordId) || Boolean(data.steamId);

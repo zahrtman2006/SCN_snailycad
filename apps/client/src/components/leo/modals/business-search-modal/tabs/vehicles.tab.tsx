@@ -1,4 +1,4 @@
-import type { RegisteredVehicle } from "@snailycad/types";
+import { RegisteredVehicle } from "@snailycad/types";
 import { Button, FullDate, TabsContent } from "@snailycad/ui";
 import { Table, useTableState } from "components/shared/Table";
 import { useModal } from "state/modalState";

@@ -1,5 +1,5 @@
-import type * as Types from "@snailycad/types";
-import type { AuditLogActionType } from "./action-types";
+import * as Types from "@snailycad/types";
+import { AuditLogActionType } from "./action-types";
 
 export type AuditLogActions =
   | UserBanAction

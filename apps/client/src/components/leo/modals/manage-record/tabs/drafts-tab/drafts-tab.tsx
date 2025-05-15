@@ -1,5 +1,5 @@
-import type { PenalCode, RecordType } from "@snailycad/types";
-import type { GetCitizenByIdRecordsData } from "@snailycad/types/api";
+import { PenalCode, RecordType } from "@snailycad/types";
+import { GetCitizenByIdRecordsData } from "@snailycad/types/api";
 import { Button, FullDate, TabsContent } from "@snailycad/ui";
 import { Table, useAsyncTable, useTableState } from "components/shared/Table";
 import { useFormikContext } from "formik";

@@ -1,5 +1,5 @@
 import { defaultPermissions } from "@snailycad/permissions";
-import type { GetCitizensData } from "@snailycad/types/api";
+import { GetCitizensData } from "@snailycad/types/api";
 import { buttonVariants } from "@snailycad/ui";
 import { ImageWrapper } from "components/shared/image-wrapper";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";

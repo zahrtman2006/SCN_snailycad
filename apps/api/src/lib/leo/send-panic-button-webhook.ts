@@ -1,17 +1,17 @@
 import {
   ShouldDoType,
-  type StatusValue,
-  type Officer,
-  type EmsFdDeputy,
-  type Citizen,
-  type CombinedLeoUnit,
-  type MiscCadSettings,
-  type cad,
+  StatusValue,
+  Officer,
+  EmsFdDeputy,
+  Citizen,
+  CombinedLeoUnit,
+  MiscCadSettings,
+  cad,
   DiscordWebhookType,
 } from "@prisma/client";
 import { sendDiscordWebhook, sendRawWebhook } from "lib/discord/webhooks";
 import { createPanicButtonEmbed } from "lib/dispatch/webhooks";
-import type { Socket } from "services/socket-service";
+import { Socket } from "services/socket-service";
 
 export interface HandlePanicButtonPressedOptions {
   locale?: string | null;

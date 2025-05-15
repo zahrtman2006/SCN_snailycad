@@ -1,6 +1,6 @@
-import { usePermission, type Permissions } from "hooks/usePermission";
+import { usePermission, Permissions } from "hooks/usePermission";
 import { classNames } from "lib/classNames";
-import type { ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface Props {
   permissions?: Permissions[];

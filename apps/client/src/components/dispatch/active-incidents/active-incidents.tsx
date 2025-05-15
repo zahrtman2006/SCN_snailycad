@@ -9,12 +9,12 @@ import { useModal } from "state/modalState";
 import { useActiveIncidentsTable } from "hooks/realtime/use-active-incidents-table";
 import { AlertModal } from "components/modal/AlertModal";
 import useFetch from "lib/useFetch";
-import type { IncidentInvolvedUnit, LeoIncident } from "@snailycad/types";
+import { IncidentInvolvedUnit, LeoIncident } from "@snailycad/types";
 import { InvolvedUnitsColumn } from "./columns/involved-units-column";
 import { DndActions } from "types/dnd-actions";
 import { classNames } from "lib/classNames";
 import { useDispatchState } from "state/dispatch/dispatch-state";
-import type { PostIncidentsData, PutIncidentByIdData } from "@snailycad/types/api";
+import { PostIncidentsData, PutIncidentByIdData } from "@snailycad/types/api";
 import { CallDescription } from "../active-calls/CallDescription";
 
 import dynamic from "next/dynamic";

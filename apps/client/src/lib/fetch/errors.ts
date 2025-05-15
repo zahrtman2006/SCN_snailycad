@@ -1,5 +1,5 @@
 import { AxiosError } from "axios";
-import type { TranslationValues } from "use-intl";
+import { TranslationValues } from "use-intl";
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-imports
 export type ErrorMessages = (typeof import("../../../locales/en/common.json"))["Errors"];

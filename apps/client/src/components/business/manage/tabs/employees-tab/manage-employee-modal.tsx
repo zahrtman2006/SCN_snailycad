@@ -1,7 +1,7 @@
 import { Loader, Button, SwitchField, FormRow, SelectField } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import useFetch from "lib/useFetch";
 import { useBusinessState } from "state/business-state";
 import { ModalIds } from "types/modal-ids";
@@ -9,8 +9,8 @@ import { useTranslations } from "use-intl";
 import { UPDATE_EMPLOYEE_SCHEMA } from "@snailycad/schemas";
 import { handleValidate } from "lib/handleValidate";
 import { useValues } from "context/ValuesContext";
-import { type Employee, EmployeeAsEnum } from "@snailycad/types";
-import type { PutBusinessEmployeesData } from "@snailycad/types/api";
+import { Employee, EmployeeAsEnum } from "@snailycad/types";
+import { PutBusinessEmployeesData } from "@snailycad/types/api";
 
 interface Props {
   isAdmin?: boolean;

@@ -3,7 +3,7 @@ import * as Popover from "@radix-ui/react-popover";
 import { Button, buttonVariants } from "@snailycad/ui";
 import { classNames } from "lib/classNames";
 import { isMarkActive, toggleMark } from "lib/editor/utils";
-import type { Text } from "slate";
+import { Text } from "slate";
 import { useSlate } from "slate-react";
 import { HexColorPicker } from "react-colorful";
 import { useTranslations } from "use-intl";

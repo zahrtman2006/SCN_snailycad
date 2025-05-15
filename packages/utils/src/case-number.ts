@@ -1,4 +1,4 @@
-import type { Record, Warrant } from "@snailycad/types";
+import { Record, Warrant } from "@snailycad/types";
 import format from "date-fns/format";
 import { prefixNumber } from "./utils/prefix-number";
 import { replaceTemplateVariables } from "./utils/replace-template-variables";

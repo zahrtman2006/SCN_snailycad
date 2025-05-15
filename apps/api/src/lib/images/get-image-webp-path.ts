@@ -1,4 +1,4 @@
-import type { Buffer } from "node:buffer";
+import { Buffer } from "node:buffer";
 import process from "node:process";
 import sharp from "sharp";
 import { randomUUID } from "node:crypto";

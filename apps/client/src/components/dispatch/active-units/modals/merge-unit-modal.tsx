@@ -1,4 +1,4 @@
-import type {
+import {
   CombinedEmsFdUnit,
   CombinedLeoUnit,
   EmergencyVehicleValue,
@@ -17,9 +17,9 @@ import { Select } from "components/form/Select";
 import { isUnitCombined, isUnitCombinedEmsFd } from "@snailycad/utils/typeguards";
 import { useGenerateCallsign } from "hooks/useGenerateCallsign";
 import { makeUnitName } from "lib/utils";
-import type { PostDispatchStatusMergeOfficers } from "@snailycad/types/api";
-import type { ActiveDeputy } from "state/ems-fd-state";
-import type { ActiveOfficer } from "state/leo-state";
+import { PostDispatchStatusMergeOfficers } from "@snailycad/types/api";
+import { ActiveDeputy } from "state/ems-fd-state";
+import { ActiveOfficer } from "state/leo-state";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 
 interface Props {

@@ -1,5 +1,5 @@
-import type { ImpoundedVehicle, RegisteredVehicle } from "@snailycad/types";
-import type { DeleteLeoCheckoutImpoundedVehicleData } from "@snailycad/types/api";
+import { ImpoundedVehicle, RegisteredVehicle } from "@snailycad/types";
+import { DeleteLeoCheckoutImpoundedVehicleData } from "@snailycad/types/api";
 import { Button, Loader } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
 import useFetch from "lib/useFetch";

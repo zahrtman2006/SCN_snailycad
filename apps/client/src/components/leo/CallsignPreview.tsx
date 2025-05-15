@@ -1,4 +1,4 @@
-import type { DepartmentValue, DivisionValue } from "@snailycad/types";
+import { DepartmentValue, DivisionValue } from "@snailycad/types";
 import { useFormikContext } from "formik";
 import { useGenerateCallsign } from "hooks/useGenerateCallsign";
 import { useTranslations } from "next-intl";

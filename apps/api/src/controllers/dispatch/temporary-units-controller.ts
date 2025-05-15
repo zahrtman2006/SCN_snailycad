@@ -5,7 +5,7 @@ import { Socket } from "services/socket-service";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
 import { upsertOfficer } from "controllers/leo/my-officers/upsert-officer";
-import type { cad, Feature, MiscCadSettings } from "@prisma/client";
+import { cad, Feature, MiscCadSettings } from "@prisma/client";
 import {
   CREATE_TEMPORARY_OFFICER_SCHEMA,
   CREATE_TEMPORARY_EMS_FD_DEPUTY_SCHEMA,

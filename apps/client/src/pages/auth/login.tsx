@@ -1,4 +1,4 @@
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { getTranslations } from "lib/getTranslation";
 import { Title } from "components/shared/Title";
 import { AuthScreenImages } from "components/auth/auth-screen-images";

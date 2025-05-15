@@ -1,6 +1,6 @@
 import { LICENSE_EXAM_SCHEMA } from "@snailycad/schemas";
 import {
-  type LicenseExam,
+  LicenseExam,
   LicenseExamPassType,
   DriversLicenseCategoryType,
   ValueLicenseType,
@@ -17,7 +17,7 @@ import { handleValidate } from "lib/handleValidate";
 import useFetch from "lib/useFetch";
 import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
-import type { PostLicenseExamsData, PutLicenseExamByIdData } from "@snailycad/types/api";
+import { PostLicenseExamsData, PutLicenseExamByIdData } from "@snailycad/types/api";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 

@@ -1,4 +1,4 @@
-import { Controller, BodyParams, Post, Res, type Response } from "@tsed/common";
+import { Controller, BodyParams, Post, Res, Response } from "@tsed/common";
 import { hashSync, genSaltSync, compareSync } from "bcrypt";
 import { BadRequest } from "@tsed/exceptions";
 import { prisma } from "lib/data/prisma";
@@ -9,17 +9,10 @@ import { ExtendedNotFound } from "~/exceptions/extended-not-found";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
 import { validateUser2FA } from "lib/auth/2fa";
 import { ContentType, Description, Returns } from "@tsed/schema";
-import {
-  type User,
-  WhitelistStatus,
-  Rank,
-  type AutoSetUserProperties,
-  type cad,
-  Feature,
-} from "@prisma/client";
+import { User, WhitelistStatus, Rank, AutoSetUserProperties, cad, Feature } from "@prisma/client";
 import { defaultPermissions, Permissions } from "@snailycad/permissions";
 import { setUserPreferencesCookies } from "lib/auth/setUserPreferencesCookies";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { setUserTokenCookies } from "lib/auth/setUserTokenCookies";
 import { validateGoogleCaptcha } from "lib/auth/validate-google-captcha";
 import { validateDiscordAndSteamId } from "lib/auth/validate-discord-steam-id";

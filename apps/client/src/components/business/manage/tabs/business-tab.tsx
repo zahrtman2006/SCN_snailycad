@@ -10,7 +10,7 @@ import { Button, Loader, Input, TabsContent, SwitchField } from "@snailycad/ui";
 import { handleValidate } from "lib/handleValidate";
 import { useRouter } from "next/router";
 import { SettingsFormField } from "components/form/SettingsFormField";
-import type { DeleteBusinessByIdData, PutBusinessByIdData } from "@snailycad/types/api";
+import { DeleteBusinessByIdData, PutBusinessByIdData } from "@snailycad/types/api";
 import { AddressPostalSelect } from "components/form/select/PostalSelect";
 
 export function ManageBusinessTab() {

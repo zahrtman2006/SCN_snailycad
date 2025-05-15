@@ -1,7 +1,7 @@
-import { Middleware, type MiddlewareMethods, Context, Req, Next } from "@tsed/common";
+import { Middleware, MiddlewareMethods, Context, Req, Next } from "@tsed/common";
 import { UseBefore } from "@tsed/platform-middlewares";
 import { StoreSet, useDecorators } from "@tsed/core";
-import type { User } from "@prisma/client";
+import { User } from "@prisma/client";
 import { hasPermission, Permissions } from "@snailycad/permissions";
 import { Forbidden, Unauthorized } from "@tsed/exceptions";
 

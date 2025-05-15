@@ -19,7 +19,7 @@ import { PersonFill } from "react-bootstrap-icons";
 import { calculateAge, formatCitizenAddress } from "lib/utils";
 import { useAuth } from "context/AuthContext";
 import { CitizenImageModal } from "components/citizen/modals/citizen-image-modal";
-import type {
+import {
   PostEmsFdDeclareCitizenById,
   PostEmsFdMedicalRecordsSearchData,
 } from "@snailycad/types/api";

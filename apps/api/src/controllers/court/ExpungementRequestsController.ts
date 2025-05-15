@@ -1,4 +1,4 @@
-import { ExpungementRequestStatus, Feature, type User, WhitelistStatus } from "@prisma/client";
+import { ExpungementRequestStatus, Feature, User, WhitelistStatus } from "@prisma/client";
 import { BodyParams, Context, PathParams, UseBeforeEach } from "@tsed/common";
 import { Controller } from "@tsed/di";
 import { BadRequest, NotFound } from "@tsed/exceptions";
@@ -6,7 +6,7 @@ import { ContentType, Delete, Get, Post } from "@tsed/schema";
 import { citizenIncludeWithRecords } from "controllers/citizen/CitizenController";
 import { prisma } from "lib/data/prisma";
 import { IsAuth } from "middlewares/auth/is-auth";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { IsFeatureEnabled } from "middlewares/is-enabled";
 import { validateSchema } from "~/lib/data/validate-schema";
 import { EXPUNGEMENT_REQUEST_SCHEMA } from "@snailycad/schemas";

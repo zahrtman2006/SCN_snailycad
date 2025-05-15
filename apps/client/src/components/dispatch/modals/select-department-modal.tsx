@@ -7,7 +7,7 @@ import { useTranslations } from "use-intl";
 import { useValues } from "context/ValuesContext";
 import useFetch from "lib/useFetch";
 import { useActiveDispatcherState } from "state/dispatch/active-dispatcher-state";
-import type { GetDispatchData } from "@snailycad/types/api";
+import { GetDispatchData } from "@snailycad/types/api";
 import { useRouter } from "next/router";
 import { ValueSelectField } from "components/form/inputs/value-select-field";
 import { ValueType } from "@snailycad/types";

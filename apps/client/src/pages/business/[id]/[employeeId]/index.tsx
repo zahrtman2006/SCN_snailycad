@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Star } from "react-bootstrap-icons";
 import Link from "next/link";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { dataToSlate, Editor } from "components/editor/editor";
 import { BreadcrumbItem, Breadcrumbs, Button, buttonVariants } from "@snailycad/ui";
 import { Layout } from "components/Layout";
@@ -11,12 +11,12 @@ import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
 import { useBusinessState } from "state/business-state";
 import { useTranslations } from "use-intl";
-import { type BusinessPost, WhitelistStatus } from "@snailycad/types";
+import { BusinessPost, WhitelistStatus } from "@snailycad/types";
 import useFetch from "lib/useFetch";
 import dynamic from "next/dynamic";
 import { requestAll } from "lib/utils";
 import { Title } from "components/shared/Title";
-import type { DeleteBusinessPostsData, GetBusinessByIdData } from "@snailycad/types/api";
+import { DeleteBusinessPostsData, GetBusinessByIdData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 
 const AlertModal = dynamic(async () => (await import("components/modal/AlertModal")).AlertModal);

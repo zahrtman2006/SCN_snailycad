@@ -2,13 +2,13 @@ import * as React from "react";
 import { FormField } from "components/form/FormField";
 import { Input, Loader, Button } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import useFetch from "lib/useFetch";
 import { useModal } from "state/modalState";
 import { useTranslations } from "use-intl";
 import { ModalIds } from "types/modal-ids";
-import type { ValueType } from "@snailycad/types";
-import type { ImportValuesData } from "@snailycad/types/api";
+import { ValueType } from "@snailycad/types";
+import { ImportValuesData } from "@snailycad/types/api";
 
 interface Props {
   type: ValueType;

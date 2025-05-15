@@ -9,14 +9,14 @@ import { callInclude, leoProperties } from "utils/leo/includes";
 import { citizenInclude } from "controllers/citizen/CitizenController";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
 import {
-  type cad,
-  type Citizen,
+  cad,
+  Citizen,
   CustomFieldCategory,
-  type DepartmentValue,
+  DepartmentValue,
   Feature,
-  type Officer,
+  Officer,
   WhitelistStatus,
-  type User,
+  User,
   PublishStatus,
 } from "@prisma/client";
 import { validateSchema } from "lib/data/validate-schema";
@@ -24,7 +24,7 @@ import { CUSTOM_FIELD_SEARCH_SCHEMA } from "@snailycad/schemas";
 import { isFeatureEnabled } from "lib/upsert-cad";
 import { defaultPermissions, hasPermission } from "@snailycad/permissions";
 import { shouldCheckCitizenUserId } from "lib/citizen/has-citizen-access";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
 import { setEndedSuspendedLicenses } from "lib/citizen/licenses/set-ended-suspended-licenses";
 import { incidentInclude } from "../incidents/IncidentController";

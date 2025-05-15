@@ -1,13 +1,13 @@
 import {
   Feature,
-  type CourtDate,
-  type CourtEntry,
-  type SeizedItem,
-  type Violation,
+  CourtDate,
+  CourtEntry,
+  SeizedItem,
+  Violation,
   PublishStatus,
 } from "@prisma/client";
-import type { CREATE_TICKET_SCHEMA, CREATE_TICKET_SCHEMA_BUSINESS } from "@snailycad/schemas";
-import { type PaymentStatus, type RecordType, WhitelistStatus } from "@snailycad/types";
+import { CREATE_TICKET_SCHEMA, CREATE_TICKET_SCHEMA_BUSINESS } from "@snailycad/schemas";
+import { PaymentStatus, RecordType, WhitelistStatus } from "@snailycad/types";
 import { NotFound } from "@tsed/exceptions";
 import { isFeatureEnabled } from "lib/upsert-cad";
 import { leoProperties } from "utils/leo/includes";
@@ -15,7 +15,7 @@ import { leoProperties } from "utils/leo/includes";
 import { prisma } from "lib/data/prisma";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
 import { ExtendedNotFound } from "~/exceptions/extended-not-found";
-import type { z } from "zod";
+import { z } from "zod";
 import { validateRecordData } from "./validate-record-data";
 import { captureException } from "@sentry/node";
 import { userProperties } from "~/lib/auth/getSessionUser";

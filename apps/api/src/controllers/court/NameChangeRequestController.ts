@@ -1,4 +1,4 @@
-import { type User } from "@prisma/client";
+import { User } from "@prisma/client";
 import { ContentType, Get, Post } from "@tsed/schema";
 import { BodyParams, Context, UseBeforeEach } from "@tsed/common";
 import { Controller } from "@tsed/di";
@@ -8,7 +8,7 @@ import { validateSchema } from "lib/data/validate-schema";
 import { NAME_CHANGE_REQUEST_SCHEMA } from "@snailycad/schemas";
 import { NotFound } from "@tsed/exceptions";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { Feature, IsFeatureEnabled } from "middlewares/is-enabled";
 
 @Controller("/name-change")

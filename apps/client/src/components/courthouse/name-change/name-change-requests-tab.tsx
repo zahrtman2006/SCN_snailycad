@@ -6,7 +6,7 @@ import { ModalIds } from "types/modal-ids";
 import { Table, useTableState } from "components/shared/Table";
 import { WhitelistStatus } from "@snailycad/types";
 import { RequestNameChangeModal } from "./request-name-change-modal";
-import type { GetNameChangeRequestsData } from "@snailycad/types/api";
+import { GetNameChangeRequestsData } from "@snailycad/types/api";
 import { CallDescription } from "components/dispatch/active-calls/CallDescription";
 
 interface Props {

@@ -1,4 +1,4 @@
-import type { AnyValue, ValueType } from "@snailycad/types";
+import { AnyValue, ValueType } from "@snailycad/types";
 import { hasValueObj, isBaseValue, isPenalCodeValue } from "@snailycad/utils";
 
 const USED_COUNT_NAMES_PER_TYPE: Partial<Record<ValueType, string[]>> = {

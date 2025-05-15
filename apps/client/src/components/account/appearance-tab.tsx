@@ -16,10 +16,10 @@ import {
   AccordionTrigger,
 } from "@snailycad/ui";
 import { i18n } from "../../../i18n.config.mjs";
-import type { Sounds } from "lib/server/getAvailableSounds.server";
+import { Sounds } from "lib/server/getAvailableSounds.server";
 import { soundCamelCaseToKebabCase } from "lib/utils";
 import { useRouter } from "next/router";
-import type { PatchUserData } from "@snailycad/types/api";
+import { PatchUserData } from "@snailycad/types/api";
 import { useAudio } from "react-use";
 import Image from "next/image";
 

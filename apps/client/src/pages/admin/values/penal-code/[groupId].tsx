@@ -4,7 +4,7 @@ import { getSelectedTableRows, Table, useAsyncTable, useTableState } from "compo
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
 import { getObjLength, isEmpty, requestAll, yesOrNoText } from "lib/utils";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { SearchArea } from "components/shared/search/search-area";
 import { Title } from "components/shared/Title";
 import { AdminLayout } from "components/admin/AdminLayout";
@@ -16,7 +16,7 @@ import { ModalIds } from "types/modal-ids";
 import Link from "next/link";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import { useModal } from "state/modalState";
-import type {
+import {
   DeleteValueByIdData,
   DeleteValuesBulkData,
   GetValuesPenalCodesData,

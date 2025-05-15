@@ -1,5 +1,5 @@
-import { type User } from "@prisma/client";
-import type { cad, Feature } from "@prisma/client";
+import { User } from "@prisma/client";
+import { cad, Feature } from "@prisma/client";
 import { MEDICAL_RECORD_SCHEMA } from "@snailycad/schemas";
 import { UseBeforeEach, Context, BodyParams, PathParams } from "@tsed/common";
 import { Controller } from "@tsed/di";
@@ -10,7 +10,7 @@ import { shouldCheckCitizenUserId } from "lib/citizen/has-citizen-access";
 import { prisma } from "lib/data/prisma";
 import { validateSchema } from "lib/data/validate-schema";
 import { IsAuth } from "middlewares/auth/is-auth";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 
 @Controller("/medical-records")
 @UseBeforeEach(IsAuth)

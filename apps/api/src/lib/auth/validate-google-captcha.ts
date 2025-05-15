@@ -1,8 +1,8 @@
-import type { REGISTER_SCHEMA } from "@snailycad/schemas";
+import { REGISTER_SCHEMA } from "@snailycad/schemas";
 import process from "node:process";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
 import { request } from "undici";
-import type { z } from "zod";
+import { z } from "zod";
 
 const GOOGLE_CAPTCHA_SECRET = process.env.GOOGLE_CAPTCHA_SECRET;
 const GOOGLE_CAPTCHA_URL = "https://www.google.com/recaptcha/api/siteverify";

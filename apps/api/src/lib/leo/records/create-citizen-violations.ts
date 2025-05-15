@@ -1,7 +1,7 @@
-import type { Feature } from "@prisma/client";
+import { Feature } from "@prisma/client";
 import { upsertRecord } from "./upsert-record";
-import type { z } from "zod";
-import type { CREATE_TICKET_SCHEMA } from "@snailycad/schemas";
+import { z } from "zod";
+import { CREATE_TICKET_SCHEMA } from "@snailycad/schemas";
 
 interface Options {
   cad: { features?: Record<Feature, boolean> };

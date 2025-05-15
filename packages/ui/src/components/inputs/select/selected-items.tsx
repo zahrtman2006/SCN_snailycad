@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import { X } from "react-bootstrap-icons";
 import { Button } from "../../button/button";
-import type { SelectValue } from "../../fields/select-field";
-import type { MultiSelectState } from "../../../hooks/select/useMultiSelectState";
+import { SelectValue } from "../../fields/select-field";
+import { MultiSelectState } from "../../../hooks/select/useMultiSelectState";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "../../hover-card";
 
 interface Props<T extends SelectValue> {

@@ -1,5 +1,5 @@
 import { TableActionsAlignment } from "@snailycad/types";
-import type { AccessorKeyColumnDef, ColumnDef, RowData } from "@tanstack/react-table";
+import { AccessorKeyColumnDef, ColumnDef, RowData } from "@tanstack/react-table";
 
 export function orderColumnsByTableActionsAlignment<TData extends RowData>(
   tableActionsAlignment: TableActionsAlignment,

@@ -1,6 +1,6 @@
-import { type Prisma, ShouldDoType, type User } from "@prisma/client";
+import { Prisma, ShouldDoType, User } from "@prisma/client";
 import { defaultPermissions, hasPermission } from "@snailycad/permissions";
-import type { Req, Context } from "@tsed/common";
+import { Req, Context } from "@tsed/common";
 import { BadRequest, Forbidden } from "@tsed/exceptions";
 import { combinedEmsFdUnitProperties, unitProperties } from "utils/leo/includes";
 import { getInactivityFilter } from "./leo/utils";

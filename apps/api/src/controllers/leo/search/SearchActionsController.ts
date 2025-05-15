@@ -14,19 +14,19 @@ import { IsAuth } from "middlewares/auth/is-auth";
 import { citizenInclude } from "controllers/citizen/CitizenController";
 import { updateCitizenLicenseCategories } from "lib/citizen/licenses/update-citizen-license-categories";
 import {
-  type cad,
+  cad,
   Feature,
-  type MiscCadSettings,
+  MiscCadSettings,
   ValueType,
-  type VehicleInspectionStatus,
-  type VehicleTaxStatus,
+  VehicleInspectionStatus,
+  VehicleTaxStatus,
   WhitelistStatus,
-  type User,
+  User,
   CustomFieldCategory,
-  type SuspendedCitizenLicenses,
+  SuspendedCitizenLicenses,
   DiscordWebhookType,
-  type Officer,
-  type CombinedLeoUnit,
+  Officer,
+  CombinedLeoUnit,
 } from "@prisma/client";
 import { UseBeforeEach, Context, UseBefore } from "@tsed/common";
 import { ContentType, Description, Post, Put } from "@tsed/schema";
@@ -43,7 +43,7 @@ import {
 } from "./SearchController";
 import { citizenObjectFromData } from "lib/citizen/citizen-create-data-obj";
 import { generateString } from "utils/generate-string";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { createVehicleImpoundedWebhookData } from "controllers/calls/tow-controller";
 import { sendDiscordWebhook, sendRawWebhook } from "lib/discord/webhooks";
 import { getUserOfficerFromActiveOfficer } from "lib/leo/utils";

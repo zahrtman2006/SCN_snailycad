@@ -2,13 +2,13 @@ import { useRouter } from "next/router";
 import { useTranslations } from "use-intl";
 import { Layout } from "components/Layout";
 import useFetch from "lib/useFetch";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
 import { useCitizen } from "context/CitizenContext";
 import { requestAll } from "lib/utils";
 import { ManageCitizenForm } from "components/citizen/ManageCitizenForm";
-import type { PostCitizenImageByIdData, PutCitizenByIdData } from "@snailycad/types/api";
+import { PostCitizenImageByIdData, PutCitizenByIdData } from "@snailycad/types/api";
 import { BreadcrumbItem, Breadcrumbs } from "@snailycad/ui";
 
 export default function EditCitizen() {

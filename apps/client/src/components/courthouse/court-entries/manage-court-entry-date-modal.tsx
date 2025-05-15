@@ -6,7 +6,7 @@ import { Form, Formik } from "formik";
 import { handleValidate } from "lib/handleValidate";
 import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
-import type { CourtDate } from "@snailycad/types";
+import { CourtDate } from "@snailycad/types";
 import { v4 } from "uuid";
 import parseISO from "date-fns/parseISO";
 
@@ -25,7 +25,7 @@ export function ManageCourtDateModal({ onCreate, onUpdate, onClose, date }: Prop
   const validate = handleValidate(COURT_DATE_SCHEMA);
   const INITIAL_VALUES = {
     note: date?.note ?? "",
-    date: typeof date?.date === "string" ? parseISO(date.date) : date?.date ?? new Date(),
+    date: typeof date?.date === "string" ? parseISO(date.date) : (date?.date ?? new Date()),
   };
 
   function handleClose() {

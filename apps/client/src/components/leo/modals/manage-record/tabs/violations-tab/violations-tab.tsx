@@ -1,7 +1,7 @@
-import type { PenalCode } from "@snailycad/types";
+import { PenalCode } from "@snailycad/types";
 import { TabsContent } from "@snailycad/ui";
 import { FormField } from "components/form/FormField";
-import type { SelectValue } from "components/form/Select";
+import { SelectValue } from "components/form/Select";
 import { useFormikContext } from "formik";
 import { useTranslations } from "use-intl";
 import { PenalCodesTable } from "../../penal-codes-table";

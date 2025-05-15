@@ -4,7 +4,7 @@ import { buttonVariants, TabsContent } from "@snailycad/ui";
 import { Table, useAsyncTable, useTableState } from "components/shared/Table";
 import Link from "next/link";
 import { SearchArea } from "components/shared/search/search-area";
-import type { GetManageRecordLogsData } from "@snailycad/types/api";
+import { GetManageRecordLogsData } from "@snailycad/types/api";
 
 interface Props {
   citizens: GetManageRecordLogsData;

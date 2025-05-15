@@ -6,7 +6,7 @@ import {
   BodyParams,
   MultipartFile,
   PathParams,
-  type PlatformMulterFile,
+  PlatformMulterFile,
   QueryParams,
   UseBeforeEach,
 } from "@tsed/common";
@@ -15,8 +15,8 @@ import { parseImportFile } from "utils/file";
 import { validateSchema } from "lib/data/validate-schema";
 import { generateString } from "utils/generate-string";
 import { citizenInclude } from "controllers/citizen/CitizenController";
-import type { Prisma } from "@prisma/client";
-import type * as APITypes from "@snailycad/types/api";
+import { Prisma } from "@prisma/client";
+import * as APITypes from "@snailycad/types/api";
 import { Permissions, UsePermissions } from "middlewares/use-permissions";
 
 const weaponsInclude = { ...citizenInclude.weapons.include, citizen: true };

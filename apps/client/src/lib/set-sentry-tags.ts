@@ -1,5 +1,5 @@
 import { setTag, setTags } from "@sentry/nextjs";
-import type { cad } from "@snailycad/types";
+import { cad } from "@snailycad/types";
 
 export interface SetSentryTagsOptions {
   cad: cad | null;

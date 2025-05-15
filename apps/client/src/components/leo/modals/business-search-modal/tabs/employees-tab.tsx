@@ -1,4 +1,4 @@
-import type { BaseCitizen } from "@snailycad/types";
+import { BaseCitizen } from "@snailycad/types";
 import { Button, TabsContent } from "@snailycad/ui";
 import { Table, useTableState } from "components/shared/Table";
 import { yesOrNoText } from "lib/utils";

@@ -21,6 +21,8 @@ export default defineConfig([
     "**/build",
     "apps/api/public/**/*",
     "**/next-env.d.ts",
+    "*.mjs",
+    "**/scripts/**/*.mjs",
   ]),
 
   {

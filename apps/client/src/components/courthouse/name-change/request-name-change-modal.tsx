@@ -2,13 +2,13 @@ import { NAME_CHANGE_REQUEST_SCHEMA } from "@snailycad/schemas";
 import { Loader, Button, FormRow, TextField } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { handleValidate } from "lib/handleValidate";
 import useFetch from "lib/useFetch";
 import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
-import type { GetNameChangeRequestsData, PostNameChangeRequestsData } from "@snailycad/types/api";
+import { GetNameChangeRequestsData, PostNameChangeRequestsData } from "@snailycad/types/api";
 
 interface Props {
   onCreate?(request: GetNameChangeRequestsData[number]): void;

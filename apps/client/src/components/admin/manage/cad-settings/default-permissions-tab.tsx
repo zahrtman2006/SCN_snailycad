@@ -1,14 +1,14 @@
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { useTranslations } from "use-intl";
 
 import { Alert, Button, Loader, SwitchField, TextField } from "@snailycad/ui";
 import { useAuth } from "context/AuthContext";
 import useFetch from "lib/useFetch";
-import type { cad } from "@snailycad/types";
+import { cad } from "@snailycad/types";
 import { toastMessage } from "lib/toastMessage";
-import type { PutCADDefaultPermissionsData } from "@snailycad/types/api";
+import { PutCADDefaultPermissionsData } from "@snailycad/types/api";
 import { usePermissionsModal } from "hooks/use-permissions-modal";
-import { type PermissionNames, getPermissions, defaultPermissions } from "@snailycad/permissions";
+import { PermissionNames, getPermissions, defaultPermissions } from "@snailycad/permissions";
 import { TabsContent } from "@radix-ui/react-tabs";
 import { SettingsTabs } from "components/admin/cad-settings/layout";
 

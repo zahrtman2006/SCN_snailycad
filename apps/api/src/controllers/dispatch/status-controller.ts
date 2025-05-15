@@ -1,15 +1,15 @@
 import {
-  type User,
+  User,
   ShouldDoType,
-  type MiscCadSettings,
-  type cad,
-  type Officer,
-  type CombinedLeoUnit,
-  type EmsFdDeputy,
+  MiscCadSettings,
+  cad,
+  Officer,
+  CombinedLeoUnit,
+  EmsFdDeputy,
   WhitelistStatus,
   DiscordWebhookType,
   Feature,
-  type DivisionValue,
+  DivisionValue,
 } from "@prisma/client";
 import { UPDATE_OFFICER_STATUS_SCHEMA } from "@snailycad/schemas";
 import { Req, UseBeforeEach } from "@tsed/common";
@@ -27,7 +27,7 @@ import { UsePermissions, Permissions } from "middlewares/use-permissions";
 import { findUnit } from "lib/leo/findUnit";
 import { defaultPermissions, hasPermission } from "@snailycad/permissions";
 import { findNextAvailableIncremental } from "lib/leo/findNextAvailableIncremental";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { createWebhookData } from "lib/dispatch/webhooks";
 import { createCallEventOnStatusChange } from "lib/dispatch/createCallEventOnStatusChange";
 import { ExtendedNotFound } from "~/exceptions/extended-not-found";

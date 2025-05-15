@@ -1,6 +1,6 @@
 import * as React from "react";
 import BN from "bignumber.js";
-import type {
+import {
   DataActions,
   PlayerDataEvent,
   PlayerLeftEvent,
@@ -17,7 +17,7 @@ import { ConnectionStatus } from "@snailycad/ui";
 import { createWithEqualityFn } from "zustand/traditional";
 import { shallow } from "zustand/shallow";
 import { useMutation } from "@tanstack/react-query";
-import type { EmsFdDeputy, Officer } from "@snailycad/types";
+import { EmsFdDeputy, Officer } from "@snailycad/types";
 import { useListener } from "@casperiv/use-socket.io";
 import { SocketEvents } from "@snailycad/config";
 

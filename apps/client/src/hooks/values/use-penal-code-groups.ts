@@ -1,8 +1,8 @@
 import * as React from "react";
 import useFetch from "lib/useFetch";
-import type { PenalCodeGroup } from "@snailycad/types";
+import { PenalCodeGroup } from "@snailycad/types";
 import { useQuery } from "@tanstack/react-query";
-import type { GetPenalCodeGroupsData } from "@snailycad/types/api";
+import { GetPenalCodeGroupsData } from "@snailycad/types/api";
 
 export function usePenalCodeGroups() {
   const { state, execute } = useFetch();

@@ -1,4 +1,4 @@
-import { type User, Feature, type cad, type Prisma, WhitelistStatus } from "@prisma/client";
+import { User, Feature, cad, Prisma, WhitelistStatus } from "@prisma/client";
 import { WEAPON_SCHEMA } from "@snailycad/schemas";
 import { UseBeforeEach, Context, BodyParams, PathParams, QueryParams } from "@tsed/common";
 import { Controller } from "@tsed/di";
@@ -12,9 +12,9 @@ import { validateSchema } from "lib/data/validate-schema";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { generateString } from "utils/generate-string";
 import { citizenInclude } from "./CitizenController";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
-import type { Weapon } from "@snailycad/types";
+import { Weapon } from "@snailycad/types";
 import { IsFeatureEnabled } from "middlewares/is-enabled";
 
 @Controller("/weapons")

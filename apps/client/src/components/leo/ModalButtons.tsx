@@ -1,5 +1,5 @@
 import { Button } from "@snailycad/ui";
-import { type ActiveOfficer, useLeoState } from "state/leo-state";
+import { ActiveOfficer, useLeoState } from "state/leo-state";
 import { ActiveToneType, ShouldDoType } from "@snailycad/types";
 import { useTranslations } from "use-intl";
 import { useGenerateCallsign } from "hooks/useGenerateCallsign";
@@ -8,7 +8,7 @@ import { makeUnitName } from "lib/utils";
 import { isUnitCombined, isUnitOfficer } from "@snailycad/utils";
 import * as modalButtons from "components/modal-buttons/buttons";
 import { ModalButton } from "components/modal-buttons/modal-button";
-import type { PostLeoTogglePanicButtonData } from "@snailycad/types/api";
+import { PostLeoTogglePanicButtonData } from "@snailycad/types/api";
 import { useActiveDispatchers } from "hooks/realtime/use-active-dispatchers";
 import { ModalIds } from "types/modal-ids";
 import { useModal } from "state/modalState";

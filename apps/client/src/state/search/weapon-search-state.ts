@@ -1,4 +1,4 @@
-import type { PostLeoSearchWeaponData } from "@snailycad/types/api";
+import { PostLeoSearchWeaponData } from "@snailycad/types/api";
 import { shallow } from "zustand/shallow";
 import { createWithEqualityFn } from "zustand/traditional";
 

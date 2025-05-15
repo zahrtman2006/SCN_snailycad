@@ -4,7 +4,7 @@ import {
   UPDATE_ASSIGNED_UNIT_SCHEMA,
   CALL_911_SCHEMA,
   LINK_INCIDENT_TO_CALL_SCHEMA,
-  type ASSIGNED_UNIT,
+  ASSIGNED_UNIT,
 } from "@snailycad/schemas";
 import { HeaderParams, BodyParams, Context, PathParams, QueryParams } from "@tsed/platform-params";
 import { BadRequest, NotFound } from "@tsed/exceptions";
@@ -14,18 +14,18 @@ import { UseAfter, UseBeforeEach } from "@tsed/platform-middlewares";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { validateSchema } from "lib/data/validate-schema";
 import {
-  type cad,
-  type User,
-  type MiscCadSettings,
-  type Call911,
+  cad,
+  User,
+  MiscCadSettings,
+  Call911,
   DiscordWebhookType,
   ShouldDoType,
-  type Prisma,
+  Prisma,
   WhitelistStatus,
   WhatPages,
 } from "@prisma/client";
 import { sendDiscordWebhook, sendRawWebhook } from "lib/discord/webhooks";
-import type { APIEmbed } from "discord-api-types/v10";
+import { APIEmbed } from "discord-api-types/v10";
 import { manyToManyHelper } from "lib/data/many-to-many";
 import { Permissions, UsePermissions } from "middlewares/use-permissions";
 import { officerOrDeputyToUnit } from "lib/leo/officerOrDeputyToUnit";
@@ -34,9 +34,9 @@ import { getInactivityFilter } from "lib/leo/utils";
 import { assignUnitsTo911Call } from "lib/dispatch/911-calls/assign-units-to-911-call";
 import { linkOrUnlinkCallDepartmentsAndDivisions } from "lib/dispatch/911-calls/link-unlink-departments-divisions-call-911";
 import { hasPermission } from "@snailycad/permissions";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { incidentInclude } from "controllers/leo/incidents/IncidentController";
-import type { z } from "zod";
+import { z } from "zod";
 import { getNextActive911CallId } from "lib/dispatch/911-calls/get-next-active-911-call";
 import { Feature, IsFeatureEnabled } from "middlewares/is-enabled";
 import { getTranslator } from "utils/get-translator";
@@ -45,7 +45,7 @@ import { handleEndCall } from "lib/dispatch/911-calls/handle-end-911-call";
 import { AuditLogActionType, createAuditLogEntry } from "@snailycad/audit-logger/server";
 import { isFeatureEnabled } from "lib/upsert-cad";
 import { _leoProperties, assignedUnitsInclude, callInclude } from "utils/leo/includes";
-import { slateDataToString, type Descendant } from "@snailycad/utils/editor";
+import { slateDataToString, Descendant } from "@snailycad/utils/editor";
 
 @Controller("/911-calls")
 @UseBeforeEach(IsAuth)
@@ -315,7 +315,7 @@ export class Calls911Controller {
         description: data.descriptionData ? null : data.description,
         name: data.name,
         userId: user.id,
-        positionId: shouldRemovePosition ? null : position?.id ?? call.positionId,
+        positionId: shouldRemovePosition ? null : (position?.id ?? call.positionId),
         descriptionData: data.descriptionData ?? undefined,
         situationCodeId: data.situationCode === null ? null : data.situationCode,
         typeId: data.type,

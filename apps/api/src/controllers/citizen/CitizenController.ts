@@ -1,4 +1,4 @@
-import { UseBeforeEach, Context, MultipartFile, type PlatformMulterFile } from "@tsed/common";
+import { UseBeforeEach, Context, MultipartFile, PlatformMulterFile } from "@tsed/common";
 import { Controller } from "@tsed/di";
 import { ContentType, Delete, Description, Get, Post, Put } from "@tsed/schema";
 import { QueryParams, BodyParams, PathParams } from "@tsed/platform-params";
@@ -7,16 +7,9 @@ import { IsAuth } from "middlewares/auth/is-auth";
 import { BadRequest, Forbidden, NotFound } from "@tsed/exceptions";
 import { CREATE_CITIZEN_SCHEMA, CREATE_OFFICER_SCHEMA } from "@snailycad/schemas";
 import fs from "node:fs/promises";
-import { type AllowedFileExtension, allowedFileExtensions } from "@snailycad/config";
+import { AllowedFileExtension, allowedFileExtensions } from "@snailycad/config";
 import { generateString } from "utils/generate-string";
-import {
-  type User,
-  ValueType,
-  Feature,
-  type cad,
-  type MiscCadSettings,
-  Prisma,
-} from "@prisma/client";
+import { User, ValueType, Feature, cad, MiscCadSettings, Prisma } from "@prisma/client";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
 import { canManageInvariant, userProperties } from "lib/auth/getSessionUser";
 import { validateSchema } from "lib/data/validate-schema";
@@ -24,7 +17,7 @@ import { updateCitizenLicenseCategories } from "lib/citizen/licenses/update-citi
 import { isFeatureEnabled } from "lib/upsert-cad";
 import { shouldCheckCitizenUserId } from "lib/citizen/has-citizen-access";
 import { citizenObjectFromData } from "lib/citizen/citizen-create-data-obj";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { getImageWebPPath } from "lib/images/get-image-webp-path";
 import { validateSocialSecurityNumber } from "lib/citizen/validate-ssn";
 import { setEndedSuspendedLicenses } from "lib/citizen/licenses/set-ended-suspended-licenses";

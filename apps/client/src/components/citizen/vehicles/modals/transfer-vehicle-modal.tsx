@@ -12,12 +12,12 @@ import { useModal } from "state/modalState";
 import { Form, Formik } from "formik";
 import useFetch from "lib/useFetch";
 import { useTranslations } from "use-intl";
-import type { Business, RegisteredVehicle } from "@snailycad/types";
+import { Business, RegisteredVehicle } from "@snailycad/types";
 import { ModalIds } from "types/modal-ids";
 import { handleValidate } from "lib/handleValidate";
 import { TRANSFER_VEHICLE_SCHEMA } from "@snailycad/schemas";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
-import type { PostCitizenTransferVehicleData } from "@snailycad/types/api";
+import { PostCitizenTransferVehicleData } from "@snailycad/types/api";
 
 interface Props {
   vehicle: RegisteredVehicle;

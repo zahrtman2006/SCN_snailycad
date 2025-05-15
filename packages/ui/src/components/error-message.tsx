@@ -1,4 +1,4 @@
-import type { DOMAttributes } from "@react-types/shared";
+import { DOMAttributes } from "@react-types/shared";
 import { ExclamationTriangleFill } from "react-bootstrap-icons";
 
 interface Props {

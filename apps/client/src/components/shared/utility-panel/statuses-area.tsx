@@ -6,22 +6,22 @@ import { useValues } from "context/ValuesContext";
 import { classNames } from "lib/classNames";
 import useFetch from "lib/useFetch";
 import { useRouter } from "next/router";
-import type { ActiveDeputy } from "state/ems-fd-state";
-import type { ActiveOfficer } from "state/leo-state";
+import { ActiveDeputy } from "state/ems-fd-state";
+import { ActiveOfficer } from "state/leo-state";
 import { ModalIds } from "types/modal-ids";
 import {
-  type CombinedEmsFdUnit,
-  type CombinedLeoUnit,
-  type EmsFdDeputy,
-  type Officer,
+  CombinedEmsFdUnit,
+  CombinedLeoUnit,
+  EmsFdDeputy,
+  Officer,
   ShouldDoType,
   WhatPages,
-  type StatusValue,
+  StatusValue,
   ValueType,
 } from "@snailycad/types";
 import { useAudio } from "react-use";
 import { useAuth } from "context/AuthContext";
-import type { PutDispatchStatusByUnitId } from "@snailycad/types/api";
+import { PutDispatchStatusByUnitId } from "@snailycad/types/api";
 import { useMounted } from "@casperiv/useful";
 import Link from "next/link";
 import { createValueDocumentationURL } from "src/pages/admin/values/[path]";

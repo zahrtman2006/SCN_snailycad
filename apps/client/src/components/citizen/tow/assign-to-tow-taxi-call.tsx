@@ -1,4 +1,4 @@
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { useTranslations } from "use-intl";
 import { Loader, Button } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
@@ -7,7 +7,7 @@ import useFetch from "lib/useFetch";
 import { ModalIds } from "types/modal-ids";
 import { useRouter } from "next/router";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
-import type { PutTaxiCallsData, PutTowCallsData } from "@snailycad/types/api";
+import { PutTaxiCallsData, PutTowCallsData } from "@snailycad/types/api";
 
 interface Props {
   call: PutTaxiCallsData | PutTowCallsData | null;

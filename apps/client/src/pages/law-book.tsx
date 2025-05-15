@@ -2,7 +2,7 @@ import * as React from "react";
 import { Layout } from "components/Layout";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { Infofield, TextField } from "@snailycad/ui";
 import { useTranslations } from "use-intl";
 import { requestAll, yesOrNoText } from "lib/utils";

@@ -1,21 +1,21 @@
 import {
-  type Citizen,
-  type CombinedLeoUnit,
-  type Officer,
-  type Value,
-  type ValueLicenseType,
+  Citizen,
+  CombinedLeoUnit,
+  Officer,
+  Value,
+  ValueLicenseType,
   WhitelistStatus,
-  type EmsFdDeputy,
-  type CombinedEmsFdUnit,
-  type Business,
+  EmsFdDeputy,
+  CombinedEmsFdUnit,
+  Business,
 } from "@snailycad/types";
 import { isUnitCombined, isUnitCombinedEmsFd, isUnitOfficer } from "@snailycad/utils/typeguards";
 import { handleRequest } from "./fetch";
-import type { IncomingMessage } from "connect";
-import type { NextApiRequestCookies } from "next/dist/server/api-utils";
+import { IncomingMessage } from "connect";
+import { NextApiRequestCookies } from "next/dist/server/api-utils";
 import format from "date-fns/format";
 import differenceInYears from "date-fns/differenceInYears";
-import type { Sounds } from "./server/getAvailableSounds.server";
+import { Sounds } from "./server/getAvailableSounds.server";
 
 export function calculateAge(dateOfBirth: string | Date): string {
   const difference = differenceInYears(new Date(), new Date(dateOfBirth));

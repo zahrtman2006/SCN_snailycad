@@ -3,7 +3,7 @@ import { useAuth } from "context/AuthContext";
 import Link from "next/link";
 import { WhitelistStatus } from "@snailycad/types";
 import { useTranslations } from "use-intl";
-import type { GetBusinessesData } from "@snailycad/types/api";
+import { GetBusinessesData } from "@snailycad/types/api";
 
 interface Props {
   employee: GetBusinessesData["ownedBusinesses"][number];

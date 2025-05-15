@@ -1,4 +1,4 @@
-import type { PlatformMulterFile } from "@tsed/common";
+import { PlatformMulterFile } from "@tsed/common";
 import { BadRequest } from "@tsed/exceptions";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
 

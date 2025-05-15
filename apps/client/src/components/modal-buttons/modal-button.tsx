@@ -1,12 +1,12 @@
 import { useTranslations } from "next-intl";
-import type { ModalButton, ModalButtonArgs } from "./buttons";
+import { ModalButton, ModalButtonArgs } from "./buttons";
 import { Button } from "@snailycad/ui";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { useActiveDispatchers } from "hooks/realtime/use-active-dispatchers";
 import { useModal } from "state/modalState";
 import { useRouter } from "next/router";
-import type { EmsFdDeputy } from "@snailycad/types";
-import type { ActiveOfficer } from "state/leo-state";
+import { EmsFdDeputy } from "@snailycad/types";
+import { ActiveOfficer } from "state/leo-state";
 import { useAuth } from "context/AuthContext";
 
 type ButtonProps = Pick<

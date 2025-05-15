@@ -1,12 +1,12 @@
 import * as React from "react";
 import useFetch from "lib/useFetch";
 import { useModal } from "state/modalState";
-import type { User } from "@snailycad/types";
+import { User } from "@snailycad/types";
 import { ModalIds } from "types/modal-ids";
 import { Modal } from "components/modal/Modal";
 import { Loader } from "@snailycad/ui";
 import { useTranslations } from "use-intl";
-import type { PostManageUsersGiveTempPasswordData } from "@snailycad/types/api";
+import { PostManageUsersGiveTempPasswordData } from "@snailycad/types/api";
 
 interface Props {
   user: User;

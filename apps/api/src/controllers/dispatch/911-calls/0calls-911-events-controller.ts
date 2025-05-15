@@ -10,7 +10,7 @@ import { IsAuth } from "middlewares/auth/is-auth";
 import { validateSchema } from "lib/data/validate-schema";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
 import { officerOrDeputyToUnit } from "lib/leo/officerOrDeputyToUnit";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { callInclude } from "~/utils/leo/includes";
 
 @Controller("/911-calls/events")

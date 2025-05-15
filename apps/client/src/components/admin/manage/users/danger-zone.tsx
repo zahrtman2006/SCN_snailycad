@@ -6,7 +6,7 @@ import { useModal } from "state/modalState";
 import { AlertModal } from "components/modal/AlertModal";
 import { GiveTempPasswordModal } from "./modals/give-temp-password-modal";
 import { useTranslations } from "use-intl";
-import type {
+import {
   DeleteManageUserRevokeApiTokenData,
   DeleteManageUsersData,
   GetManageUserByIdData,

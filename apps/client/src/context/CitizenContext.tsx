@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { Citizen, MedicalRecord, Record, RegisteredVehicle, Weapon } from "@snailycad/types";
+import { Citizen, MedicalRecord, Record, RegisteredVehicle, Weapon } from "@snailycad/types";
 
 export type CitizenWithVehAndWep = Citizen & {
   weapons: Weapon[];

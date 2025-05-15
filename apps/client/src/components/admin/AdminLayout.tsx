@@ -3,7 +3,7 @@ import { Nav } from "components/shared/nav/Nav";
 import { useRoleplayStopped } from "hooks/global/useRoleplayStopped";
 import { classNames } from "lib/classNames";
 import { AdminSidebar } from "./Sidebar";
-import type { LayoutProps } from "components/Layout";
+import { LayoutProps } from "components/Layout";
 import { useHasPermissionForLayout } from "hooks/auth/useHasPermissionForLayout";
 import { useSocketError } from "hooks/global/useSocketError";
 import { useAuth } from "context/AuthContext";

@@ -16,10 +16,10 @@ import { Table, useTableState } from "components/shared/Table";
 import Link from "next/link";
 import { usePermission, Permissions } from "hooks/usePermission";
 import { useAsyncTable } from "hooks/shared/table/use-async-table";
-import type { DeleteManageCitizenByIdData, GetManageCitizensData } from "@snailycad/types/api";
+import { DeleteManageCitizenByIdData, GetManageCitizensData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import dynamic from "next/dynamic";
-import type { User } from "@snailycad/types";
+import { User } from "@snailycad/types";
 
 const AlertModal = dynamic(async () => (await import("components/modal/AlertModal")).AlertModal, {
   ssr: false,

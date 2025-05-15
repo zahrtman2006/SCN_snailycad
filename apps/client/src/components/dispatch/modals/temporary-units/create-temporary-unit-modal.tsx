@@ -7,7 +7,7 @@ import { Form, Formik } from "formik";
 import { FormField } from "components/form/FormField";
 import useFetch from "lib/useFetch";
 
-import type { Put911CallByIdData } from "@snailycad/types/api";
+import { Put911CallByIdData } from "@snailycad/types/api";
 import { useValues } from "context/ValuesContext";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { Select } from "components/form/Select";

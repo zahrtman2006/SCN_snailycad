@@ -1,12 +1,7 @@
-import {
-  type EmsFdIncident,
-  type IncidentInvolvedUnit,
-  type LeoIncident,
-  ShouldDoType,
-} from "@prisma/client";
+import { EmsFdIncident, IncidentInvolvedUnit, LeoIncident, ShouldDoType } from "@prisma/client";
 import { findUnit } from "lib/leo/findUnit";
 import { prisma } from "lib/data/prisma";
-import type { Socket } from "services/socket-service";
+import { Socket } from "services/socket-service";
 import { manyToManyHelper } from "lib/data/many-to-many";
 import { getNextIncidentId } from "./get-next-incident-id";
 

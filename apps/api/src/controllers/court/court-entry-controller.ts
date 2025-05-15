@@ -7,7 +7,7 @@ import { validateSchema } from "lib/data/validate-schema";
 import { COURT_ENTRY_SCHEMA } from "@snailycad/schemas";
 import { NotFound } from "@tsed/exceptions";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { Feature } from "@snailycad/types";
 import { IsFeatureEnabled } from "middlewares/is-enabled";
 

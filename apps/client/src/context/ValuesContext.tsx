@@ -1,5 +1,5 @@
 import * as React from "react";
-import type {
+import {
   DepartmentValue,
   DivisionValue,
   DriversLicenseCategoryValue,
@@ -13,9 +13,9 @@ import type {
   AddressValue,
 } from "@snailycad/types";
 import { ValueType } from "@snailycad/types";
-import type { GetValuesData } from "@snailycad/types/api";
+import { GetValuesData } from "@snailycad/types/api";
 import { hasValueObj, isBaseValue, isPenalCodeValue } from "@snailycad/utils";
-import type { Router } from "next/router";
+import { Router } from "next/router";
 import { normalizeValue } from "lib/values/normalize-value";
 
 interface ContextValue<Custom = Value> {

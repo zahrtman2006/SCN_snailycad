@@ -1,4 +1,4 @@
-import { type Prisma, WhitelistStatus } from "@prisma/client";
+import { Prisma, WhitelistStatus } from "@prisma/client";
 import { Controller } from "@tsed/di";
 import { NotFound } from "@tsed/exceptions";
 import { UseBeforeEach } from "@tsed/platform-middlewares";
@@ -8,7 +8,7 @@ import { userProperties } from "lib/auth/getSessionUser";
 import { prisma } from "lib/data/prisma";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { validateSchema } from "lib/data/validate-schema";
 import { UPDATE_EMPLOYEE_SCHEMA } from "@snailycad/schemas";
 import { EmployeeAsEnum } from "@snailycad/types";

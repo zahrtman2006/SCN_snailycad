@@ -1,4 +1,4 @@
-import type { GetManageUserByIdData } from "@snailycad/types/api";
+import { GetManageUserByIdData } from "@snailycad/types/api";
 import { FullDate, Infofield } from "@snailycad/ui";
 import { Table, useTableState } from "components/shared/Table";
 

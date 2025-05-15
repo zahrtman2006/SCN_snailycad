@@ -1,17 +1,17 @@
 import { LINK_INCIDENT_TO_CALL_SCHEMA } from "@snailycad/schemas";
 import { Loader, Button } from "@snailycad/ui";
 import { FormField } from "components/form/FormField";
-import { Select, type SelectValue } from "components/form/Select";
+import { Select, SelectValue } from "components/form/Select";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
 import { Form, Formik } from "formik";
 import { handleValidate } from "lib/handleValidate";
 import useFetch from "lib/useFetch";
 import { useTranslations } from "next-intl";
-import type { Full911Call } from "state/dispatch/dispatch-state";
+import { Full911Call } from "state/dispatch/dispatch-state";
 import { ModalIds } from "types/modal-ids";
-import type { LeoIncident } from "@snailycad/types";
-import type { PostLink911CallToIncident } from "@snailycad/types/api";
+import { LeoIncident } from "@snailycad/types";
+import { PostLink911CallToIncident } from "@snailycad/types/api";
 
 interface Props {
   call: Full911Call | null;

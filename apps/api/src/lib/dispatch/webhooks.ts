@@ -1,16 +1,16 @@
 import {
-  type Officer,
-  type EmsFdDeputy,
-  type Citizen,
-  type CombinedLeoUnit,
-  type MiscCadSettings,
-  type StatusValue,
-  type Value,
+  Officer,
+  EmsFdDeputy,
+  Citizen,
+  CombinedLeoUnit,
+  MiscCadSettings,
+  StatusValue,
+  Value,
   Feature,
 } from "@prisma/client";
 import { generateCallsign } from "@snailycad/utils";
 import { isFeatureEnabled } from "lib/upsert-cad";
-import type { HandlePanicButtonPressedOptions } from "lib/leo/send-panic-button-webhook";
+import { HandlePanicButtonPressedOptions } from "lib/leo/send-panic-button-webhook";
 import { getTranslator } from "utils/get-translator";
 
 type V<T> = T & { value: Value };

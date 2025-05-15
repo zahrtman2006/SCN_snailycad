@@ -11,7 +11,7 @@ import { ValueLicenseType, ValueType } from "@snailycad/types";
 import { useVehicleSearch } from "state/search/vehicle-search-state";
 import { useVehicleLicenses } from "hooks/locale/useVehicleLicenses";
 import { useNameSearch } from "state/search/name-search-state";
-import type { PutSearchActionsVehicleLicensesData } from "@snailycad/types/api";
+import { PutSearchActionsVehicleLicensesData } from "@snailycad/types/api";
 import { ValueSelectField } from "components/form/inputs/value-select-field";
 import { hasSearchResults } from "../VehicleSearchModal";
 

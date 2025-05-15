@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Select, type SelectValue } from "components/form/Select";
-import type { PenalCode } from "@snailycad/types";
+import { Select, SelectValue } from "components/form/Select";
+import { PenalCode } from "@snailycad/types";
 import { FormRow } from "@snailycad/ui";
 import { usePenalCodeGroups } from "hooks/values/use-penal-code-groups";
 import { parseCurrentValue } from "./table-item-form";

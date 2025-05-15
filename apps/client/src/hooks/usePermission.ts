@@ -1,5 +1,5 @@
 import { Permissions, hasPermission, getPermissions } from "@snailycad/permissions";
-import type { User } from "@snailycad/types";
+import { User } from "@snailycad/types";
 import { useAuth } from "context/AuthContext";
 
 export { Permissions };

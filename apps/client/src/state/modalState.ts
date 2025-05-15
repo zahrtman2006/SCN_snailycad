@@ -1,4 +1,4 @@
-import type { ModalIds } from "types/modal-ids";
+import { ModalIds } from "types/modal-ids";
 import { shallow } from "zustand/shallow";
 import { createWithEqualityFn } from "zustand/traditional";
 

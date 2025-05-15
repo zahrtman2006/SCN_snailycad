@@ -1,4 +1,4 @@
-import type { User } from "@snailycad/types";
+import { User } from "@snailycad/types";
 import { classNames } from "lib/classNames";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 

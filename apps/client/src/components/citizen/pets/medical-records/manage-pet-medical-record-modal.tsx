@@ -5,12 +5,9 @@ import { Modal } from "components/modal/Modal";
 import useFetch from "lib/useFetch";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
-import type { PetMedicalRecord } from "@snailycad/types";
+import { PetMedicalRecord } from "@snailycad/types";
 import { handleValidate } from "lib/handleValidate";
-import type {
-  PutPetByIdMedicalRecordsData,
-  PostPetByIdMedicalRecordsData,
-} from "@snailycad/types/api";
+import { PutPetByIdMedicalRecordsData, PostPetByIdMedicalRecordsData } from "@snailycad/types/api";
 import { Button, TextField, Loader } from "@snailycad/ui";
 import { usePetsState } from "state/citizen/pets-state";
 

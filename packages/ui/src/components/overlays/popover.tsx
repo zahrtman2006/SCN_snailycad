@@ -1,6 +1,6 @@
 import * as React from "react";
-import { type OverlayTriggerState } from "@react-stately/overlays";
-import { DismissButton, Overlay, usePopover, type AriaPopoverProps } from "@react-aria/overlays";
+import { OverlayTriggerState } from "@react-stately/overlays";
+import { DismissButton, Overlay, usePopover, AriaPopoverProps } from "@react-aria/overlays";
 import { mergeProps } from "@react-aria/utils";
 import { cn } from "mxcn";
 

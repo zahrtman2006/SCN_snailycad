@@ -1,7 +1,7 @@
 import * as React from "react";
 import { convertToMap } from "lib/map/utils";
 import { Marker, Popup, Tooltip, useMap } from "react-leaflet";
-import { SmartMotorwaySignSpeedType, type SmartMotorwaySignMarker } from "types/map";
+import { SmartMotorwaySignSpeedType, SmartMotorwaySignMarker } from "types/map";
 import { icon as leafletIcon } from "leaflet";
 import { useTranslations } from "next-intl";
 import { MapItem, useDispatchMapState, useSocketStore } from "state/mapState";

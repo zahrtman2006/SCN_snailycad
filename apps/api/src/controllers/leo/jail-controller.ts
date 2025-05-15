@@ -6,13 +6,13 @@ import { prisma } from "lib/data/prisma";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { leoProperties } from "utils/leo/includes";
 
-import { type MiscCadSettings, ReleaseType, type Prisma, PublishStatus } from "@prisma/client";
+import { MiscCadSettings, ReleaseType, Prisma, PublishStatus } from "@prisma/client";
 import { validateSchema } from "lib/data/validate-schema";
 import { RELEASE_CITIZEN_SCHEMA } from "@snailycad/schemas";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
 import { Permissions, UsePermissions } from "middlewares/use-permissions";
 import { convertToJailTimeScale } from "lib/leo/utils";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 
 const citizenInclude = {
   Record: {

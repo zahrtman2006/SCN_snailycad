@@ -1,12 +1,12 @@
-import { type Prisma } from "@prisma/client";
-import { type AllowedFileExtension, allowedFileExtensions } from "@snailycad/config";
+import { Prisma } from "@prisma/client";
+import { AllowedFileExtension, allowedFileExtensions } from "@snailycad/config";
 import { CUSTOM_ROLE_SCHEMA } from "@snailycad/schemas";
 import {
   BodyParams,
   Context,
   MultipartFile,
   PathParams,
-  type PlatformMulterFile,
+  PlatformMulterFile,
   QueryParams,
   UseBeforeEach,
 } from "@tsed/common";
@@ -21,7 +21,7 @@ import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
 import { validateImageURL } from "lib/images/validate-image-url";
 import fs from "node:fs/promises";
 import process from "node:process";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { AuditLogActionType, createAuditLogEntry } from "@snailycad/audit-logger/server";
 import { defaultPermissions } from "@snailycad/permissions";
 

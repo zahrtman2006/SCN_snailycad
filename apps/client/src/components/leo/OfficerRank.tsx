@@ -1,4 +1,4 @@
-import type { EmsFdDeputy, Officer } from "@snailycad/types";
+import { EmsFdDeputy, Officer } from "@snailycad/types";
 import { isUnitOfficer } from "@snailycad/utils";
 import { ImageWrapper } from "components/shared/image-wrapper";
 import { useImageUrl } from "hooks/useImageUrl";

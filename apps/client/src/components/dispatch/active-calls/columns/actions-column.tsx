@@ -1,13 +1,13 @@
 import { Button } from "@snailycad/ui";
 import { useActiveDispatchers } from "hooks/realtime/use-active-dispatchers";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
-import type { Full911Call } from "state/dispatch/dispatch-state";
+import { Full911Call } from "state/dispatch/dispatch-state";
 import { useModal } from "state/modalState";
 import { usePermission } from "hooks/usePermission";
 import { useRouter } from "next/router";
 import { defaultPermissions } from "@snailycad/permissions";
-import type { ActiveOfficer } from "state/leo-state";
-import type { ActiveDeputy } from "state/ems-fd-state";
+import { ActiveOfficer } from "state/leo-state";
+import { ActiveDeputy } from "state/ems-fd-state";
 import { ShouldDoType } from "@snailycad/types";
 import { ModalIds } from "types/modal-ids";
 import { useTranslations } from "next-intl";

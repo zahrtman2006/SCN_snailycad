@@ -3,7 +3,7 @@ import {
   UseBeforeEach,
   Use,
   MultipartFile,
-  type PlatformMulterFile,
+  PlatformMulterFile,
   UseAfter,
 } from "@tsed/common";
 import { ContentType, Delete, Description, Get, Post, Put } from "@tsed/schema";
@@ -16,16 +16,16 @@ import { QueryParams, BodyParams, Context, PathParams } from "@tsed/platform-par
 import { BadRequest, NotFound } from "@tsed/exceptions";
 import { prisma } from "lib/data/prisma";
 import {
-  type cad as DBCad,
-  type MiscCadSettings,
+  cad as DBCad,
+  MiscCadSettings,
   ShouldDoType,
-  type User,
+  User,
   Feature,
-  type Prisma,
+  Prisma,
   WhatPages,
 } from "@prisma/client";
-import { type EmsFdDeputy } from "@snailycad/types";
-import { type AllowedFileExtension, allowedFileExtensions } from "@snailycad/config";
+import { EmsFdDeputy } from "@snailycad/types";
+import { AllowedFileExtension, allowedFileExtensions } from "@snailycad/config";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { ActiveDeputy } from "middlewares/active-deputy";
 import fs from "node:fs/promises";
@@ -34,7 +34,7 @@ import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
 import { getInactivityFilter } from "lib/leo/utils";
 import { Socket } from "services/socket-service";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { isFeatureEnabled } from "lib/upsert-cad";
 import { IsFeatureEnabled } from "middlewares/is-enabled";
 import { handlePanicButtonPressed } from "lib/leo/send-panic-button-webhook";

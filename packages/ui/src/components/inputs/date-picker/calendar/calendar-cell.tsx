@@ -1,7 +1,7 @@
 import * as React from "react";
-import type { CalendarState } from "@react-stately/calendar";
+import { CalendarState } from "@react-stately/calendar";
 import { useCalendarCell } from "@react-aria/calendar";
-import type { CalendarDate } from "@internationalized/date";
+import { CalendarDate } from "@internationalized/date";
 import { useFocusRing } from "@react-aria/focus";
 import { mergeProps } from "@react-aria/utils";
 import { cn } from "mxcn";

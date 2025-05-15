@@ -1,16 +1,16 @@
 import { COURTHOUSE_POST_SCHEMA } from "@snailycad/schemas";
-import type { CourthousePost } from "@snailycad/types";
+import { CourthousePost } from "@snailycad/types";
 import { Loader, Button, TextField } from "@snailycad/ui";
 import { FormField } from "components/form/FormField";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { handleValidate } from "lib/handleValidate";
 import useFetch from "lib/useFetch";
 import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
 import { DEFAULT_EDITOR_DATA, Editor } from "components/editor/editor";
-import type { PostCourthousePostsData, PutCourthousePostsData } from "@snailycad/types/api";
+import { PostCourthousePostsData, PutCourthousePostsData } from "@snailycad/types/api";
 
 interface Props {
   post: CourthousePost | null;

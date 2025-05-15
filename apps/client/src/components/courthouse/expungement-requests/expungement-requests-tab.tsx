@@ -6,7 +6,7 @@ import { getTitles } from "./request-expungement-modal";
 import { useModal } from "state/modalState";
 import { Button, FullDate, Status, TabsContent } from "@snailycad/ui";
 import { ModalIds } from "types/modal-ids";
-import type { GetExpungementRequestsData } from "@snailycad/types/api";
+import { GetExpungementRequestsData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import useFetch from "lib/useFetch";
 import { useList } from "hooks/shared/table/use-list";

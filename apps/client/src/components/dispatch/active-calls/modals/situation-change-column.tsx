@@ -1,5 +1,5 @@
-import type { AssignedUnit, StatusValue } from "@snailycad/types";
-import type { Post911CallEventsData } from "@snailycad/types/api";
+import { AssignedUnit, StatusValue } from "@snailycad/types";
+import { Post911CallEventsData } from "@snailycad/types/api";
 import {
   ContextMenu,
   ContextMenuContent,

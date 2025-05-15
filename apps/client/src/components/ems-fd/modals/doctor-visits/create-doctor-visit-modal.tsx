@@ -6,9 +6,9 @@ import { Modal } from "components/modal/Modal";
 import useFetch from "lib/useFetch";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
-import type { DoctorVisit } from "@snailycad/types";
+import { DoctorVisit } from "@snailycad/types";
 import { handleValidate } from "lib/handleValidate";
-import type { PostEmsFdDoctorVisit, PostEmsFdMedicalRecordsSearchData } from "@snailycad/types/api";
+import { PostEmsFdDoctorVisit, PostEmsFdMedicalRecordsSearchData } from "@snailycad/types/api";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
 
 interface Props {

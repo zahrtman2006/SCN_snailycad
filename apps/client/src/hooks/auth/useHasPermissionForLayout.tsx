@@ -1,7 +1,7 @@
 import * as React from "react";
 import { usePermission } from "hooks/usePermission";
 import { useRouter } from "next/router";
-import type { LayoutProps } from "components/Layout";
+import { LayoutProps } from "components/Layout";
 import { Loader } from "@snailycad/ui";
 
 export function useHasPermissionForLayout(permissions: LayoutProps["permissions"]) {

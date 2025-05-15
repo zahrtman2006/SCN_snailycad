@@ -3,9 +3,9 @@ import { SettingsFormField } from "components/form/SettingsFormField";
 import { Textarea, TextField } from "@snailycad/ui";
 import { FormField } from "components/form/FormField";
 import { useFormikContext } from "formik";
-import type { GetCADDiscordWebhooksData } from "@snailycad/types/api";
+import { GetCADDiscordWebhooksData } from "@snailycad/types/api";
 import { useTranslations } from "use-intl";
-import { type DiscordWebhookType } from "@snailycad/types";
+import { DiscordWebhookType } from "@snailycad/types";
 
 interface FieldProps {
   description?: string;

@@ -1,5 +1,5 @@
-import type { Citizen } from "@prisma/client";
-import type { SuspendedCitizenLicenses } from "@snailycad/types";
+import { Citizen } from "@prisma/client";
+import { SuspendedCitizenLicenses } from "@snailycad/types";
 import { prisma } from "lib/data/prisma";
 
 export async function setEndedSuspendedLicenses<

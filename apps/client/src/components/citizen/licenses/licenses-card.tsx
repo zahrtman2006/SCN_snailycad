@@ -2,16 +2,12 @@ import { useTranslations } from "use-intl";
 import { Button, FullDate, Infofield } from "@snailycad/ui";
 import { ModalIds } from "types/modal-ids";
 import { useModal } from "state/modalState";
-import { type LicenseInitialValues, ManageLicensesModal } from "./manage-licenses-modal";
-import { type CitizenWithVehAndWep, useCitizen } from "context/CitizenContext";
+import { LicenseInitialValues, ManageLicensesModal } from "./manage-licenses-modal";
+import { CitizenWithVehAndWep, useCitizen } from "context/CitizenContext";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
-import {
-  type Citizen,
-  DriversLicenseCategoryType,
-  type SuspendedCitizenLicenses,
-} from "@snailycad/types";
+import { Citizen, DriversLicenseCategoryType, SuspendedCitizenLicenses } from "@snailycad/types";
 import useFetch from "lib/useFetch";
-import type { PutCitizenLicensesByIdData } from "@snailycad/types/api";
+import { PutCitizenLicensesByIdData } from "@snailycad/types/api";
 
 const types = [
   "driversLicense",

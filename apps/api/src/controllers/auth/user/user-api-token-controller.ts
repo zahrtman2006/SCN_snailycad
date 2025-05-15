@@ -1,4 +1,4 @@
-import { type ApiToken, type User } from "@snailycad/types";
+import { ApiToken, User } from "@snailycad/types";
 import { BodyParams, Context } from "@tsed/common";
 import { Controller } from "@tsed/di";
 import { BadRequest } from "@tsed/exceptions";
@@ -8,7 +8,7 @@ import { userProperties } from "lib/auth/getSessionUser";
 import { prisma } from "lib/data/prisma";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { nanoid } from "nanoid";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { validateSchema } from "~/lib/data/validate-schema";
 import { z } from "zod";
 

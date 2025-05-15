@@ -9,10 +9,7 @@ import { useNameSearch } from "state/search/name-search-state";
 import { useLoadValuesClientSide } from "hooks/useLoadValuesClientSide";
 import { ValueType } from "@snailycad/types";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
-import type {
-  PostCitizenImageByIdData,
-  PostSearchActionsCreateCitizen,
-} from "@snailycad/types/api";
+import { PostCitizenImageByIdData, PostSearchActionsCreateCitizen } from "@snailycad/types/api";
 
 export function CreateOrManageCitizenModal() {
   const modalState = useModal();

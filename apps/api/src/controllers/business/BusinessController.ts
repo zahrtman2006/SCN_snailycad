@@ -12,16 +12,16 @@ import {
 import { BadRequest, NotFound } from "@tsed/exceptions";
 import { prisma } from "lib/data/prisma";
 import {
-  type User,
+  User,
   EmployeeAsEnum,
-  type MiscCadSettings,
+  MiscCadSettings,
   WhitelistStatus,
-  type cad,
-  type Prisma,
+  cad,
+  Prisma,
 } from "@prisma/client";
 import { validateSchema } from "lib/data/validate-schema";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { Feature, IsFeatureEnabled } from "middlewares/is-enabled";
 
 const businessInclude = {

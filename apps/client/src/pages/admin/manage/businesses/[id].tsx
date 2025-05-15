@@ -2,7 +2,7 @@ import { useTranslations } from "use-intl";
 import { Alert, Button, Status, buttonVariants } from "@snailycad/ui";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { useModal } from "state/modalState";
 import { EmployeeAsEnum, ValueType, WhitelistStatus } from "@snailycad/types";
 import useFetch from "lib/useFetch";
@@ -11,7 +11,7 @@ import { requestAll, yesOrNoText } from "lib/utils";
 import { Table, useAsyncTable, useTableState } from "components/shared/Table";
 import { Title } from "components/shared/Title";
 import { usePermission, Permissions } from "hooks/usePermission";
-import type {
+import {
   DeleteBusinessFireEmployeeData,
   GetManageBusinessByIdEmployeesData,
 } from "@snailycad/types/api";

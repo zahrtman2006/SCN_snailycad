@@ -12,27 +12,21 @@ import { ContentType, Delete, Description, Get, Post, Put } from "@tsed/schema";
 import { prisma } from "lib/data/prisma";
 import { CAD_SELECT, IsAuth, setCADFeatures } from "middlewares/auth/is-auth";
 import { BadRequest, NotFound } from "@tsed/exceptions";
-import { MultipartFile, type PlatformMulterFile, Req, Res, UseBefore } from "@tsed/common";
+import { MultipartFile, PlatformMulterFile, Req, Res, UseBefore } from "@tsed/common";
 import { Socket } from "services/socket-service";
 import { nanoid } from "nanoid";
 import { validateSchema } from "lib/data/validate-schema";
-import {
-  type ApiToken,
-  type cad,
-  type Feature,
-  type JailTimeScale,
-  type Prisma,
-} from "@prisma/client";
+import { ApiToken, cad, Feature, JailTimeScale, Prisma } from "@prisma/client";
 import { getCADVersion } from "@snailycad/utils/version";
 import { getSessionUser, userProperties } from "lib/auth/getSessionUser";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { Permissions, UsePermissions } from "middlewares/use-permissions";
 import {
   AuditLogActionType,
   createAuditLogEntry,
   parseAuditLogs,
 } from "@snailycad/audit-logger/server";
-import type { MiscCadSettings } from "@snailycad/types";
+import { MiscCadSettings } from "@snailycad/types";
 import { createFeaturesObject } from "middlewares/is-enabled";
 import { hasPermission } from "@snailycad/permissions";
 import { parseImportFile } from "~/utils/file";

@@ -2,13 +2,13 @@ import { useTranslations } from "use-intl";
 import * as React from "react";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { AdminLayout } from "components/admin/AdminLayout";
 import { requestAll } from "lib/utils";
 import { Title } from "components/shared/Title";
 import { AllCitizensTab } from "components/admin/manage/citizens/all-citizens-tab";
 import { Permissions } from "@snailycad/permissions";
-import type { GetManageCitizensData } from "@snailycad/types/api";
+import { GetManageCitizensData } from "@snailycad/types/api";
 
 interface Props {
   citizens: GetManageCitizensData;

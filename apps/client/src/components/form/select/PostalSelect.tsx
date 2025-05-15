@@ -1,12 +1,12 @@
 import * as React from "react";
-import { type AddressValue, ValueType } from "@snailycad/types";
+import { AddressValue, ValueType } from "@snailycad/types";
 import { useValues } from "context/ValuesContext";
 import { useFormikContext } from "formik";
 import { useLoadValuesClientSide } from "hooks/useLoadValuesClientSide";
 import { useTranslations } from "use-intl";
 import { AsyncListSearchField, FormRow, Item } from "@snailycad/ui";
 import { classNames } from "lib/classNames";
-import type { Node } from "@react-types/shared";
+import { Node } from "@react-types/shared";
 
 let hasFetched = false;
 

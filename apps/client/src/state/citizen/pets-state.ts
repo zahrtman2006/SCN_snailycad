@@ -1,4 +1,4 @@
-import type { Pet } from "@snailycad/types";
+import { Pet } from "@snailycad/types";
 import { shallow } from "zustand/shallow";
 import { createWithEqualityFn } from "zustand/traditional";
 

@@ -8,8 +8,8 @@ import useFetch from "lib/useFetch";
 import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
 import { classNames } from "lib/classNames";
-import type { CustomField, CustomFieldCategory, CustomFieldValue } from "@snailycad/types";
-import type {
+import { CustomField, CustomFieldCategory, CustomFieldValue } from "@snailycad/types";
+import {
   PutSearchActionsUpdateCitizenCustomFields,
   PutSearchActionsUpdateVehicleCustomFields,
   PutSearchActionsUpdateWeaponCustomFields,

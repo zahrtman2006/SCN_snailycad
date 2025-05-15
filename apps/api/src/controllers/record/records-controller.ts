@@ -13,19 +13,19 @@ import { ActiveOfficer } from "middlewares/active-officer";
 import { Controller } from "@tsed/di";
 import { IsAuth } from "middlewares/auth/is-auth";
 import {
-  type Citizen,
+  Citizen,
   Feature,
-  type Record as CADRecord,
-  type Violation,
-  type Warrant,
+  Record as CADRecord,
+  Violation,
+  Warrant,
   WarrantStatus,
   WhitelistStatus,
   DiscordWebhookType,
-  type CombinedLeoUnit,
-  type User,
-  type Business,
+  CombinedLeoUnit,
+  User,
+  Business,
   PaymentStatus,
-  type RecordType,
+  RecordType,
   PublishStatus,
 } from "@prisma/client";
 import { validateSchema } from "lib/data/validate-schema";
@@ -34,11 +34,11 @@ import { UsePermissions, Permissions } from "middlewares/use-permissions";
 import { isFeatureEnabled } from "lib/upsert-cad";
 import { sendDiscordWebhook, sendRawWebhook } from "lib/discord/webhooks";
 import { getUserOfficerFromActiveOfficer, getInactivityFilter } from "lib/leo/utils";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { officerOrDeputyToUnit } from "lib/leo/officerOrDeputyToUnit";
 import { Socket } from "services/socket-service";
 import { assignUnitsToWarrant } from "~/lib/leo/records/assign-units-to-warrant";
-import type { MiscCadSettings, Officer, cad } from "@snailycad/types";
+import { MiscCadSettings, Officer, cad } from "@snailycad/types";
 import { userProperties } from "lib/auth/getSessionUser";
 import { upsertRecord } from "~/lib/leo/records/upsert-record";
 import { IsFeatureEnabled } from "middlewares/is-enabled";
@@ -50,7 +50,7 @@ import differenceInYears from "date-fns/differenceInYears";
 import { recordsInclude } from "../leo/search/SearchController";
 import { citizenInclude } from "../citizen/CitizenController";
 import { generateCallsign } from "@snailycad/utils";
-import { type Descendant, slateDataToString } from "@snailycad/utils/editor";
+import { Descendant, slateDataToString } from "@snailycad/utils/editor";
 import puppeteer from "puppeteer";
 import { AuditLogActionType, createAuditLogEntry } from "@snailycad/audit-logger/server";
 import { captureException } from "@sentry/node";

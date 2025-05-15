@@ -1,4 +1,4 @@
-import type { z } from "zod";
+import { z } from "zod";
 
 type ZodSchema = z.ZodType;
 type Errors<Schema extends ZodSchema> = keyof z.infer<Schema>;

@@ -6,8 +6,8 @@ import { NOTE_SCHEMA } from "@snailycad/schemas";
 import { prisma } from "lib/data/prisma";
 import { NotFound } from "@tsed/exceptions";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
-import type { Citizen, RegisteredVehicle } from "@prisma/client";
-import type * as APITypes from "@snailycad/types/api";
+import { Citizen, RegisteredVehicle } from "@prisma/client";
+import * as APITypes from "@snailycad/types/api";
 
 @Controller("/notes")
 @UseBeforeEach(IsAuth)

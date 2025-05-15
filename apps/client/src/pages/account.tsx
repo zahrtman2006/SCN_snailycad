@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Layout } from "components/Layout";
 import { TabList } from "@snailycad/ui";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { useTranslations } from "next-intl";
 import { useAuth } from "context/AuthContext";
 import { getSessionUser } from "lib/auth";
@@ -13,7 +13,7 @@ import { useMounted } from "@casperiv/useful";
 import { Title } from "components/shared/Title";
 import { toastMessage } from "lib/toastMessage";
 import { canUseThirdPartyConnections } from "lib/utils";
-import { getAvailableSounds, type Sounds } from "lib/server/getAvailableSounds.server";
+import { getAvailableSounds, Sounds } from "lib/server/getAvailableSounds.server";
 import { AccountInfoTab } from "components/account/account-info-tab";
 
 const AccountSettingsTab = dynamic(

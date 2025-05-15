@@ -1,4 +1,4 @@
-import type { PostDispatchSignal100Data } from "@snailycad/types/api";
+import { PostDispatchSignal100Data } from "@snailycad/types/api";
 import { Button, Loader, SelectField } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
 import { Form, Formik } from "formik";

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useOption } from "@react-aria/listbox";
-import type { Node } from "@react-types/shared";
-import type { ListState } from "@react-stately/list";
+import { Node } from "@react-types/shared";
+import { ListState } from "@react-stately/list";
 import { buttonVariants } from "../../button/button";
 import { cn } from "mxcn";
 import { Check } from "react-bootstrap-icons";

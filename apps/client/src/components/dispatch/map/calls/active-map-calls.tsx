@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useTranslations } from "next-intl";
-import type { Call911 } from "@snailycad/types";
+import { Call911 } from "@snailycad/types";
 import { useListener } from "@casperiv/use-socket.io";
 import { SocketEvents } from "@snailycad/config";
 import { CallItem } from "./call-item";

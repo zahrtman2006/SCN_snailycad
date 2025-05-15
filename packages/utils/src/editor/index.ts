@@ -1,7 +1,7 @@
-import type { SlateElements, Text } from "./types";
-import type { BaseEditor, Descendant } from "slate";
-import type { ReactEditor } from "slate-react";
-import type { HistoryEditor } from "slate-history";
+import { SlateElements, Text } from "./types";
+import { BaseEditor, Descendant } from "slate";
+import { ReactEditor } from "slate-react";
+import { HistoryEditor } from "slate-history";
 
 export type SlateEditor = BaseEditor & ReactEditor & HistoryEditor;
 

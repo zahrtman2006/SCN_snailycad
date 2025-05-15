@@ -3,21 +3,21 @@ import "styles/fonts.css";
 import "styles/nprogress.css";
 
 import * as React from "react";
-import type { AppProps } from "next/app";
+import { AppProps } from "next/app";
 import { NextIntlClientProvider } from "next-intl";
 import { AuthProvider } from "context/AuthContext";
 import { ValuesProvider } from "context/ValuesContext";
 import { CitizenProvider } from "context/CitizenContext";
 import { SocketProvider } from "@casperiv/use-socket.io";
 import { getAPIUrl } from "@snailycad/utils/api-url";
-import type { User } from "@snailycad/types";
+import { User } from "@snailycad/types";
 import { useMounted } from "@casperiv/useful/hooks/useMounted";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import type { GetErrorMapOptions } from "lib/validation/zod-error-map";
-import type { SetSentryTagsOptions } from "lib/set-sentry-tags";
+import { GetErrorMapOptions } from "lib/validation/zod-error-map";
+import { SetSentryTagsOptions } from "lib/set-sentry-tags";
 
 const ReauthorizeSessionModal = dynamic(
   async () =>

@@ -1,4 +1,4 @@
-import type * as Enums from "../enums";
+import * as Enums from "../enums";
 
 export interface CadFeatureOptions {
   [Enums.Feature.LICENSE_EXAMS]: LicenseExamFeatureOption;

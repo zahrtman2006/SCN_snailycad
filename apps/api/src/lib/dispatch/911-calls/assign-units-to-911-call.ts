@@ -1,11 +1,11 @@
-import { type AssignedUnit, ShouldDoType } from "@prisma/client";
-import type { Call911 } from "@prisma/client";
+import { AssignedUnit, ShouldDoType } from "@prisma/client";
+import { Call911 } from "@prisma/client";
 import { findUnit } from "~/lib/leo/findUnit";
 import { prisma } from "~/lib/data/prisma";
-import type { Socket } from "~/services/socket-service";
+import { Socket } from "~/services/socket-service";
 import { manyToManyHelper } from "~/lib/data/many-to-many";
-import type { z } from "zod";
-import type { ASSIGNED_UNIT } from "@snailycad/schemas";
+import { z } from "zod";
+import { ASSIGNED_UNIT } from "@snailycad/schemas";
 import { createAssignedText } from "./utils/create-assigned-text";
 import { getNextActive911CallId } from "./get-next-active-911-call";
 import { assignedUnitsInclude } from "~/utils/leo/includes";

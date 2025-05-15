@@ -1,18 +1,18 @@
 import { COURT_ENTRY_SCHEMA } from "@snailycad/schemas";
-import type { CourtDate, CourtEntry } from "@snailycad/types";
+import { CourtDate, CourtEntry } from "@snailycad/types";
 import { Loader, Button, TextField } from "@snailycad/ui";
 import { FormField } from "components/form/FormField";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { handleValidate } from "lib/handleValidate";
 import useFetch from "lib/useFetch";
 import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
 import { DEFAULT_EDITOR_DATA, Editor } from "components/editor/editor";
 import { CourtEntryDates } from "./court-entry-dates";
-import type { PostCourtEntriesData, PutCourtEntriesData } from "@snailycad/types/api";
-import type { z } from "zod";
+import { PostCourtEntriesData, PutCourtEntriesData } from "@snailycad/types/api";
+import { z } from "zod";
 
 interface Props {
   courtEntry: CourtEntry | null;

@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { CombinedEmsFdUnit, CombinedLeoUnit, EmsFdDeputy, Officer } from "@snailycad/types";
+import { CombinedEmsFdUnit, CombinedLeoUnit, EmsFdDeputy, Officer } from "@snailycad/types";
 import { useTranslations } from "next-intl";
 import { UnitItem } from "./unit-item";
 import { ManageUnitModal } from "components/dispatch/active-units/modals/manage-unit-modal";

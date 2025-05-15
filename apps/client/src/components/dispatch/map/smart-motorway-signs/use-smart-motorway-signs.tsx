@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useDispatchMapState, useSocketStore } from "state/mapState";
-import type { SmartMotorwaySignMarker } from "types/map";
+import { SmartMotorwaySignMarker } from "types/map";
 
 export function useSmartMotorwaySigns() {
   const socket = useSocketStore((state) => state.socket);

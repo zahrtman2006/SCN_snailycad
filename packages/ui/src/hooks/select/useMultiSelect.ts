@@ -2,15 +2,12 @@ import { setInteractionModality } from "@react-aria/interactions";
 import { useField } from "@react-aria/label";
 import { useMenuTrigger } from "@react-aria/menu";
 import { filterDOMProps, mergeProps, useId } from "@react-aria/utils";
-import type * as React from "react";
+import * as React from "react";
 
-import type {
-  MultiSelectProps as MultiSelectStateProps,
-  MultiSelectState,
-} from "./useMultiSelectState";
-import type { AriaSelectProps } from "@react-types/select";
-import type { AriaButtonOptions } from "@react-aria/button";
-import type { DOMAttributes, FocusableElement } from "@react-types/shared";
+import { MultiSelectProps as MultiSelectStateProps, MultiSelectState } from "./useMultiSelectState";
+import { AriaSelectProps } from "@react-types/select";
+import { AriaButtonOptions } from "@react-aria/button";
+import { DOMAttributes, FocusableElement } from "@react-types/shared";
 
 interface MultiSelectProps<T> extends Omit<AriaSelectProps<T>, "onSelectionChange"> {
   disallowEmptySelection?: boolean;

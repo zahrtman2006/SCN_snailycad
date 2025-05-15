@@ -1,12 +1,12 @@
 import * as React from "react";
 import { Input, Button } from "@snailycad/ui";
-import { type FormikHelpers, useFormikContext } from "formik";
+import { FormikHelpers, useFormikContext } from "formik";
 import { useTranslations } from "next-intl";
 import { FormField } from "../FormField";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
 import { CropImageModal } from "components/modal/CropImageModal";
-import { type AllowedFileExtension, allowedFileExtensions, IMAGES_REGEX } from "@snailycad/config";
+import { AllowedFileExtension, allowedFileExtensions, IMAGES_REGEX } from "@snailycad/config";
 import Link from "next/link";
 import { BoxArrowUpRight } from "react-bootstrap-icons";
 import { useDebounce } from "react-use";
@@ -68,7 +68,7 @@ export function ImageSelectInput({
     <FormField
       optional={isOptional}
       errorMessage={errors[valueKey] as string}
-      label={hideLabel ? null : label ?? common("image")}
+      label={hideLabel ? null : (label ?? common("image"))}
     >
       <div className="flex gap-2">
         <Input
@@ -119,7 +119,7 @@ export function ImageSelectInput({
       <FormField
         optional={isOptional}
         errorMessage={errors[valueKey] as string}
-        label={hideLabel ? null : label ?? common("image")}
+        label={hideLabel ? null : (label ?? common("image"))}
       >
         <div className="flex">
           <Input

@@ -8,8 +8,8 @@ import useFetch from "lib/useFetch";
 import { makeUnitName } from "lib/utils";
 import { isUnitCombined } from "@snailycad/utils";
 import { useGenerateCallsign } from "hooks/useGenerateCallsign";
-import type { PutIncidentByIdData } from "@snailycad/types/api";
-import type {
+import { PutIncidentByIdData } from "@snailycad/types/api";
+import {
   CombinedLeoUnit,
   EmsFdDeputy,
   EmsFdIncident,

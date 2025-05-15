@@ -1,4 +1,4 @@
-import type { CombinedEmsFdUnit, EmsFdDeputy } from "@snailycad/types";
+import { CombinedEmsFdUnit, EmsFdDeputy } from "@snailycad/types";
 import { shallow } from "zustand/shallow";
 import { createWithEqualityFn } from "zustand/traditional";
 

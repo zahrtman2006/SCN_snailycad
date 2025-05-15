@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { Record, Violation } from "@snailycad/types";
+import { Record, Violation } from "@snailycad/types";
 import { dataToSlate, Editor } from "components/editor/editor";
 import { useValues } from "context/ValuesContext";
 import { useTranslations } from "next-intl";

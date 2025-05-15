@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { Unit } from "src/pages/admin/manage/units";
+import { Unit } from "src/pages/admin/manage/units";
 import Link from "next/link";
 import {
   formatUnitDivisions,
@@ -19,7 +19,7 @@ import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
 import { OfficerRank } from "components/leo/OfficerRank";
-import type {
+import {
   DeleteManageUnitByIdData,
   GetManageUnitsData,
   PutManageUnitsOffDutyData,
@@ -216,7 +216,7 @@ export function AllUnitsTab({ units }: Props) {
                   </Link>
                 ) : (
                   // todo: add information about temporary unit here
-                  unit.user?.username ?? t("Leo.temporaryUnit")
+                  (unit.user?.username ?? t("Leo.temporaryUnit"))
                 ),
               callsign: generateCallsign(unit),
               badgeNumberString: unit.badgeNumberString,

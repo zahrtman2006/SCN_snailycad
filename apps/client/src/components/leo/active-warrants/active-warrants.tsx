@@ -1,4 +1,4 @@
-import type { AssignedWarrantOfficer, Warrant } from "@snailycad/types";
+import { AssignedWarrantOfficer, Warrant } from "@snailycad/types";
 import { Button } from "@snailycad/ui";
 import { Table, useTableState } from "components/shared/Table";
 import { useTranslations } from "next-intl";
@@ -12,7 +12,7 @@ import { isUnitCombined } from "@snailycad/utils";
 import { CallDescription } from "components/dispatch/active-calls/CallDescription";
 import { Permissions, usePermission } from "hooks/usePermission";
 import dynamic from "next/dynamic";
-import type { GetActiveWarrantsData } from "@snailycad/types/api";
+import { GetActiveWarrantsData } from "@snailycad/types/api";
 
 const CreateWarrantModal = dynamic(
   async () => (await import("../modals/CreateWarrantModal")).CreateWarrantModal,

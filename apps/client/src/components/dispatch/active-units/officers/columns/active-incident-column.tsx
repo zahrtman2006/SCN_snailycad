@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { LeoIncident } from "@snailycad/types";
+import { LeoIncident } from "@snailycad/types";
 import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
 import { useModal } from "state/modalState";
@@ -8,7 +8,7 @@ import { useActiveDispatchers } from "hooks/realtime/use-active-dispatchers";
 import dynamic from "next/dynamic";
 import { useQuery } from "@tanstack/react-query";
 import useFetch from "lib/useFetch";
-import type { GetIncidentByIdData } from "@snailycad/types/api";
+import { GetIncidentByIdData } from "@snailycad/types/api";
 import { classNames } from "lib/classNames";
 
 const ManageIncidentModal = dynamic(

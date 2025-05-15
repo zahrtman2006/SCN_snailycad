@@ -1,5 +1,5 @@
 import { useAuth } from "context/AuthContext";
-import type {
+import {
   CombinedEmsFdUnit,
   CombinedLeoUnit,
   EmsFdDeputy,

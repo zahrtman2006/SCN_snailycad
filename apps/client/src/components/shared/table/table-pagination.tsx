@@ -5,7 +5,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "react-bootstrap-icons";
-import type { Table, RowData } from "@tanstack/react-table";
+import { Table, RowData } from "@tanstack/react-table";
 
 interface Props<TData extends RowData> {
   isLoading: boolean;

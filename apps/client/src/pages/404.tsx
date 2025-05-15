@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Layout } from "components/Layout";
-import type { GetStaticProps } from "next";
+import { GetStaticProps } from "next";
 import { getTranslations } from "lib/getTranslation";
 import { Title } from "components/shared/Title";
 import { handleRequest } from "lib/fetch";

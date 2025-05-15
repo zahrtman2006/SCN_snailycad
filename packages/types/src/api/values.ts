@@ -1,5 +1,5 @@
-import type * as Types from "../index.js";
-import type { PenalCodeGroup, AnyValue, ValueType } from "../index.js";
+import * as Types from "../index.js";
+import { PenalCodeGroup, AnyValue, ValueType } from "../index.js";
 
 /**
  * @method GET

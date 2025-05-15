@@ -1,4 +1,4 @@
-import type { UnitQualification } from "@snailycad/types";
+import { UnitQualification } from "@snailycad/types";
 import { ImageWrapper } from "components/shared/image-wrapper";
 import { useImageUrl } from "hooks/useImageUrl";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@snailycad/ui";

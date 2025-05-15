@@ -1,11 +1,11 @@
-import type { Req, Res } from "@tsed/common";
+import { Req, Res } from "@tsed/common";
 import { Unauthorized } from "@tsed/exceptions";
 import { parse } from "cookie";
 import { Cookie, USER_API_TOKEN_HEADER } from "@snailycad/config";
 import { signJWT, verifyJWT } from "utils/jwt";
 import { prisma } from "lib/data/prisma";
-import { type User } from "@snailycad/types";
-import type { GetUserData } from "@snailycad/types/api";
+import { User } from "@snailycad/types";
+import { GetUserData } from "@snailycad/types/api";
 import { setCookie } from "utils/set-cookie";
 import { ACCESS_TOKEN_EXPIRES_MS, ACCESS_TOKEN_EXPIRES_S } from "./setUserTokenCookies";
 import { getUserFromUserAPIToken } from "./getUserFromUserAPIToken";

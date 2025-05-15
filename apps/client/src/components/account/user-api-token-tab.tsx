@@ -1,10 +1,10 @@
 import { useAuth } from "context/AuthContext";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import useFetch from "lib/useFetch";
 import { useTranslations } from "use-intl";
 import { Button, Loader, SwitchField, TabsContent, TextField } from "@snailycad/ui";
 import { SettingsFormField } from "components/form/SettingsFormField";
-import type {
+import {
   DeleteUserRegenerateApiTokenData,
   PutUserEnableDisableApiTokenData,
 } from "@snailycad/types/api";

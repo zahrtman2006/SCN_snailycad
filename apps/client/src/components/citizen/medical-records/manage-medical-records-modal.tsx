@@ -5,13 +5,10 @@ import { Modal } from "components/modal/Modal";
 import useFetch from "lib/useFetch";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
-import { type BaseCitizen, type MedicalRecord, ValueType } from "@snailycad/types";
+import { BaseCitizen, MedicalRecord, ValueType } from "@snailycad/types";
 import { handleValidate } from "lib/handleValidate";
 import { useValues } from "context/ValuesContext";
-import type {
-  PostCitizenMedicalRecordsData,
-  PutCitizenMedicalRecordsData,
-} from "@snailycad/types/api";
+import { PostCitizenMedicalRecordsData, PutCitizenMedicalRecordsData } from "@snailycad/types/api";
 import { Button, TextField, Loader } from "@snailycad/ui";
 import { ValueSelectField } from "components/form/inputs/value-select-field";
 import { Editor, dataToSlate } from "components/editor/editor";

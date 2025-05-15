@@ -1,8 +1,8 @@
 import { CHANGE_PASSWORD_SCHEMA } from "@snailycad/schemas";
-import type { PostUserPasswordData } from "@snailycad/types/api";
+import { PostUserPasswordData } from "@snailycad/types/api";
 import { Button, TextField } from "@snailycad/ui";
 import { useAuth } from "context/AuthContext";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { handleValidate } from "lib/handleValidate";
 import useFetch from "lib/useFetch";
 import toast from "react-hot-toast";

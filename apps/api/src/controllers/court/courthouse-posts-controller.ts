@@ -1,4 +1,4 @@
-import { Feature, type User } from "@prisma/client";
+import { Feature, User } from "@prisma/client";
 import {
   BodyParams,
   Context,
@@ -15,7 +15,7 @@ import { Permissions, UsePermissions } from "middlewares/use-permissions";
 import { COURTHOUSE_POST_SCHEMA } from "@snailycad/schemas";
 import { userProperties } from "lib/auth/getSessionUser";
 import { NotFound } from "@tsed/exceptions";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { IsFeatureEnabled } from "middlewares/is-enabled";
 
 @Controller("/courthouse-posts")

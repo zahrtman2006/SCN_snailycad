@@ -2,7 +2,7 @@ import * as React from "react";
 import { Layout } from "components/Layout";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { Button } from "@snailycad/ui";
 import { useTranslations } from "use-intl";
 import { useModal } from "state/modalState";
@@ -11,7 +11,7 @@ import { requestAll } from "lib/utils";
 import { Title } from "components/shared/Title";
 import { TowTaxiCallsTable } from "components/citizen/tow/tow-taxi-calls-table";
 import { Permissions } from "@snailycad/permissions";
-import type { GetTaxiCallsData } from "@snailycad/types/api";
+import { GetTaxiCallsData } from "@snailycad/types/api";
 
 interface Props {
   initialData: GetTaxiCallsData;

@@ -1,7 +1,7 @@
 import * as React from "react";
 import compareDesc from "date-fns/compareDesc";
 import { useRouter } from "next/router";
-import { PaymentStatus, type Record, RecordType } from "@snailycad/types";
+import { PaymentStatus, Record, RecordType } from "@snailycad/types";
 import { useTranslations } from "use-intl";
 import { Button, FullDate, Loader, Status, TabsContent } from "@snailycad/ui";
 import { ModalIds } from "types/modal-ids";
@@ -14,7 +14,7 @@ import { Table, useTableState } from "components/shared/Table";
 import { ManageRecordModal } from "../../manage-record/manage-record-modal";
 import { Permissions, usePermission } from "hooks/usePermission";
 import { ViolationsColumn } from "components/leo/ViolationsColumn";
-import type { DeleteRecordsByIdData, PutRecordsByIdData } from "@snailycad/types/api";
+import { DeleteRecordsByIdData, PutRecordsByIdData } from "@snailycad/types/api";
 import { RecordsCaseNumberColumn } from "components/leo/records-case-number-column";
 import { CallDescription } from "components/dispatch/active-calls/CallDescription";
 import { getAPIUrl } from "@snailycad/utils/api-url";

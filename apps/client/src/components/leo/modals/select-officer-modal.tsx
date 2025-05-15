@@ -2,7 +2,7 @@ import { SELECT_OFFICER_SCHEMA } from "@snailycad/schemas";
 import { Loader, Button, AsyncListSearchField, Item, TextField } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { handleValidate } from "lib/handleValidate";
 import useFetch from "lib/useFetch";
 import { ModalIds } from "types/modal-ids";
@@ -10,15 +10,15 @@ import { useTranslations } from "use-intl";
 import { useLeoState } from "state/leo-state";
 import { useValues } from "context/ValuesContext";
 import {
-  type EmergencyVehicleValue,
-  type Officer,
+  EmergencyVehicleValue,
+  Officer,
   ShouldDoType,
   WhatPages,
   ValueType,
 } from "@snailycad/types";
 import { useGenerateCallsign } from "hooks/useGenerateCallsign";
 import { makeUnitName } from "lib/utils";
-import type { GetMyOfficersData, PutDispatchStatusByUnitId } from "@snailycad/types/api";
+import { GetMyOfficersData, PutDispatchStatusByUnitId } from "@snailycad/types/api";
 import { useDispatchState } from "state/dispatch/dispatch-state";
 import { Permissions, usePermission } from "hooks/usePermission";
 import { ValueSelectField } from "components/form/inputs/value-select-field";

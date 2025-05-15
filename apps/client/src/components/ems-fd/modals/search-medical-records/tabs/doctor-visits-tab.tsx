@@ -1,4 +1,4 @@
-import type { PostEmsFdMedicalRecordsSearchData } from "@snailycad/types/api";
+import { PostEmsFdMedicalRecordsSearchData } from "@snailycad/types/api";
 import { Button, FullDate, TabsContent } from "@snailycad/ui";
 import { CallDescription } from "components/dispatch/active-calls/CallDescription";
 import { Table, useTableState } from "components/shared/Table";

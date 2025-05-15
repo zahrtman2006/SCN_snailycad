@@ -3,7 +3,7 @@ import { useFormikContext } from "formik";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { useImageUrl } from "hooks/useImageUrl";
 import { PersonFill } from "react-bootstrap-icons";
-import type { NameSearchResult } from "state/search/name-search-state";
+import { NameSearchResult } from "state/search/name-search-state";
 import { ImageWrapper } from "./image-wrapper";
 
 interface Props<Suggestion extends NameSearchResult> {

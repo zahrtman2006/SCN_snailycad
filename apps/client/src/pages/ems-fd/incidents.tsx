@@ -3,14 +3,14 @@ import { Layout } from "components/Layout";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
 import { requestAll } from "lib/utils";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { useTranslations } from "use-intl";
 import { useModal } from "state/modalState";
 import { Button } from "@snailycad/ui";
 import { ModalIds } from "types/modal-ids";
 import { Title } from "components/shared/Title";
 import { usePermission, Permissions } from "hooks/usePermission";
-import type { GetEmsFdActiveDeputy, GetIncidentsData } from "@snailycad/types/api";
+import { GetEmsFdActiveDeputy, GetIncidentsData } from "@snailycad/types/api";
 
 import { useEmsFdState } from "state/ems-fd-state";
 import { IncidentsTable } from "components/leo/incidents/incidents-table";

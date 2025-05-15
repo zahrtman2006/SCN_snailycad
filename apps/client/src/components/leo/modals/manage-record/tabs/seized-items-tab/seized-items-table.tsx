@@ -6,7 +6,7 @@ import { yesOrNoText } from "lib/utils";
 import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
 import { ManageSeizedItemsModal } from "./manage-seized-items-modal";
-import type { SeizedItem } from "@snailycad/types";
+import { SeizedItem } from "@snailycad/types";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 
 export function SeizedItemsTable({ isReadOnly }: { isReadOnly?: boolean }) {

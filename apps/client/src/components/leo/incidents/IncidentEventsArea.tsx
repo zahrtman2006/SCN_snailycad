@@ -1,12 +1,12 @@
-import type { EmsFdIncident, LeoIncident } from "@snailycad/types";
+import { EmsFdIncident, LeoIncident } from "@snailycad/types";
 import useFetch from "lib/useFetch";
 import { useTranslations } from "next-intl";
 import compareDesc from "date-fns/compareDesc";
 import { UpdateEventForm } from "components/dispatch/events/UpdateEventForm";
 import { EventItem } from "components/dispatch/events/EventItem";
-import type { FormikHelpers } from "formik";
+import { FormikHelpers } from "formik";
 import { classNames } from "lib/classNames";
-import type { PostIncidentEventsData, PutIncidentEventByIdData } from "@snailycad/types/api";
+import { PostIncidentEventsData, PutIncidentEventByIdData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 
 interface Props {

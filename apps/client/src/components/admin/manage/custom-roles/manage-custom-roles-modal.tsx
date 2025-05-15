@@ -1,17 +1,17 @@
 import * as React from "react";
 import { Button, Loader, SelectField, TextField } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { handleValidate } from "lib/handleValidate";
 import useFetch from "lib/useFetch";
 import { useModal } from "state/modalState";
-import type { CustomRole, DiscordRole } from "@snailycad/types";
+import { CustomRole, DiscordRole } from "@snailycad/types";
 import { useTranslations } from "use-intl";
 import { ModalIds } from "types/modal-ids";
 import { CUSTOM_ROLE_SCHEMA } from "@snailycad/schemas";
 import { Permissions } from "@snailycad/permissions";
 import { ImageSelectInput, validateFile } from "components/form/inputs/ImageSelectInput";
-import type {
+import {
   GetCADDiscordRolesData,
   PostCustomRolesData,
   PutCustomRoleByIdData,

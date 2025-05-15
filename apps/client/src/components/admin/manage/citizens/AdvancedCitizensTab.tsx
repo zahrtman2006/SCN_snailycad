@@ -6,7 +6,7 @@ import useFetch from "lib/useFetch";
 import { X } from "react-bootstrap-icons";
 import { ImportModal } from "components/admin/import/ImportModal";
 import { ModalIds } from "types/modal-ids";
-import type { PostImportCitizensData } from "@snailycad/types/api";
+import { PostImportCitizensData } from "@snailycad/types/api";
 import { useTranslations } from "use-intl";
 import { ValueSelectField } from "components/form/inputs/value-select-field";
 import { ValueType } from "@snailycad/types";

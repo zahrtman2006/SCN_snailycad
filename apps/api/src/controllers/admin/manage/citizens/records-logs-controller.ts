@@ -10,8 +10,8 @@ import { IsAuth } from "middlewares/auth/is-auth";
 import { Prisma, WhitelistStatus } from "@prisma/client";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
 
-import type * as APITypes from "@snailycad/types/api";
-import { type AcceptDeclineType, ACCEPT_DECLINE_TYPES } from "../units/manage-units-controller";
+import * as APITypes from "@snailycad/types/api";
+import { AcceptDeclineType, ACCEPT_DECLINE_TYPES } from "../units/manage-units-controller";
 import { BadRequest, NotFound } from "@tsed/exceptions";
 
 export const recordsLogsInclude = {

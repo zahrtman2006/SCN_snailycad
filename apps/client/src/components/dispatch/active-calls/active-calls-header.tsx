@@ -1,10 +1,10 @@
 import { Button } from "@snailycad/ui";
-import type { useAsyncTable } from "components/shared/Table";
+import { useAsyncTable } from "components/shared/Table";
 import { classNames } from "lib/classNames";
 import { useTranslations } from "next-intl";
 import { Filter } from "react-bootstrap-icons";
 import { useCallsFilters } from "state/callsFiltersState";
-import type { Full911Call } from "state/dispatch/dispatch-state";
+import { Full911Call } from "state/dispatch/dispatch-state";
 import dynamic from "next/dynamic";
 import { ModalIds } from "types/modal-ids";
 import { useModal } from "state/modalState";

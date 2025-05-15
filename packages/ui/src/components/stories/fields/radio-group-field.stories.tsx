@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import { RadioGroupField, Radio } from "../../fields/radio-group-field";
 
 const meta = {

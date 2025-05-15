@@ -1,4 +1,4 @@
-import type { ValueType } from "@snailycad/types";
+import { ValueType } from "@snailycad/types";
 
 // transform: PENAL_CODES -> penalCodes
 // transform: DEPARTMENT  -> department

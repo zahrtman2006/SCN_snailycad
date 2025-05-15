@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useTranslations } from "next-intl";
 import { cn } from "mxcn";
-import type { FocusableElement } from "@react-types/shared";
+import { FocusableElement } from "@react-types/shared";
 import { InfoCircle } from "react-bootstrap-icons";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "./hover-card";
 

@@ -17,13 +17,13 @@ import { handleValidate } from "lib/handleValidate";
 import { toastMessage } from "lib/toastMessage";
 import useFetch from "lib/useFetch";
 import { useRouter } from "next/router";
-import type { Full911Call } from "state/dispatch/dispatch-state";
+import { Full911Call } from "state/dispatch/dispatch-state";
 import { useEmsFdState } from "state/ems-fd-state";
 import { useLeoState } from "state/leo-state";
 import { ModalIds } from "types/modal-ids";
 import { useTranslations } from "use-intl";
-import type { VehicleSearchResult } from "state/search/vehicle-search-state";
-import type { PostTowCallsData } from "@snailycad/types/api";
+import { VehicleSearchResult } from "state/search/vehicle-search-state";
+import { PostTowCallsData } from "@snailycad/types/api";
 import { AddressPostalSelect } from "components/form/select/PostalSelect";
 import { isUnitCombined, isUnitCombinedEmsFd } from "@snailycad/utils";
 import { ValueSelectField } from "components/form/inputs/value-select-field";
@@ -76,7 +76,7 @@ export function DispatchCallTowModal({ call }: Props) {
   const INITIAL_VALUES = {
     location: call?.location ?? "",
     postal: call?.postal ?? "",
-    creatorId: isCombined ? null : activeUnit?.citizenId ?? null,
+    creatorId: isCombined ? null : (activeUnit?.citizenId ?? null),
     description: call?.description ?? "",
     descriptionData: call?.descriptionData ?? null,
     callCountyService: false,

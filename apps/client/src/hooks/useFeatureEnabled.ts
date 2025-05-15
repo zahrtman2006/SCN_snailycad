@@ -1,5 +1,5 @@
 import * as React from "react";
-import { type CadFeatureOptions, CourthouseType, Feature, LicenseExamType } from "@snailycad/types";
+import { CadFeatureOptions, CourthouseType, Feature, LicenseExamType } from "@snailycad/types";
 import { useAuth } from "context/AuthContext";
 
 export const DEFAULT_DISABLED_FEATURES = {

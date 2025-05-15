@@ -4,7 +4,7 @@ import { TabsContent, TabList, Loader, Button, buttonVariants, Status } from "@s
 import { Modal } from "components/modal/Modal";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { useModal } from "state/modalState";
 import useFetch from "lib/useFetch";
 import { AdminLayout } from "components/admin/AdminLayout";
@@ -15,7 +15,7 @@ import { useAuth } from "context/AuthContext";
 import { Table, useAsyncTable, useTableState } from "components/shared/Table";
 import { Title } from "components/shared/Title";
 import { usePermission, Permissions } from "hooks/usePermission";
-import type { DeleteBusinessByIdData, GetManageBusinessesData } from "@snailycad/types/api";
+import { DeleteBusinessByIdData, GetManageBusinessesData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import Link from "next/link";
 import { SearchArea } from "components/shared/search/search-area";

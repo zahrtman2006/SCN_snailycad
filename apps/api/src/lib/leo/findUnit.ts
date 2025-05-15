@@ -1,5 +1,5 @@
 import { combinedEmsFdUnitProperties, combinedUnitProperties } from "utils/leo/includes";
-import type {
+import {
   CombinedLeoUnit,
   CombinedEmsFdUnit,
   Officer,

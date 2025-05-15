@@ -1,6 +1,6 @@
-import type * as Prisma from "@prisma/client";
-import type * as Types from "../index";
-import type { APITextChannel } from "discord-api-types/v10";
+import * as Prisma from "@prisma/client";
+import * as Types from "../index";
+import { APITextChannel } from "discord-api-types/v10";
 
 /**
  * @method GET
