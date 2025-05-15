@@ -1,4 +1,4 @@
-import type { RenderElementProps } from "slate-react";
+import { RenderElementProps } from "slate-react";
 import { CheckListItemElement } from "./checklist-item";
 
 export function EditorElement({ attributes, children, element, ...rest }: RenderElementProps) {

@@ -1,10 +1,10 @@
 import { useTranslations } from "use-intl";
 import { Button, TabsContent } from "@snailycad/ui";
 import { useBusinessState } from "state/business-state";
-import { type Employee, WhitelistStatus } from "@snailycad/types";
+import { Employee, WhitelistStatus } from "@snailycad/types";
 import useFetch from "lib/useFetch";
 import { Table, useTableState } from "components/shared/Table";
-import type { PutBusinessEmployeesData } from "@snailycad/types/api";
+import { PutBusinessEmployeesData } from "@snailycad/types/api";
 
 export function PendingEmployeesTab() {
   const { state, execute } = useFetch();

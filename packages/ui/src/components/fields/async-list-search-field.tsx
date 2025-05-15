@@ -2,24 +2,24 @@ import * as React from "react";
 import { useComboBox } from "@react-aria/combobox";
 import { useComboBoxState } from "@react-stately/combobox";
 import { Item } from "@react-stately/collections";
-import type { ComboBoxProps } from "@react-types/combobox";
+import { ComboBoxProps } from "@react-types/combobox";
 import { Label } from "../label";
 import { Input } from "../inputs/input";
 import { ErrorMessage } from "../error-message";
 import { AsyncListFieldListBox } from "../list/async-list/async-list-list-box";
 import { useAsyncList } from "@react-stately/data";
 import { USER_API_TOKEN_HEADER } from "@snailycad/config";
-import type { Key } from "@react-types/shared";
+import { Key } from "@react-types/shared";
 
 import { useDebounce } from "react-use";
-import type { Node } from "@react-types/shared";
+import { Node } from "@react-types/shared";
 import { useTranslations } from "next-intl";
 import { Loader } from "../loader";
 import { getAPIUrl } from "@snailycad/utils/api-url";
 import { AsyncListSearchFieldActions } from "./async-list-search-field/actions";
 import { cn } from "mxcn";
 import { Popover } from "..";
-import type { AriaPopoverProps } from "@react-aria/overlays";
+import { AriaPopoverProps } from "@react-aria/overlays";
 
 interface AsyncListFieldFetchOptions {
   filterTextRequired?: boolean;
@@ -90,7 +90,7 @@ function AsyncListSearchField<T extends object>(props: AsyncListFieldProps<T>) {
       });
 
       const json = await res.json();
-      const itemsArray = Array.isArray(json) ? json : props.fetchOptions.onResponse?.(json) ?? [];
+      const itemsArray = Array.isArray(json) ? json : (props.fetchOptions.onResponse?.(json) ?? []);
 
       return {
         items: itemsArray,

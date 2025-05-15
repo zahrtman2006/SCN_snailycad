@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import { DndProvider, Draggable, Droppable } from "../../dnd";
 
 const meta = {

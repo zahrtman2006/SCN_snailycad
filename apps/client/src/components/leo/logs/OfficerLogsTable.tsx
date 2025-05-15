@@ -1,13 +1,13 @@
-import { Table, type useAsyncTable, useTableState } from "components/shared/Table";
+import { Table, useAsyncTable, useTableState } from "components/shared/Table";
 import formatDistance from "date-fns/formatDistance";
 import { useImageUrl } from "hooks/useImageUrl";
 import { makeUnitName } from "lib/utils";
 import { useTranslations } from "next-intl";
-import type { OfficerLogWithOfficer } from "src/pages/officer/my-officer-logs";
-import type { EmsFdDeputy, Officer, OfficerLog } from "@snailycad/types";
-import type { OfficerLogWithDeputy } from "src/pages/ems-fd/my-deputy-logs";
+import { OfficerLogWithOfficer } from "src/pages/officer/my-officer-logs";
+import { EmsFdDeputy, Officer, OfficerLog } from "@snailycad/types";
+import { OfficerLogWithDeputy } from "src/pages/ems-fd/my-deputy-logs";
 import { useGenerateCallsign } from "hooks/useGenerateCallsign";
-import type { GetMyDeputiesLogsData, GetMyOfficersLogsData } from "@snailycad/types/api";
+import { GetMyDeputiesLogsData, GetMyOfficersLogsData } from "@snailycad/types/api";
 import { ImageWrapper } from "components/shared/image-wrapper";
 import { FullDate } from "@snailycad/ui";
 

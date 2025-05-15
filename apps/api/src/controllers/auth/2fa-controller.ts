@@ -1,4 +1,4 @@
-import { type User } from "@prisma/client";
+import { User } from "@prisma/client";
 import process from "node:process";
 import { authenticator } from "otplib";
 import { BodyParams, Context, UseBeforeEach } from "@tsed/common";
@@ -12,7 +12,7 @@ import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { encryptValue } from "lib/auth/crypto";
 import { validateUser2FA } from "lib/auth/2fa";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 
 @Controller("/2fa")
 @UseBeforeEach(IsAuth)

@@ -1,4 +1,4 @@
-import type { PostLeoSearchVehicleData } from "@snailycad/types/api";
+import { PostLeoSearchVehicleData } from "@snailycad/types/api";
 import { createWithEqualityFn } from "zustand/traditional";
 import { shallow } from "zustand/shallow";
 

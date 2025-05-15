@@ -3,15 +3,15 @@ import { Layout } from "components/Layout";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
 import { requestAll } from "lib/utils";
-import type { GetServerSideProps } from "next";
-import type { Citizen, RecordLog } from "@snailycad/types";
+import { GetServerSideProps } from "next";
+import { Citizen, RecordLog } from "@snailycad/types";
 import { Title } from "components/shared/Title";
 import { Permissions } from "@snailycad/permissions";
 import { TabList } from "@snailycad/ui";
 import { CitizenLogsTab } from "components/leo/citizen-logs/citizen-logs-tab";
 import { PendingCitizenRecordsTab } from "components/leo/citizen-logs/pending-citizen-logs-tab";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
-import type { GetManagePendingCitizenRecords, GetManageRecordLogsData } from "@snailycad/types/api";
+import { GetManagePendingCitizenRecords, GetManageRecordLogsData } from "@snailycad/types/api";
 
 export type CitizenLog = RecordLog & { citizen: Citizen };
 interface Props {

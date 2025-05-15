@@ -12,19 +12,19 @@ import { leoProperties } from "utils/leo/includes";
 
 import { validateSchema } from "lib/data/validate-schema";
 import {
-  type Bolo,
+  Bolo,
   BoloType,
-  type CombinedLeoUnit,
+  CombinedLeoUnit,
   DiscordWebhookType,
-  type Officer,
-  type Prisma,
+  Officer,
+  Prisma,
 } from "@prisma/client";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
-import type { APIEmbed } from "discord-api-types/v10";
+import { APIEmbed } from "discord-api-types/v10";
 import { sendDiscordWebhook, sendRawWebhook } from "lib/discord/webhooks";
 import { getUserOfficerFromActiveOfficer, getInactivityFilter } from "lib/leo/utils";
-import type * as APITypes from "@snailycad/types/api";
-import type { cad } from "@snailycad/types";
+import * as APITypes from "@snailycad/types/api";
+import { cad } from "@snailycad/types";
 import { getTranslator } from "utils/get-translator";
 import { HandleInactivity } from "middlewares/handle-inactivity";
 

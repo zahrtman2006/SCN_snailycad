@@ -1,5 +1,5 @@
 import * as defaultPermissions from "./defaults";
-import { allPermissions, type Permissions } from "./permissions";
+import { allPermissions, Permissions } from "./permissions";
 
 export * from "./permissions";
 

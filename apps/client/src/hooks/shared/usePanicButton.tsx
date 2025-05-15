@@ -4,7 +4,7 @@ import { SocketEvents } from "@snailycad/config";
 import { useTranslations } from "use-intl";
 import { useGenerateCallsign } from "../useGenerateCallsign";
 import { makeUnitName } from "lib/utils";
-import type { CombinedLeoUnit, EmsFdDeputy, Officer } from "@snailycad/types";
+import { CombinedLeoUnit, EmsFdDeputy, Officer } from "@snailycad/types";
 import { isUnitCombined, isUnitCombinedEmsFd } from "@snailycad/utils";
 import { useAudio } from "react-use";
 import { useAuth } from "context/AuthContext";

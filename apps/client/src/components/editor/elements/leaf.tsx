@@ -1,4 +1,4 @@
-import type { RenderLeafProps } from "slate-react";
+import { RenderLeafProps } from "slate-react";
 
 export function EditorLeaf({ attributes, children, leaf }: RenderLeafProps) {
   const style = {

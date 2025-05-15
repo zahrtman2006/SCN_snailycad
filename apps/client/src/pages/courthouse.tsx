@@ -1,7 +1,7 @@
 import { Layout } from "components/Layout";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { useTranslations } from "use-intl";
 import { requestAll } from "lib/utils";
 import { Title } from "components/shared/Title";
@@ -12,7 +12,7 @@ import { CourtEntriesTab } from "components/courthouse/court-entries/court-entri
 import { usePermission, Permissions } from "hooks/usePermission";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { CourthousePostsTab } from "components/courthouse/courthouse-posts/courthouse-posts-tab";
-import type { GetExpungementRequestsData, GetNameChangeRequestsData } from "@snailycad/types/api";
+import { GetExpungementRequestsData, GetNameChangeRequestsData } from "@snailycad/types/api";
 import Link from "next/link";
 import { BoxArrowUpRight } from "react-bootstrap-icons";
 import { defaultPermissions } from "@snailycad/permissions";

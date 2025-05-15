@@ -1,9 +1,9 @@
 import {
-  type EmsFdDeputy,
-  type Officer,
-  type LeoWhitelistStatus,
+  EmsFdDeputy,
+  Officer,
+  LeoWhitelistStatus,
   WhitelistStatus,
-  type DepartmentValue,
+  DepartmentValue,
 } from "@prisma/client";
 import { prisma } from "lib/data/prisma";
 import { ExtendedNotFound } from "~/exceptions/extended-not-found";

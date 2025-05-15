@@ -6,7 +6,7 @@ import { Modal } from "components/modal/Modal";
 import { ModalIds } from "types/modal-ids";
 import { Button, Loader } from "@snailycad/ui";
 import { handleValidate } from "lib/handleValidate";
-import type { Citizen, SuspendedCitizenLicenses } from "@snailycad/types";
+import { Citizen, SuspendedCitizenLicenses } from "@snailycad/types";
 import { createDefaultLicensesValues, ManageLicensesFormFields } from "./ManageLicensesFormFields";
 
 interface Props {

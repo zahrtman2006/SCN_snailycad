@@ -1,5 +1,5 @@
-import type { Warrant } from "@snailycad/types";
-import type { _Record } from "@snailycad/utils/case-number";
+import { Warrant } from "@snailycad/types";
+import { _Record } from "@snailycad/utils/case-number";
 import { useFormatCaseNumber } from "hooks/use-format-case-number";
 
 interface RecordsCaseNumberColumnProps {

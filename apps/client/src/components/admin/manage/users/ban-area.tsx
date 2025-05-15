@@ -4,7 +4,7 @@ import { handleValidate } from "lib/handleValidate";
 import useFetch from "lib/useFetch";
 import { useTranslations } from "use-intl";
 import { BAN_SCHEMA } from "@snailycad/schemas";
-import type { GetManageUserByIdData, PostManageUserBanUnbanData } from "@snailycad/types/api";
+import { GetManageUserByIdData, PostManageUserBanUnbanData } from "@snailycad/types/api";
 
 interface Props {
   user: GetManageUserByIdData;

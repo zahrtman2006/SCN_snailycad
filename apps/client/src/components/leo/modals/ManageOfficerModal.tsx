@@ -3,16 +3,16 @@ import { CREATE_OFFICER_SCHEMA } from "@snailycad/schemas";
 import { Loader, Button } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
-import { Formik, type FormikHelpers } from "formik";
+import { Formik, FormikHelpers } from "formik";
 import { handleValidate } from "lib/handleValidate";
 import useFetch from "lib/useFetch";
 import { ModalIds } from "types/modal-ids";
 import { useTranslations } from "use-intl";
-import type { IndividualDivisionCallsign, Officer } from "@snailycad/types";
+import { IndividualDivisionCallsign, Officer } from "@snailycad/types";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { UnitQualificationsTable } from "../qualifications/UnitQualificationsTable";
 import { classNames } from "lib/classNames";
-import type {
+import {
   PostMyOfficerByIdData,
   PostMyOfficersData,
   PutMyOfficerByIdData,

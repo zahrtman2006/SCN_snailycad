@@ -1,4 +1,4 @@
-import type { User } from "@snailycad/types";
+import { User } from "@snailycad/types";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
 import { useTranslations } from "next-intl";
@@ -6,7 +6,7 @@ import { ModalIds } from "types/modal-ids";
 import { Form, Formik } from "formik";
 import { Loader, Button, SelectField } from "@snailycad/ui";
 import useFetch from "lib/useFetch";
-import type { GetCustomRolesData, PutManageUserByIdRolesData } from "@snailycad/types/api";
+import { GetCustomRolesData, PutManageUserByIdRolesData } from "@snailycad/types/api";
 
 interface Props {
   user: User;

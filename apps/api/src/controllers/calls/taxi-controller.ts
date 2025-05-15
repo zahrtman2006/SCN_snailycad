@@ -14,11 +14,11 @@ import { NotFound } from "@tsed/exceptions";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { Socket } from "services/socket-service";
 import { validateSchema } from "lib/data/validate-schema";
-import { Feature, type Prisma, type User } from "@prisma/client";
+import { Feature, Prisma, User } from "@prisma/client";
 import { canManageInvariant } from "lib/auth/getSessionUser";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
 import { towIncludes } from "./tow-controller";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { IsFeatureEnabled } from "middlewares/is-enabled";
 
 @Controller("/taxi")

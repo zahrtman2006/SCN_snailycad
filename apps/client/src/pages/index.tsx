@@ -1,5 +1,5 @@
 import { getSessionUser } from "lib/auth";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 
 export default function IndexPage() {
   return null;

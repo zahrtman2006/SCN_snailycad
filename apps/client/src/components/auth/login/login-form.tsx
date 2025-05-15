@@ -1,4 +1,4 @@
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import Link from "next/link";
 import { Discord, Steam } from "react-bootstrap-icons";
 import { Alert, Button, Loader, TextField } from "@snailycad/ui";
@@ -11,7 +11,7 @@ import { useAuth } from "context/AuthContext";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { handleValidate } from "lib/handleValidate";
 import { AUTH_SCHEMA } from "@snailycad/schemas";
-import type { PostLoginUserData } from "@snailycad/types/api";
+import { PostLoginUserData } from "@snailycad/types/api";
 import { canUseThirdPartyConnections } from "lib/utils";
 import { classNames } from "lib/classNames";
 

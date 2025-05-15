@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { Unit } from "src/pages/admin/manage/units";
+import { Unit } from "src/pages/admin/manage/units";
 import useFetch from "lib/useFetch";
 import { formatUnitDivisions, makeUnitName, formatOfficerDepartment } from "lib/utils";
 import { useTranslations } from "use-intl";
@@ -10,7 +10,7 @@ import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
 import { AlertDeclineOfficerModal } from "../AlertDeclineOfficerModal";
 import Link from "next/link";
-import type {
+import {
   GetManageUnitsData,
   PostManageUnitAcceptDeclineDepartmentData,
 } from "@snailycad/types/api";
@@ -105,7 +105,7 @@ export function DepartmentWhitelistingTab({ pendingUnits }: Props) {
                     {officer.user.username}
                   </Link>
                 ) : (
-                  officer.user?.username ?? common("Leo.temporaryUnit")
+                  (officer.user?.username ?? common("Leo.temporaryUnit"))
                 ),
               actions: (
                 <>

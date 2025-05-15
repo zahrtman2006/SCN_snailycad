@@ -2,9 +2,9 @@
 import {
   Rank,
   WhitelistStatus,
-  type User,
+  User,
   Prisma,
-  type CustomRole,
+  CustomRole,
   DiscordWebhookType,
 } from "@prisma/client";
 import { PathParams, BodyParams, Context, QueryParams } from "@tsed/common";
@@ -29,12 +29,12 @@ import { validateSchema } from "lib/data/validate-schema";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
 import { manyToManyHelper } from "lib/data/many-to-many";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { AuditLogActionType, createAuditLogEntry } from "@snailycad/audit-logger/server";
 import { isDiscordIdInUse } from "lib/discord/utils";
 import { getTranslator } from "~/utils/get-translator";
 import { sendRawWebhook, sendDiscordWebhook } from "~/lib/discord/webhooks";
-import { type APIEmbed } from "discord-api-types/v10";
+import { APIEmbed } from "discord-api-types/v10";
 import { getPrismaModelOrderBy } from "~/utils/order-by";
 import { leoProperties, unitProperties } from "utils/leo/includes";
 

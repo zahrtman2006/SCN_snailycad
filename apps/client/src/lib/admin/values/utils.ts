@@ -1,11 +1,5 @@
 import compareAsc from "date-fns/compareAsc";
-import {
-  type AnyValue,
-  type PenalCodeGroup,
-  type StatusValue,
-  WhatPages,
-  ValueType,
-} from "@snailycad/types";
+import { AnyValue, PenalCodeGroup, StatusValue, WhatPages, ValueType } from "@snailycad/types";
 import {
   hasValueObj,
   isBaseValue,

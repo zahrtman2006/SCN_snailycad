@@ -1,6 +1,6 @@
-import axios, { type Method, type AxiosRequestConfig, type AxiosResponse } from "axios";
-import type { IncomingMessage } from "connect";
-import type { NextApiRequestCookies } from "next/dist/server/api-utils";
+import axios, { Method, AxiosRequestConfig, AxiosResponse } from "axios";
+import { IncomingMessage } from "connect";
+import { NextApiRequestCookies } from "next/dist/server/api-utils";
 import { getAPIUrl } from "@snailycad/utils/api-url";
 import { getErrorObj } from "./fetch/errors";
 

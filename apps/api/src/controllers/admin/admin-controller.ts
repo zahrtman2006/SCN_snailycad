@@ -6,10 +6,10 @@ import { join } from "node:path";
 import { stat } from "node:fs/promises";
 import { Res, UseBefore } from "@tsed/common";
 import { IsAuth } from "middlewares/auth/is-auth";
-import { type Prisma, WhitelistStatus } from "@prisma/client";
+import { Prisma, WhitelistStatus } from "@prisma/client";
 import { UsePermissions } from "middlewares/use-permissions";
 import { defaultPermissions, Permissions } from "@snailycad/permissions";
-import type { GetAdminDashboardData } from "@snailycad/types/api";
+import { GetAdminDashboardData } from "@snailycad/types/api";
 import { request } from "undici";
 import { getCADVersion } from "@snailycad/utils/version";
 

@@ -6,7 +6,7 @@ import {
   BodyParams,
   MultipartFile,
   PathParams,
-  type PlatformMulterFile,
+  PlatformMulterFile,
   QueryParams,
   UseBeforeEach,
 } from "@tsed/common";
@@ -15,9 +15,9 @@ import { parseImportFile } from "utils/file";
 import { validateSchema } from "lib/data/validate-schema";
 import { generateString } from "utils/generate-string";
 import { citizenInclude } from "controllers/citizen/CitizenController";
-import type { Prisma, VehicleInspectionStatus, VehicleTaxStatus } from "@prisma/client";
+import { Prisma, VehicleInspectionStatus, VehicleTaxStatus } from "@prisma/client";
 import { getLastOfArray, manyToManyHelper } from "lib/data/many-to-many";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { Permissions, UsePermissions } from "middlewares/use-permissions";
 
 const vehiclesInclude = { ...citizenInclude.vehicles.include, citizen: true };

@@ -1,14 +1,14 @@
 import { CREATE_OFFICER_SCHEMA } from "@snailycad/schemas";
 import {
-  type cad,
-  type Citizen,
-  type DivisionValue,
+  cad,
+  Citizen,
+  DivisionValue,
   Feature,
-  type LeoWhitelistStatus,
-  type MiscCadSettings,
-  type Officer,
+  LeoWhitelistStatus,
+  MiscCadSettings,
+  Officer,
   ShouldDoType,
-  type User,
+  User,
   WhatPages,
 } from "@prisma/client";
 import { shouldCheckCitizenUserId } from "lib/citizen/has-citizen-access";
@@ -26,8 +26,8 @@ import { validateImageURL } from "lib/images/validate-image-url";
 import { getLastOfArray, manyToManyHelper } from "lib/data/many-to-many";
 import { leoProperties } from "utils/leo/includes";
 
-import type * as APITypes from "@snailycad/types/api";
-import type { ZodSchema } from "zod";
+import * as APITypes from "@snailycad/types/api";
+import { ZodSchema } from "zod";
 import generateBlurPlaceholder from "lib/images/generate-image-blur-data";
 import { WhitelistStatus } from "@snailycad/types";
 import { sendUnitWhitelistStatusChangeWebhook } from "~/controllers/admin/manage/units/manage-units-controller";

@@ -4,8 +4,8 @@ import { ContentType, Description, Post } from "@tsed/schema";
 import { prisma } from "lib/data/prisma";
 import { BadRequest, NotFound } from "@tsed/exceptions";
 import {
-  type CombinedEmsFdUnit,
-  type CombinedLeoUnit,
+  CombinedEmsFdUnit,
+  CombinedLeoUnit,
   Feature,
   ShouldDoType,
   WhatPages,
@@ -14,7 +14,7 @@ import { Socket } from "services/socket-service";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
 import { findNextAvailableIncremental } from "lib/leo/findNextAvailableIncremental";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { getNextActive911CallId } from "lib/dispatch/911-calls/get-next-active-911-call";
 import { getNextIncidentId } from "lib/incidents/get-next-incident-id";
 import { validateSchema } from "lib/data/validate-schema";

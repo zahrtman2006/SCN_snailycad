@@ -1,8 +1,8 @@
-import type { StatusValue } from "@prisma/client";
+import { StatusValue } from "@prisma/client";
 import { ShouldDoType } from "@snailycad/types";
 import { officerOrDeputyToUnit } from "lib/leo/officerOrDeputyToUnit";
 import { prisma } from "lib/data/prisma";
-import type { Socket } from "services/socket-service";
+import { Socket } from "services/socket-service";
 import { callInclude } from "~/utils/leo/includes";
 
 interface Options {

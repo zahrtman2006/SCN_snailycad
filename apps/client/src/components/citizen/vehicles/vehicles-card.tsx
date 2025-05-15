@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useTranslations } from "use-intl";
 import { Button, FullDate, Status } from "@snailycad/ui";
-import type { RegisteredVehicle } from "@snailycad/types";
+import { RegisteredVehicle } from "@snailycad/types";
 import { ModalIds } from "types/modal-ids";
 import { useModal } from "state/modalState";
 import { AlertModal } from "components/modal/AlertModal";
@@ -10,7 +10,7 @@ import { Table, useTableState } from "components/shared/Table";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { useAsyncTable } from "hooks/shared/table/use-async-table";
 import { useCitizen } from "context/CitizenContext";
-import type { DeleteCitizenVehicleData, GetCitizenVehiclesData } from "@snailycad/types/api";
+import { DeleteCitizenVehicleData, GetCitizenVehiclesData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import { SearchArea } from "components/shared/search/search-area";
 import dynamic from "next/dynamic";

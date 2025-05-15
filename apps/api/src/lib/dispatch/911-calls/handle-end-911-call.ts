@@ -1,8 +1,8 @@
-import type { AssignedUnit, Call911 } from "@prisma/client";
+import { AssignedUnit, Call911 } from "@prisma/client";
 import { captureException } from "@sentry/node";
 import { prisma } from "~/lib/data/prisma";
 import { getPrismaNameActiveCallIncident } from "~/lib/leo/utils";
-import type { Socket } from "~/services/socket-service";
+import { Socket } from "~/services/socket-service";
 import { getNextActive911CallId } from "./get-next-active-911-call";
 
 interface HandleEndCallOptions {

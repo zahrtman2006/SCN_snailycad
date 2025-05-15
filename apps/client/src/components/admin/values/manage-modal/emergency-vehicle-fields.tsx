@@ -1,11 +1,11 @@
-import type { AnyValue } from "@snailycad/types";
+import { AnyValue } from "@snailycad/types";
 import { JsonEditor, SelectField, TextField } from "@snailycad/ui";
 import { isEmergencyVehicleValue } from "@snailycad/utils";
 import { useValues } from "context/ValuesContext";
 import { useFormikContext } from "formik";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { useTranslations } from "use-intl";
-import type { ManageValueFormValues } from "../ManageValueModal";
+import { ManageValueFormValues } from "../ManageValueModal";
 import { FormField } from "components/form/FormField";
 
 export function useDefaultDivisions() {

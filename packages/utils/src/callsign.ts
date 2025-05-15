@@ -1,4 +1,4 @@
-import type { CombinedEmsFdUnit, CombinedLeoUnit, EmsFdDeputy, Officer } from "@snailycad/types";
+import { CombinedEmsFdUnit, CombinedLeoUnit, EmsFdDeputy, Officer } from "@snailycad/types";
 import { replaceTemplateVariables } from "./utils/replace-template-variables";
 
 type P =

@@ -22,16 +22,16 @@ import { dataToSlate, Editor } from "components/editor/editor";
 import { IncidentEventsArea } from "./IncidentEventsArea";
 import { classNames } from "lib/classNames";
 import { useActiveIncidents } from "hooks/realtime/useActiveIncidents";
-import { type EmsFdIncident, type LeoIncident, StatusValueType, ValueType } from "@snailycad/types";
+import { EmsFdIncident, LeoIncident, StatusValueType, ValueType } from "@snailycad/types";
 import { useValues } from "context/ValuesContext";
-import type { PostIncidentsData, PutIncidentByIdData } from "@snailycad/types/api";
+import { PostIncidentsData, PutIncidentByIdData } from "@snailycad/types/api";
 import { AddressPostalSelect } from "components/form/select/PostalSelect";
 import { InvolvedUnitsTable } from "./involved-units/involved-units-table";
 import { ValueSelectField } from "components/form/inputs/value-select-field";
 import { useAuth } from "context/AuthContext";
 import { useActiveDispatchers } from "hooks/realtime/use-active-dispatchers";
-import { type ActiveOfficer, useLeoState } from "state/leo-state";
-import { type ActiveDeputy, useEmsFdState } from "state/ems-fd-state";
+import { ActiveOfficer, useLeoState } from "state/leo-state";
+import { ActiveDeputy, useEmsFdState } from "state/ems-fd-state";
 
 interface Props<T extends LeoIncident | EmsFdIncident> {
   incident?: T | null;
@@ -176,10 +176,10 @@ export function ManageIncidentModal<T extends LeoIncident | EmsFdIncident>({
     firearmsInvolved: incident?.firearmsInvolved ?? false,
     injuriesOrFatalities: incident?.injuriesOrFatalities ?? false,
     arrestsMade: incident?.arrestsMade ?? false,
-    isActive: isDispatch ? true : incident?.isActive ?? false,
+    isActive: isDispatch ? true : (incident?.isActive ?? false),
     situationCodeId: incident?.situationCodeId ?? null,
     openModalAfterCreation: true,
-    fireType: isEmsFdIncident ? incident.fireType ?? "" : "",
+    fireType: isEmsFdIncident ? (incident.fireType ?? "") : "",
   };
 
   return (

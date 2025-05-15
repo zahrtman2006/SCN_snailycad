@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 import { slateDataToString } from "../src/editor/slate-data-to-string";
-import type { Descendant } from "slate";
+import { Descendant } from "slate";
 
 const TEST_VALUE = [
   {

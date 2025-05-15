@@ -8,7 +8,7 @@ import { expungementRequestInclude } from "controllers/court/ExpungementRequests
 import { prisma } from "lib/data/prisma";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { AuditLogActionType, createAuditLogEntry } from "@snailycad/audit-logger/server";
 
 @UseBeforeEach(IsAuth)

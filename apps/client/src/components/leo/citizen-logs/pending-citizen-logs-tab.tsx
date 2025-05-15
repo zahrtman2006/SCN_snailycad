@@ -9,7 +9,7 @@ import {
   Status,
   TabsContent,
 } from "@snailycad/ui";
-import { type Record, RecordType } from "@snailycad/types";
+import { Record, RecordType } from "@snailycad/types";
 import { Table, useAsyncTable, useTableState } from "components/shared/Table";
 import { useGenerateCallsign } from "hooks/useGenerateCallsign";
 import { makeUnitName } from "lib/utils";
@@ -18,10 +18,7 @@ import { ModalIds } from "types/modal-ids";
 import { ManageRecordModal } from "../modals/manage-record/manage-record-modal";
 import useFetch from "lib/useFetch";
 import { ViolationsColumn } from "../ViolationsColumn";
-import type {
-  GetManagePendingCitizenRecords,
-  PostCitizenRecordLogsData,
-} from "@snailycad/types/api";
+import { GetManagePendingCitizenRecords, PostCitizenRecordLogsData } from "@snailycad/types/api";
 import { useQuery } from "@tanstack/react-query";
 import { RecordsCaseNumberColumn } from "../records-case-number-column";
 import { RecordsStatsColumn } from "../records-stats-column";

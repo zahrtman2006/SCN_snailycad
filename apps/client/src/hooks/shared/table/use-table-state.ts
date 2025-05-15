@@ -1,6 +1,6 @@
 import * as React from "react";
-import type { RowSelectionState, SortingState, VisibilityState } from "@tanstack/react-table";
-import type { useAsyncTable } from "./use-async-table";
+import { RowSelectionState, SortingState, VisibilityState } from "@tanstack/react-table";
+import { useAsyncTable } from "./use-async-table";
 import { useMounted } from "@casperiv/useful";
 
 interface TableStateOptions {

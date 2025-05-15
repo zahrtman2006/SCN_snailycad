@@ -1,4 +1,4 @@
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 
 export default function Page() {
   return null;

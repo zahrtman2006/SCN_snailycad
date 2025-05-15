@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import type { Post911CallsData, Put911CallByIdData } from "@snailycad/types/api";
+import { Post911CallsData, Put911CallByIdData } from "@snailycad/types/api";
 import { StatusValueType, ValueType, WhitelistStatus } from "@snailycad/types";
 import { handleValidate } from "lib/handleValidate";
 import { CALL_911_SCHEMA } from "@snailycad/schemas";
@@ -11,7 +11,7 @@ import { Form, Formik } from "formik";
 import { Button, CheckboxField, Loader, TextField, FormRow } from "@snailycad/ui";
 import { FormField } from "components/form/FormField";
 import useFetch from "lib/useFetch";
-import type { Full911Call } from "state/dispatch/dispatch-state";
+import { Full911Call } from "state/dispatch/dispatch-state";
 import { Select } from "components/form/Select";
 import { useTranslations } from "next-intl";
 import { useCall911State } from "state/dispatch/call-911-state";

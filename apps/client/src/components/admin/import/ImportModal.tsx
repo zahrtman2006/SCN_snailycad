@@ -2,12 +2,12 @@ import * as React from "react";
 import { FormField } from "components/form/FormField";
 import { Button, Input, Loader } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import useFetch from "lib/useFetch";
 import { useModal } from "state/modalState";
 import { useTranslations } from "use-intl";
 import { ModalIds } from "types/modal-ids";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 
 type ImportData =
   | APITypes.PostImportCitizensData

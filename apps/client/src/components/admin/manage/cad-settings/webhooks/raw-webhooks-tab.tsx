@@ -7,7 +7,7 @@ import { useAuth } from "context/AuthContext";
 import { DiscordWebhookType } from "@snailycad/types";
 import { WebhookSettingsField } from "../discord-webhooks/WebhookSettingsField";
 import { toastMessage } from "lib/toastMessage";
-import type { GetCADDiscordWebhooksData, PostCADDiscordWebhooksData } from "@snailycad/types/api";
+import { GetCADDiscordWebhooksData, PostCADDiscordWebhooksData } from "@snailycad/types/api";
 import { useQuery } from "@tanstack/react-query";
 import { TabsContent } from "@radix-ui/react-tabs";
 import { SettingsTabs } from "components/admin/cad-settings/layout";

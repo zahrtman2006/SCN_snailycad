@@ -1,4 +1,4 @@
-import { type AriaCheckboxProps, useCheckbox } from "@react-aria/checkbox";
+import { AriaCheckboxProps, useCheckbox } from "@react-aria/checkbox";
 import { VisuallyHidden } from "@react-aria/visually-hidden";
 import { useToggleState } from "@react-stately/toggle";
 import * as React from "react";

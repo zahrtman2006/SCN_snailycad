@@ -1,12 +1,12 @@
 import * as React from "react";
 import { Button, Loader, SwitchField, TextField } from "@snailycad/ui";
 import { useAuth } from "context/AuthContext";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import useFetch from "lib/useFetch";
 import { useTranslations } from "use-intl";
 import { SettingsFormField } from "components/form/SettingsFormField";
 import { toastMessage } from "lib/toastMessage";
-import type { DeleteCADApiTokenData, PutCADApiTokenData } from "@snailycad/types/api";
+import { DeleteCADApiTokenData, PutCADApiTokenData } from "@snailycad/types/api";
 import { getAPIUrl } from "@snailycad/utils/api-url";
 import { TabsContent } from "@radix-ui/react-tabs";
 import { SettingsTabs } from "components/admin/cad-settings/layout";

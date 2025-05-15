@@ -1,5 +1,5 @@
 import { InfoCircleFill, X } from "react-bootstrap-icons";
-import toast, { type ToastOptions, ErrorIcon, CheckmarkIcon } from "react-hot-toast";
+import toast, { ToastOptions, ErrorIcon, CheckmarkIcon } from "react-hot-toast";
 
 interface Options extends ToastOptions {
   message: string | React.ReactNode;

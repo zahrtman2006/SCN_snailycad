@@ -1,4 +1,4 @@
-import { type Warrant, WarrantStatus, WhitelistStatus } from "@prisma/client";
+import { Warrant, WarrantStatus, WhitelistStatus } from "@prisma/client";
 import { Controller } from "@tsed/di";
 import { BadRequest, NotFound } from "@tsed/exceptions";
 import { UseBeforeEach } from "@tsed/platform-middlewares";
@@ -7,7 +7,7 @@ import { ContentType, Description, Get, Put } from "@tsed/schema";
 import { prisma } from "lib/data/prisma";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { assignedOfficersInclude } from "controllers/record/records-controller";
 import { leoProperties } from "utils/leo/includes";
 

@@ -1,12 +1,12 @@
 import { FormField } from "components/form/FormField";
 import { CheckboxField, Input, Textarea } from "@snailycad/ui";
-import type { SelectValue } from "components/form/Select";
+import { SelectValue } from "components/form/Select";
 import { useFormikContext } from "formik";
 import { useTranslations } from "next-intl";
-import type { PenalCode } from "@snailycad/types";
+import { PenalCode } from "@snailycad/types";
 import React from "react";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
-import { type createInitialRecordValues } from "./manage-record-modal";
+import { createInitialRecordValues } from "./manage-record-modal";
 
 type PenalCodeValueName = "counts" | "fine" | "jailTime" | "bail" | "communityService";
 interface PenalCodeValue<Name extends PenalCodeValueName> {

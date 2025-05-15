@@ -1,15 +1,15 @@
 import * as React from "react";
-import type { AxiosRequestConfig } from "axios";
+import { AxiosRequestConfig } from "axios";
 import { useTranslations } from "use-intl";
-import type { FormikHelpers } from "formik";
+import { FormikHelpers } from "formik";
 import { toastMessage } from "./toastMessage";
 import { useModal } from "../state/modalState";
 import { ModalIds } from "../types/modal-ids";
 import { useAuth } from "../context/AuthContext";
 import { getNextI18nConfig } from "./i18n/getNextI18nConfig";
 import {
-  type ErrorMessage,
-  type ErrorResponseData,
+  ErrorMessage,
+  ErrorResponseData,
   getErrorObj,
   getFeatureNotEnabledError,
   isAxiosError,

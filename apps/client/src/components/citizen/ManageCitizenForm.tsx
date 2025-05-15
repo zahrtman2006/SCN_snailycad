@@ -11,14 +11,14 @@ import {
   Item,
   FormRow,
 } from "@snailycad/ui";
-import type { SelectValue } from "components/form/Select";
+import { SelectValue } from "components/form/Select";
 import { ImageSelectInput, validateFile } from "components/form/inputs/ImageSelectInput";
 import { CREATE_CITIZEN_SCHEMA, CREATE_CITIZEN_WITH_OFFICER_SCHEMA } from "@snailycad/schemas";
 import { useAuth } from "context/AuthContext";
 import { useValues } from "context/ValuesContext";
 import { handleValidate } from "lib/handleValidate";
-import type { FormikHelpers } from "formik";
-import { type User, type Citizen, type PenalCode, ValueType } from "@snailycad/types";
+import { FormikHelpers } from "formik";
+import { User, Citizen, PenalCode, ValueType } from "@snailycad/types";
 import { useTranslations } from "next-intl";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import {

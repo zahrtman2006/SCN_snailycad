@@ -12,7 +12,7 @@ import { citizenInclude } from "controllers/citizen/CitizenController";
 import { validateImageURL } from "lib/images/validate-image-url";
 import { Feature, Prisma } from "@prisma/client";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { validateSocialSecurityNumber } from "lib/citizen/validate-ssn";
 import generateBlurPlaceholder from "lib/images/generate-image-blur-data";
 import { AuditLogActionType, createAuditLogEntry } from "@snailycad/audit-logger/server";

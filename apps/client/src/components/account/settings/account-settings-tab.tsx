@@ -1,5 +1,5 @@
 import { useTranslations } from "use-intl";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { CHANGE_USER_SCHEMA } from "@snailycad/schemas";
 import { useAuth } from "context/AuthContext";
 import useFetch from "lib/useFetch";
@@ -8,7 +8,7 @@ import { ChangePasswordArea } from "./change-password-area";
 import { Manage2FAModal } from "../2fa/manage-2fa-modal";
 import { TwoFactorAuthArea } from "../2fa/two-factor-auth-area";
 import { handleValidate } from "lib/handleValidate";
-import type { PatchUserData } from "@snailycad/types/api";
+import { PatchUserData } from "@snailycad/types/api";
 
 export function AccountSettingsTab() {
   const { user, setUser } = useAuth();

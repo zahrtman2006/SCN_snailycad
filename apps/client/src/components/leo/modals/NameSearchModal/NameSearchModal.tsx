@@ -6,24 +6,24 @@ import { Form, Formik, useFormikContext } from "formik";
 import useFetch from "lib/useFetch";
 import { ModalIds } from "types/modal-ids";
 import { useTranslations } from "use-intl";
-import { CustomFieldCategory, type Citizen, BoloType } from "@snailycad/types";
+import { CustomFieldCategory, Citizen, BoloType } from "@snailycad/types";
 import format from "date-fns/format";
 import { NameSearchTabsContainer } from "./tabs/tabs-container";
-import { type NameSearchResult, useNameSearch } from "state/search/name-search-state";
+import { NameSearchResult, useNameSearch } from "state/search/name-search-state";
 import { useRouter } from "next/router";
 import { ArrowLeft, PersonFill } from "react-bootstrap-icons";
 import { useImageUrl } from "hooks/useImageUrl";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import dynamic from "next/dynamic";
 import {
-  type LicenseInitialValues,
+  LicenseInitialValues,
   ManageLicensesModal,
 } from "components/citizen/licenses/manage-licenses-modal";
 import { ManageCitizenFlagsModal } from "./ManageCitizenFlagsModal";
 import { CitizenImageModal } from "components/citizen/modals/citizen-image-modal";
 import { ManageCustomFieldsModal } from "./ManageCustomFieldsModal";
 import { useBolos } from "hooks/realtime/useBolos";
-import type { PostLeoSearchCitizenData, PutSearchActionsLicensesData } from "@snailycad/types/api";
+import { PostLeoSearchCitizenData, PutSearchActionsLicensesData } from "@snailycad/types/api";
 import { NameSearchBasicInformation } from "./sections/basic-information";
 import { NameSearchLicensesSection } from "./sections/licenses-section";
 import { NameSearchFooter } from "./sections/footer";
@@ -153,7 +153,7 @@ export function NameSearchModal() {
   }
 
   const warrants =
-    !currentResult || currentResult.isConfidential ? [] : currentResult.warrants ?? [];
+    !currentResult || currentResult.isConfidential ? [] : (currentResult.warrants ?? []);
 
   const hasActiveWarrants = warrants.filter((v) => v.status === "ACTIVE").length > 0;
   const isArrested =

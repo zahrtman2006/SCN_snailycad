@@ -1,4 +1,4 @@
-import type {
+import {
   Bolo,
   Call911,
   Call911Event,

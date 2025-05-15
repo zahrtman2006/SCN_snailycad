@@ -1,5 +1,5 @@
 import { Loader, TextField } from "@snailycad/ui";
-import type { useAsyncTable } from "components/shared/Table";
+import { useAsyncTable } from "components/shared/Table";
 import { classNames } from "lib/classNames";
 import { useTranslations } from "use-intl";
 

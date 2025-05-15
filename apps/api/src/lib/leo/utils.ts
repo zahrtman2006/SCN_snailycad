@@ -1,17 +1,17 @@
 import {
-  type MiscCadSettings,
+  MiscCadSettings,
   JailTimeScale,
-  type CombinedLeoUnit,
-  type Officer,
-  type AssignedUnit,
-  type IncidentInvolvedUnit,
-  type Feature,
-  type cad,
+  CombinedLeoUnit,
+  Officer,
+  AssignedUnit,
+  IncidentInvolvedUnit,
+  Feature,
+  cad,
 } from "@prisma/client";
-import type { INDIVIDUAL_CALLSIGN_SCHEMA } from "@snailycad/schemas";
+import { INDIVIDUAL_CALLSIGN_SCHEMA } from "@snailycad/schemas";
 import { prisma } from "lib/data/prisma";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
-import type { DisconnectOrConnect } from "lib/data/many-to-many";
+import { DisconnectOrConnect } from "lib/data/many-to-many";
 
 interface MaxDepartmentOptions {
   type: "emsFdDeputy" | "officer";

@@ -4,7 +4,7 @@ import { FormField } from "components/form/FormField";
 import { Select } from "components/form/Select";
 import { ImageSelectInput } from "components/form/inputs/ImageSelectInput";
 import { CallSignPreview } from "../CallsignPreview";
-import { ValueType, type Officer } from "@snailycad/types";
+import { ValueType, Officer } from "@snailycad/types";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
 
 import { useFormikContext } from "formik";
@@ -126,7 +126,7 @@ export function getManageOfficerFieldsDefaults(options: GetManageOfficerFieldsDe
     callsign2: options.officer?.callsign2 ?? "",
     divisions: options.officer?.divisions.map((v) => ({ value: v.id, label: v.value.value })) ?? [],
     badgeNumberString: options.features.BADGE_NUMBERS
-      ? options.officer?.badgeNumberString ?? ""
+      ? (options.officer?.badgeNumberString ?? "")
       : undefined,
     citizenId: options.officer?.citizenId ?? "",
     name: options.officer

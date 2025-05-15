@@ -1,4 +1,4 @@
-import type { REST } from "@discordjs/rest";
+import { REST } from "@discordjs/rest";
 import { getRest } from "./config";
 
 interface Options {

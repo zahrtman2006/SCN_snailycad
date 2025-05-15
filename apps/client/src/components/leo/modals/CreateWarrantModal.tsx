@@ -1,4 +1,4 @@
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { useTranslations } from "use-intl";
 import { Loader, Button, SelectField, TextField } from "@snailycad/ui";
 import useFetch from "lib/useFetch";
@@ -6,8 +6,8 @@ import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
 import { toastMessage } from "lib/toastMessage";
-import type { PostCreateWarrantData, PutWarrantsData } from "@snailycad/types/api";
-import type { ActiveWarrant } from "state/leo-state";
+import { PostCreateWarrantData, PutWarrantsData } from "@snailycad/types/api";
+import { ActiveWarrant } from "state/leo-state";
 import { isUnitCombined } from "@snailycad/utils";
 import { makeUnitName } from "lib/utils";
 import { useGenerateCallsign } from "hooks/useGenerateCallsign";

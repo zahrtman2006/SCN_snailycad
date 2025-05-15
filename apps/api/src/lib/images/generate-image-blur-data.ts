@@ -1,5 +1,5 @@
 import { request } from "undici";
-import type { getImageWebPPath } from "./get-image-webp-path";
+import { getImageWebPPath } from "./get-image-webp-path";
 
 const cache = new Map<string, string>();
 

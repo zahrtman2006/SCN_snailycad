@@ -1,6 +1,6 @@
 import { handleRequest } from "lib/fetch";
-import type { IncomingMessage } from "node:http";
-import type { GetUserData, PostUserLogoutData } from "@snailycad/types/api";
+import { IncomingMessage } from "node:http";
+import { GetUserData, PostUserLogoutData } from "@snailycad/types/api";
 import { WhitelistStatus } from "@snailycad/types";
 
 export async function getSessionUser(req?: IncomingMessage): Promise<GetUserData | null> {

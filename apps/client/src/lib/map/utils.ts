@@ -1,5 +1,5 @@
 import { LatLngBounds } from "leaflet";
-import type { XYZ } from "types/map";
+import { XYZ } from "types/map";
 
 const TILE_SIZE = 1024 as const;
 

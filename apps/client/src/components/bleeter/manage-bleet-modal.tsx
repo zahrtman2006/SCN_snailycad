@@ -1,4 +1,4 @@
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { useTranslations } from "use-intl";
 
 import { Loader, Input, Button, TextField } from "@snailycad/ui";
@@ -11,7 +11,7 @@ import { handleValidate } from "lib/handleValidate";
 import { BLEETER_SCHEMA } from "@snailycad/schemas";
 import { CropImageModal } from "components/modal/CropImageModal";
 import { dataToSlate, Editor } from "components/editor/editor";
-import type {
+import {
   GetBleeterByIdData,
   PostBleeterData,
   PostBleeterByIdImageData,

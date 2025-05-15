@@ -1,5 +1,5 @@
 import * as React from "react";
-import type {
+import {
   CombinedEmsFdUnit,
   CombinedLeoUnit,
   EmsFdDeputy,
@@ -10,7 +10,7 @@ import { useDebounce, useHoverDirty } from "react-use";
 import { isUnitCombined, isUnitCombinedEmsFd } from "@snailycad/utils";
 import useFetch from "lib/useFetch";
 import { HoverCard, HoverCardContent, HoverCardTrigger, Loader } from "@snailycad/ui";
-import type { GetUnitQualificationsByUnitIdData } from "@snailycad/types/api";
+import { GetUnitQualificationsByUnitIdData } from "@snailycad/types/api";
 import dynamic from "next/dynamic";
 import { createWithEqualityFn } from "zustand/traditional";
 import { shallow } from "zustand/shallow";

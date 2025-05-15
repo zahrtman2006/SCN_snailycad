@@ -1,5 +1,5 @@
-import type * as Prisma from "@prisma/client";
-import type * as Types from "../index";
+import * as Prisma from "@prisma/client";
+import * as Types from "../index";
 
 /** ems-fd search */
 /**

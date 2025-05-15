@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { AUTH_SCHEMA } from "@snailycad/schemas";
@@ -7,10 +7,10 @@ import { useTranslations } from "use-intl";
 
 import useFetch from "lib/useFetch";
 import { handleValidate } from "lib/handleValidate";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { getTranslations } from "lib/getTranslation";
 import { Button, Loader, TextField } from "@snailycad/ui";
-import { type cad, WhitelistStatus } from "@snailycad/types";
+import { cad, WhitelistStatus } from "@snailycad/types";
 import { handleRequest } from "lib/fetch";
 import { Title } from "components/shared/Title";
 import { AuthScreenImages } from "components/auth/auth-screen-images";
@@ -18,7 +18,7 @@ import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { LocalhostDetector } from "components/auth/localhost-detector";
 import { parseCookies } from "nookies";
 import { VersionDisplay } from "components/shared/VersionDisplay";
-import type { PostRegisterUserData } from "@snailycad/types/api";
+import { PostRegisterUserData } from "@snailycad/types/api";
 
 import { GoogleReCaptchaProvider, useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { toastMessage } from "lib/toastMessage";

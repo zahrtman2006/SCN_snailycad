@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useRouter } from "next/router";
-import type { cad as CAD, Feature } from "@snailycad/types";
+import { cad as CAD, Feature } from "@snailycad/types";
 
 const featuresRoute: Partial<Record<Feature, string>> = {
   TOW: "/tow",

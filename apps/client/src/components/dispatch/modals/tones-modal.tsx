@@ -1,18 +1,18 @@
 import { Loader, Button, TextField, SwitchField, FormRow } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import useFetch from "lib/useFetch";
 import { ModalIds } from "types/modal-ids";
 import { useTranslations } from "use-intl";
 import { handleValidate } from "lib/handleValidate";
 import { TONES_SCHEMA } from "@snailycad/schemas";
 import { toastMessage } from "lib/toastMessage";
-import type { DeleteDispatchTonesData, PostDispatchTonesData } from "@snailycad/types/api";
+import { DeleteDispatchTonesData, PostDispatchTonesData } from "@snailycad/types/api";
 import { useGetActiveTone } from "hooks/global/use-tones";
 import { Table, useTableState } from "components/shared/Table";
 import { CallDescription } from "../active-calls/CallDescription";
-import { type ActiveTone, ActiveToneType } from "@snailycad/types";
+import { ActiveTone, ActiveToneType } from "@snailycad/types";
 import { useQueryClient } from "@tanstack/react-query";
 
 interface Props {

@@ -1,6 +1,6 @@
-import type { ResponseErrorObject } from "@tsed/common";
+import { ResponseErrorObject } from "@tsed/common";
 import { BadRequest } from "@tsed/exceptions";
-import type { IsFeatureEnabledOptions } from "middlewares/is-enabled";
+import { IsFeatureEnabledOptions } from "middlewares/is-enabled";
 
 export class FeatureNotEnabled extends BadRequest implements ResponseErrorObject {
   headers = {};

@@ -8,10 +8,7 @@ import * as modalButtons from "components/modal-buttons/buttons";
 import { ModalButton } from "components/modal-buttons/modal-button";
 import { ModalIds } from "types/modal-ids";
 import { useModal } from "state/modalState";
-import type {
-  PostDispatchDispatchersStateData,
-  PostDispatchSignal100Data,
-} from "@snailycad/types/api";
+import { PostDispatchDispatchersStateData, PostDispatchSignal100Data } from "@snailycad/types/api";
 
 import dynamic from "next/dynamic";
 import { useCall911State } from "state/dispatch/call-911-state";

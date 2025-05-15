@@ -1,4 +1,4 @@
-import { type CustomFieldCategory, type Prisma } from "@prisma/client";
+import { CustomFieldCategory, Prisma } from "@prisma/client";
 import { AuditLogActionType, createAuditLogEntry } from "@snailycad/audit-logger/server";
 import { CUSTOM_FIELDS_SCHEMA } from "@snailycad/schemas";
 import { BodyParams, Context, PathParams, QueryParams, UseBeforeEach } from "@tsed/common";
@@ -9,7 +9,7 @@ import { prisma } from "lib/data/prisma";
 import { validateSchema } from "lib/data/validate-schema";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 
 @Controller("/admin/manage/custom-fields")
 @UseBeforeEach(IsAuth)

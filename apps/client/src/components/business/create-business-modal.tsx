@@ -11,7 +11,7 @@ import { useRouter } from "next/router";
 import { toastMessage } from "lib/toastMessage";
 import { WhitelistStatus } from "@snailycad/types";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
-import type { GetBusinessesData, PostCreateBusinessData } from "@snailycad/types/api";
+import { GetBusinessesData, PostCreateBusinessData } from "@snailycad/types/api";
 import { AddressPostalSelect } from "components/form/select/PostalSelect";
 
 interface Props {

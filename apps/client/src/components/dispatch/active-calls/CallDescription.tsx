@@ -1,7 +1,7 @@
 import { DEFAULT_EDITOR_DATA } from "components/editor/editor";
 import { classNames } from "lib/classNames";
 import { useTranslations } from "next-intl";
-import type { Descendant } from "slate";
+import { Descendant } from "slate";
 import dynamic from "next/dynamic";
 import { slateDataToString } from "@snailycad/utils/editor";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@snailycad/ui";

@@ -1,9 +1,9 @@
-import { type Warrant, WhitelistStatus } from "@snailycad/types";
+import { Warrant, WhitelistStatus } from "@snailycad/types";
 import { Table, useAsyncTable, useTableState } from "components/shared/Table";
 import { useTranslations } from "next-intl";
 import { Button, FullDate, TabsContent } from "@snailycad/ui";
 import useFetch from "lib/useFetch";
-import type { GetManagePendingWarrants, PutManagePendingWarrants } from "@snailycad/types/api";
+import { GetManagePendingWarrants, PutManagePendingWarrants } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";

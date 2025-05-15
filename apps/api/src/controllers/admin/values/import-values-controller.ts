@@ -3,7 +3,7 @@ import {
   PathParams,
   UseBeforeEach,
   MultipartFile,
-  type PlatformMulterFile,
+  PlatformMulterFile,
   Context,
 } from "@tsed/common";
 import { ContentType, Post } from "@tsed/schema";
@@ -27,19 +27,19 @@ import {
   EMERGENCY_VEHICLE_ARR,
 } from "@snailycad/schemas";
 import {
-  type DepartmentType,
-  type DriversLicenseCategoryType,
-  type EmployeeAsEnum,
-  type ShouldDoType,
-  type StatusValueType,
-  type ValueLicenseType,
-  type QualificationValueType,
+  DepartmentType,
+  DriversLicenseCategoryType,
+  EmployeeAsEnum,
+  ShouldDoType,
+  StatusValueType,
+  ValueLicenseType,
+  QualificationValueType,
   WhatPages,
   ValueType,
-  type Value,
-  type cad,
-  type PenalCodeType,
-  type Feature,
+  Value,
+  cad,
+  PenalCodeType,
+  Feature,
 } from "@prisma/client";
 import { validateSchema } from "lib/data/validate-schema";
 import { upsertWarningApplicable } from "~/lib/leo/records/penal-code";
@@ -47,7 +47,7 @@ import { getLastOfArray, manyToManyHelper } from "lib/data/many-to-many";
 import { getPermissionsForValuesRequest } from "lib/values/utils";
 import { UsePermissions } from "middlewares/use-permissions";
 import { validateImageURL } from "lib/images/validate-image-url";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
 import generateBlurPlaceholder from "lib/images/generate-image-blur-data";
 
@@ -576,7 +576,7 @@ export const typeHandlers = {
       data.map((item) => {
         const data = {
           update: {
-            isDefault: type === ValueType.LICENSE ? item.isDefault ?? false : false,
+            isDefault: type === ValueType.LICENSE ? (item.isDefault ?? false) : false,
             type: type as ValueType,
             value: { set: item.value },
             licenseType:
@@ -584,7 +584,7 @@ export const typeHandlers = {
             isDisabled: item.isDisabled ?? false,
           },
           create: {
-            isDefault: type === ValueType.LICENSE ? item.isDefault ?? false : false,
+            isDefault: type === ValueType.LICENSE ? (item.isDefault ?? false) : false,
             type: type as ValueType,
             value: item.value,
             isDisabled: item.isDisabled ?? false,

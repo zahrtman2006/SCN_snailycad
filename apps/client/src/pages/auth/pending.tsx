@@ -1,6 +1,6 @@
 import { useTranslations } from "use-intl";
 
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { getTranslations } from "lib/getTranslation";
 import { Alert, Button } from "@snailycad/ui";
 import { getSessionUser } from "lib/auth";

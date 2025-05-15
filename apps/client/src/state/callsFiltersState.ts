@@ -1,4 +1,4 @@
-import type { Record, Citizen, MedicalRecord, RegisteredVehicle, Weapon } from "@snailycad/types";
+import { Record, Citizen, MedicalRecord, RegisteredVehicle, Weapon } from "@snailycad/types";
 import { shallow } from "zustand/shallow";
 import { createWithEqualityFn } from "zustand/traditional";
 

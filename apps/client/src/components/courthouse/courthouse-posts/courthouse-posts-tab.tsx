@@ -3,12 +3,12 @@ import { useModal } from "state/modalState";
 import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
 import { Table, useAsyncTable, useTableState } from "components/shared/Table";
-import type { CourthousePost } from "@snailycad/types";
+import { CourthousePost } from "@snailycad/types";
 import { ManageCourtPostModal } from "./manage-courthouse-post-modal";
 import { AlertModal } from "components/modal/AlertModal";
 import useFetch from "lib/useFetch";
 import { usePermission, Permissions } from "hooks/usePermission";
-import type { DeleteCourthousePostsData, GetCourthousePostsData } from "@snailycad/types/api";
+import { DeleteCourthousePostsData, GetCourthousePostsData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import { CallDescription } from "components/dispatch/active-calls/CallDescription";
 

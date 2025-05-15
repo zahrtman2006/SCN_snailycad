@@ -5,8 +5,8 @@ import { ContentType, Delete, Description, Get, Hidden, Post, Put } from "@tsed/
 import { IsAuth } from "middlewares/auth/is-auth";
 import { NotFound } from "@tsed/exceptions";
 import { prisma } from "lib/data/prisma";
-import { type User, WhitelistStatus } from "@prisma/client";
-import type * as APITypes from "@snailycad/types/api";
+import { User, WhitelistStatus } from "@prisma/client";
+import * as APITypes from "@snailycad/types/api";
 import { Feature, IsFeatureEnabled } from "middlewares/is-enabled";
 import { validateSchema } from "lib/data/validate-schema";
 import { BUSINESSES_BUSINESS_ROLE_SCHEMA } from "@snailycad/schemas";

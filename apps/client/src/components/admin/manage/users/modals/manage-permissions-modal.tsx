@@ -3,11 +3,11 @@ import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
 import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
-import { getPermissions, type PermissionNames, Permissions } from "@snailycad/permissions";
+import { getPermissions, PermissionNames, Permissions } from "@snailycad/permissions";
 import { Form, Formik } from "formik";
 import useFetch from "lib/useFetch";
 import { Loader, Button, TextField, SwitchField } from "@snailycad/ui";
-import type { GetManageUserByIdData, PutManageUserPermissionsByIdData } from "@snailycad/types/api";
+import { GetManageUserByIdData, PutManageUserPermissionsByIdData } from "@snailycad/types/api";
 import { usePermissionsModal } from "hooks/use-permissions-modal";
 
 interface Props {

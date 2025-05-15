@@ -3,7 +3,7 @@ import { SocketEvents } from "@snailycad/config";
 import useFetch from "lib/useFetch";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { useRouter } from "next/router";
-import type { GetDispatchData } from "@snailycad/types/api";
+import { GetDispatchData } from "@snailycad/types/api";
 import { useActiveDispatcherState } from "state/dispatch/active-dispatcher-state";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 

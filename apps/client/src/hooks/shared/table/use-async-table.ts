@@ -1,9 +1,9 @@
 import * as React from "react";
 import useFetch from "lib/useFetch";
 import { useDebounce } from "react-use";
-import { useQuery, type QueryFunctionContext } from "@tanstack/react-query";
+import { useQuery, QueryFunctionContext } from "@tanstack/react-query";
 import { useList } from "./use-list";
-import type { SortingState } from "@tanstack/react-table";
+import { SortingState } from "@tanstack/react-table";
 
 interface FetchOptions {
   pageSize?: number;

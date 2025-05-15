@@ -1,9 +1,9 @@
 import { Loader, SelectField, TextField } from "@snailycad/ui";
-import { type Bolo, BoloType } from "@snailycad/types";
+import { Bolo, BoloType } from "@snailycad/types";
 import { useGenerateCallsign } from "hooks/useGenerateCallsign";
 import { useTranslations } from "next-intl";
 import { makeUnitName } from "lib/utils";
-import type { useAsyncTable } from "components/shared/Table";
+import { useAsyncTable } from "components/shared/Table";
 
 interface Props {
   asyncTable: ReturnType<typeof useAsyncTable>;

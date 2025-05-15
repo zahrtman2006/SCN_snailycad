@@ -7,7 +7,7 @@ import useFetch from "lib/useFetch";
 import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
-import type {
+import {
   PostExpungementRequestByCitizenIdData,
   GetManageExpungementRequests,
   GetExpungementRequestByCitizenIdData,

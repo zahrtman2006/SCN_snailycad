@@ -1,4 +1,4 @@
-import type { GetMyDeputiesData } from "@snailycad/types/api";
+import { GetMyDeputiesData } from "@snailycad/types/api";
 import { useQuery } from "@tanstack/react-query";
 import useFetch from "lib/useFetch";
 

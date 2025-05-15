@@ -3,12 +3,12 @@ import { Button, FullDate, TabsContent } from "@snailycad/ui";
 import { useBusinessState } from "state/business-state";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
-import type { RegisteredVehicle } from "@snailycad/types";
+import { RegisteredVehicle } from "@snailycad/types";
 import useFetch from "lib/useFetch";
 import { RegisterVehicleModal } from "components/citizen/vehicles/modals/register-vehicle-modal";
 import { AlertModal } from "components/modal/AlertModal";
 import { Table, useTableState } from "components/shared/Table";
-import type { DeleteCitizenVehicleData } from "@snailycad/types/api";
+import { DeleteCitizenVehicleData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 
 export function VehiclesTab() {

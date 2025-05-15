@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useTranslations } from "use-intl";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { LEO_VEHICLE_SCHEMA, VEHICLE_SCHEMA } from "@snailycad/schemas";
 import {
   Item,
@@ -18,10 +18,10 @@ import { useValues } from "src/context/ValuesContext";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
 import {
-  type RegisteredVehicle,
+  RegisteredVehicle,
   ValueLicenseType,
   ValueType,
-  type VehicleValue,
+  VehicleValue,
   WhitelistStatus,
 } from "@snailycad/types";
 import { handleValidate } from "lib/handleValidate";
@@ -34,7 +34,7 @@ import { filterLicenseType, filterLicenseTypes } from "lib/utils";
 import { useVehicleLicenses } from "hooks/locale/useVehicleLicenses";
 import { toastMessage } from "lib/toastMessage";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
-import type {
+import {
   PostCitizenImageByIdData,
   PostCitizenVehicleData,
   PutCitizenVehicleData,
@@ -164,7 +164,7 @@ export function RegisterVehicleModal({ vehicle, onClose, onCreate, onUpdate }: P
     inspectionStatus: vehicle?.inspectionStatus ?? null,
     taxStatus: vehicle?.taxStatus ?? null,
     registrationStatus: vehicle?.registrationStatusId ?? "",
-    citizenId: isDisabled ? citizen.id : vehicle?.citizenId ?? "",
+    citizenId: isDisabled ? citizen.id : (vehicle?.citizenId ?? ""),
     name: isDisabled
       ? `${citizen.name} ${citizen.surname}`
       : vehicle?.citizen

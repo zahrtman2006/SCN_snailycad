@@ -1,7 +1,7 @@
 import { useTranslations } from "use-intl";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { ValueType } from "@snailycad/types";
 import { AdminLayout } from "components/admin/AdminLayout";
 import { requestAll } from "lib/utils";
@@ -10,8 +10,8 @@ import { ManageCitizenForm } from "components/citizen/ManageCitizenForm";
 import useFetch from "lib/useFetch";
 import { useRouter } from "next/router";
 import { Permissions } from "@snailycad/permissions";
-import type { SelectValue } from "components/form/Select";
-import type {
+import { SelectValue } from "components/form/Select";
+import {
   GetManageCitizenByIdData,
   PostCitizenImageByIdData,
   PutManageCitizenByIdData,

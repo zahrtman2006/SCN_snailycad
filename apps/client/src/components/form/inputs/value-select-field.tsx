@@ -1,9 +1,9 @@
 import * as React from "react";
-import { type AnyValue, ValueType } from "@snailycad/types";
+import { AnyValue, ValueType } from "@snailycad/types";
 import { useFormikContext } from "formik";
 import { useLoadValuesClientSide } from "hooks/useLoadValuesClientSide";
 import { AsyncListSearchField, Item } from "@snailycad/ui";
-import type { Node } from "@react-types/shared";
+import { Node } from "@react-types/shared";
 import { getValueStrFromValue } from "lib/admin/values/utils";
 
 let hasFetched = false;

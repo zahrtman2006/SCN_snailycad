@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "../../hover-card";
 import { Button } from "../../button/button";
 

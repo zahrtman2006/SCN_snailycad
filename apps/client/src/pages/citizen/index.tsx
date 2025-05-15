@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useTranslations } from "use-intl";
@@ -14,7 +14,7 @@ import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { useAreaOfPlay } from "hooks/global/useAreaOfPlay";
 import { Title } from "components/shared/Title";
 import { CitizenList } from "components/citizen/citizen-list/citizen-list";
-import type { GetCitizensData } from "@snailycad/types/api";
+import { GetCitizensData } from "@snailycad/types/api";
 import { useLoadValuesClientSide } from "hooks/useLoadValuesClientSide";
 import { ValueType } from "@snailycad/types";
 import { useSignal100 } from "hooks/shared/useSignal100";

@@ -1,4 +1,4 @@
-import { Editor, Element as SlateElement, type Descendant } from "slate";
+import { Editor, Element as SlateElement, Descendant } from "slate";
 
 export function slateDataToString(data: Descendant[] | null) {
   const string: string[] = [];

@@ -1,6 +1,6 @@
 import * as React from "react";
-import type { ActiveWarrant } from "state/leo-state";
-import type { GetActiveWarrantsData } from "@snailycad/types/api";
+import { ActiveWarrant } from "state/leo-state";
+import { GetActiveWarrantsData } from "@snailycad/types/api";
 import { SocketEvents } from "@snailycad/config";
 import { useListener } from "@casperiv/use-socket.io";
 import { useAsyncTable } from "components/shared/Table";

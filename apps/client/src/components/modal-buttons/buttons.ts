@@ -1,7 +1,7 @@
 import { hasPermission, Permissions } from "@snailycad/permissions";
-import type { EmsFdDeputy, Feature, User } from "@snailycad/types";
+import { EmsFdDeputy, Feature, User } from "@snailycad/types";
 import { isUnitOfficer } from "@snailycad/utils";
-import type { ActiveOfficer } from "state/leo-state";
+import { ActiveOfficer } from "state/leo-state";
 import { ModalIds } from "types/modal-ids";
 
 export type ModalButtonArgs<T> = Record<

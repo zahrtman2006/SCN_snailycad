@@ -1,9 +1,9 @@
-import type { Put911CallByIdData } from "@snailycad/types/api";
-import type { LeafletEvent } from "leaflet";
+import { Put911CallByIdData } from "@snailycad/types/api";
+import { LeafletEvent } from "leaflet";
 import { convertToMap } from "lib/map/utils";
 import useFetch from "lib/useFetch";
 import * as React from "react";
-import type { Full911Call } from "state/dispatch/active-dispatcher-state";
+import { Full911Call } from "state/dispatch/active-dispatcher-state";
 import { useCall911State } from "state/dispatch/call-911-state";
 import { useMapStore } from "state/mapState";
 

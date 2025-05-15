@@ -1,5 +1,5 @@
-import type { Response } from "@tsed/common";
-import type { CookieSerializeOptions } from "cookie";
+import { Response } from "@tsed/common";
+import { CookieSerializeOptions } from "cookie";
 import isIP from "is-ip";
 
 interface SetCookieOptions {

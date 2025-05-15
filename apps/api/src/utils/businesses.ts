@@ -1,4 +1,4 @@
-import { type cad, WhitelistStatus } from "@prisma/client";
+import { cad, WhitelistStatus } from "@prisma/client";
 import { BadRequest } from "@tsed/exceptions";
 import { prisma } from "lib/data/prisma";
 

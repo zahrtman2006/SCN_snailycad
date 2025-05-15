@@ -4,11 +4,11 @@ import { Layout } from "components/Layout";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
 import { getObjLength, isEmpty, makeUnitName, requestAll } from "lib/utils";
-import type { GetServerSideProps } from "next";
-import type { AssignedUnit } from "@snailycad/types";
+import { GetServerSideProps } from "next";
+import { AssignedUnit } from "@snailycad/types";
 import { Table, useAsyncTable, useTableState } from "components/shared/Table";
 import { useGenerateCallsign } from "hooks/useGenerateCallsign";
-import type { Full911Call } from "state/dispatch/dispatch-state";
+import { Full911Call } from "state/dispatch/dispatch-state";
 import { Loader, Button, TextField, FullDate } from "@snailycad/ui";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
@@ -19,11 +19,7 @@ import { AlertModal } from "components/modal/AlertModal";
 import { Manage911CallModal } from "components/dispatch/active-calls/modals/manage-911-call-modal";
 import { isUnitCombined } from "@snailycad/utils";
 import { usePermission, Permissions } from "hooks/usePermission";
-import type {
-  DeletePurge911CallsData,
-  Get911CallsData,
-  GetIncidentsData,
-} from "@snailycad/types/api";
+import { DeletePurge911CallsData, Get911CallsData, GetIncidentsData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import { getSelectedTableRows } from "hooks/shared/table/use-table-state";
 import { CallDescription } from "components/dispatch/active-calls/CallDescription";

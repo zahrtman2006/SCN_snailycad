@@ -4,7 +4,7 @@ import { Title } from "components/shared/Title";
 import { Permissions } from "@snailycad/permissions";
 import { dataToSlate, Editor } from "components/editor/editor";
 import { useTranslations } from "next-intl";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { requestAll, yesOrNoText } from "lib/utils";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";

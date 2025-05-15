@@ -13,7 +13,7 @@ import { useTranslations } from "next-intl";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
 import { useAsyncTable } from "components/shared/Table";
-import type { GetManageUnitsInactiveUnits } from "@snailycad/types/api";
+import { GetManageUnitsInactiveUnits } from "@snailycad/types/api";
 import { toastMessage } from "lib/toastMessage";
 import { Modal } from "components/modal/Modal";
 import { useValues } from "context/ValuesContext";

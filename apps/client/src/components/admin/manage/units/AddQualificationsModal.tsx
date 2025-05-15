@@ -1,8 +1,5 @@
 import { QualificationValueType, ValueType } from "@snailycad/types";
-import type {
-  GetManageUnitByIdData,
-  PostManageUnitAddQualificationData,
-} from "@snailycad/types/api";
+import { GetManageUnitByIdData, PostManageUnitAddQualificationData } from "@snailycad/types/api";
 import { Loader, Button } from "@snailycad/ui";
 import { ValueSelectField } from "components/form/inputs/value-select-field";
 import { Modal } from "components/modal/Modal";

@@ -1,14 +1,14 @@
 import { Loader, Button, TextField, SelectField } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { handleValidate } from "lib/handleValidate";
 import useFetch from "lib/useFetch";
 import { useModal } from "state/modalState";
-import { type CustomField, CustomFieldCategory } from "@snailycad/types";
+import { CustomField, CustomFieldCategory } from "@snailycad/types";
 import { useTranslations } from "use-intl";
 import { ModalIds } from "types/modal-ids";
 import { CUSTOM_FIELDS_SCHEMA } from "@snailycad/schemas";
-import type { PostManageCustomFieldsData, PutManageCustomFieldsData } from "@snailycad/types/api";
+import { PostManageCustomFieldsData, PutManageCustomFieldsData } from "@snailycad/types/api";
 
 interface Props {
   field: CustomField | null;

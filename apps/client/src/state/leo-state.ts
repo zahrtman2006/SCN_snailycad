@@ -1,5 +1,5 @@
-import type { AssignedWarrantOfficer, BaseCitizen, Warrant } from "@snailycad/types";
-import type { GetActiveOfficerData } from "@snailycad/types/api";
+import { AssignedWarrantOfficer, BaseCitizen, Warrant } from "@snailycad/types";
+import { GetActiveOfficerData } from "@snailycad/types/api";
 import { shallow } from "zustand/shallow";
 import { createWithEqualityFn } from "zustand/traditional";
 

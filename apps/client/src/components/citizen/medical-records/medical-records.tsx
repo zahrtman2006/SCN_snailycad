@@ -1,13 +1,13 @@
 import { useTranslations } from "use-intl";
 import { Button, FullDate } from "@snailycad/ui";
-import type { MedicalRecord, Value } from "@snailycad/types";
+import { MedicalRecord, Value } from "@snailycad/types";
 import { ModalIds } from "types/modal-ids";
 import { useModal } from "state/modalState";
 import { AlertModal } from "components/modal/AlertModal";
 import useFetch from "lib/useFetch";
 import { Table, useTableState } from "components/shared/Table";
 import { useCitizen } from "context/CitizenContext";
-import type { DeleteCitizenMedicalRecordsData } from "@snailycad/types/api";
+import { DeleteCitizenMedicalRecordsData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import dynamic from "next/dynamic";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";

@@ -2,8 +2,8 @@ import { useTranslations } from "use-intl";
 import * as React from "react";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
-import type { GetServerSideProps } from "next";
-import { type CustomField } from "@snailycad/types";
+import { GetServerSideProps } from "next";
+import { CustomField } from "@snailycad/types";
 import { AdminLayout } from "components/admin/AdminLayout";
 import { requestAll } from "lib/utils";
 import { Title } from "components/shared/Title";
@@ -16,7 +16,7 @@ import { ManageCustomFieldModal } from "components/admin/manage/custom-fields/Ma
 import { AlertModal } from "components/modal/AlertModal";
 import useFetch from "lib/useFetch";
 import { usePermission } from "hooks/usePermission";
-import type { DeleteManageCustomFieldsData, GetManageCustomFieldsData } from "@snailycad/types/api";
+import { DeleteManageCustomFieldsData, GetManageCustomFieldsData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import { SearchArea } from "components/shared/search/search-area";
 

@@ -1,4 +1,4 @@
-import type { CombinedLeoUnit, EmsFdDeputy, Officer } from "@prisma/client";
+import { CombinedLeoUnit, EmsFdDeputy, Officer } from "@prisma/client";
 import { prisma } from "~/lib/data/prisma";
 
 interface Options {

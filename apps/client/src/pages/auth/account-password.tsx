@@ -1,4 +1,4 @@
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { useRouter } from "next/router";
 import { TEMP_PASSWORD_SCHEMA } from "@snailycad/schemas";
 import { useTranslations } from "use-intl";
@@ -6,13 +6,13 @@ import { useTranslations } from "use-intl";
 import useFetch from "lib/useFetch";
 
 import { handleValidate } from "lib/handleValidate";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { getTranslations } from "lib/getTranslation";
 import { Button, Loader, TextField } from "@snailycad/ui";
 import { getSessionUser } from "lib/auth";
 import { useAuth } from "context/AuthContext";
 import { Title } from "components/shared/Title";
-import type { PostUserPasswordData } from "@snailycad/types/api";
+import { PostUserPasswordData } from "@snailycad/types/api";
 import { VersionDisplay } from "components/shared/VersionDisplay";
 
 const INITIAL_VALUES = {

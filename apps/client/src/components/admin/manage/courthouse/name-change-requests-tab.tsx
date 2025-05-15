@@ -4,10 +4,7 @@ import { usePermission, Permissions } from "hooks/usePermission";
 import { useTranslations } from "next-intl";
 import { Button, FullDate, Status, TabsContent } from "@snailycad/ui";
 import useFetch from "lib/useFetch";
-import type {
-  GetManageNameChangeRequests,
-  PutManageNameChangeRequests,
-} from "@snailycad/types/api";
+import { GetManageNameChangeRequests, PutManageNameChangeRequests } from "@snailycad/types/api";
 import { useInvalidateQuery } from "hooks/use-invalidate-query";
 import { CallDescription } from "components/dispatch/active-calls/CallDescription";
 

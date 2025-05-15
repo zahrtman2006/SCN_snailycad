@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { CombinedEmsFdUnit, CombinedLeoUnit, EmsFdDeputy, Officer } from "@snailycad/types";
+import { CombinedEmsFdUnit, CombinedLeoUnit, EmsFdDeputy, Officer } from "@snailycad/types";
 import { Loader, Button, TextField } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
 import { Form, Formik } from "formik";
@@ -12,7 +12,7 @@ import { handleValidate } from "lib/handleValidate";
 import { UPDATE_RADIO_CHANNEL_SCHEMA } from "@snailycad/schemas";
 import { isUnitCombined, isUnitCombinedEmsFd } from "@snailycad/utils";
 import { useActiveDispatchers } from "hooks/realtime/use-active-dispatchers";
-import type { PutDispatchRadioChannelData } from "@snailycad/types/api";
+import { PutDispatchRadioChannelData } from "@snailycad/types/api";
 
 interface Props {
   unit: Officer | EmsFdDeputy | CombinedLeoUnit | CombinedEmsFdUnit;

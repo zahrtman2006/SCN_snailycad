@@ -1,7 +1,7 @@
 import { Loader, Button, SelectField } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import useFetch from "lib/useFetch";
 import { ModalIds } from "types/modal-ids";
 import { useTranslations } from "use-intl";
@@ -12,7 +12,7 @@ import { useBusinessState } from "state/business-state";
 import { toastMessage } from "lib/toastMessage";
 import { WhitelistStatus } from "@snailycad/types";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
-import type { GetBusinessesData, PostJoinBusinessData } from "@snailycad/types/api";
+import { GetBusinessesData, PostJoinBusinessData } from "@snailycad/types/api";
 
 interface Props {
   onCreate?(business: GetBusinessesData["ownedBusinesses"][number]): void;

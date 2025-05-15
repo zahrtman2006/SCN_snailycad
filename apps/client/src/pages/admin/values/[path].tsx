@@ -5,9 +5,9 @@ import { Button, FullDate } from "@snailycad/ui";
 import { Layout } from "components/Layout";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { useModal } from "state/modalState";
-import { type AnyValue, ValueType } from "@snailycad/types";
+import { AnyValue, ValueType } from "@snailycad/types";
 import useFetch from "lib/useFetch";
 import { AdminLayout } from "components/admin/AdminLayout";
 import { getObjLength, isEmpty, requestAll, yesOrNoText } from "lib/utils";
@@ -19,11 +19,7 @@ import { Title } from "components/shared/Title";
 import { AlertModal } from "components/modal/AlertModal";
 import { ModalIds } from "types/modal-ids";
 import { valueRoutes } from "components/admin/Sidebar/routes";
-import type {
-  DeleteValuesBulkData,
-  GetValuesData,
-  PutValuePositionsData,
-} from "@snailycad/types/api";
+import { DeleteValuesBulkData, GetValuesData, PutValuePositionsData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import * as Tooltip from "@radix-ui/react-tooltip";
 import { isValueInUse } from "lib/admin/values/isValueInUse";
@@ -33,7 +29,7 @@ import {
   getValueStrFromValue,
   hasTableDataChanged,
 } from "lib/admin/values/utils";
-import type { AccessorKeyColumnDef } from "@tanstack/react-table";
+import { AccessorKeyColumnDef } from "@tanstack/react-table";
 import { getSelectedTableRows } from "hooks/shared/table/use-table-state";
 import { SearchArea } from "components/shared/search/search-area";
 import { useLoadValuesClientSide } from "hooks/useLoadValuesClientSide";

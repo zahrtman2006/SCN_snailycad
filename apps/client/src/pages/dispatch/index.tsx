@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import { Layout } from "components/Layout";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { ActiveCalls } from "components/dispatch/active-calls/active-calls";
 import { useDispatchState } from "state/dispatch/dispatch-state";
 import { ActiveBolos } from "components/active-bolos/active-bolos";
@@ -19,7 +19,7 @@ import { ModalIds } from "types/modal-ids";
 import { useModal } from "state/modalState";
 import { Permissions } from "@snailycad/permissions";
 import { useLoadValuesClientSide } from "hooks/useLoadValuesClientSide";
-import type {
+import {
   Get911CallsData,
   GetActiveOfficersData,
   GetBolosData,

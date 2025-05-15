@@ -3,7 +3,7 @@ import * as React from "react";
 import { Marker, Popup, Tooltip, useMap } from "react-leaflet";
 import { defaultPermissions, hasPermission } from "@snailycad/permissions";
 import { Button } from "@snailycad/ui";
-import type { MapPlayer, PlayerDataEventPayload } from "types/map";
+import { MapPlayer, PlayerDataEventPayload } from "types/map";
 import { icon as leafletIcon } from "leaflet";
 import { useTranslations } from "next-intl";
 import { MapItem, useDispatchMapState } from "state/mapState";

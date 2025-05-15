@@ -8,7 +8,7 @@ import { usePermission, Permissions } from "hooks/usePermission";
 import { defaultPermissions } from "@snailycad/permissions";
 import { useAsyncTable } from "hooks/shared/table/use-async-table";
 import { buttonVariants, Status, TabsContent } from "@snailycad/ui";
-import type { GetManageUsersData } from "@snailycad/types/api";
+import { GetManageUsersData } from "@snailycad/types/api";
 import { SearchArea } from "components/shared/search/search-area";
 import dynamic from "next/dynamic";
 

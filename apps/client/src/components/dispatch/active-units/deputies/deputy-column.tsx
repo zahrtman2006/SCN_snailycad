@@ -13,15 +13,15 @@ import { DndActions } from "types/dnd-actions";
 import { ActiveUnitsQualificationsCard } from "components/leo/qualifications/ActiveUnitsQualificationsCard";
 import { useActiveDeputies } from "hooks/realtime/useActiveDeputies";
 import { useActiveDispatchers } from "hooks/realtime/use-active-dispatchers";
-import type { CombinedEmsFdUnit, EmsFdDeputy } from "@snailycad/types";
+import { CombinedEmsFdUnit, EmsFdDeputy } from "@snailycad/types";
 import { useDispatchState } from "state/dispatch/dispatch-state";
 import { isUnitCombinedEmsFd } from "@snailycad/utils";
 import { useRouter } from "next/router";
-import { type ActiveDeputy, useEmsFdState } from "state/ems-fd-state";
+import { ActiveDeputy, useEmsFdState } from "state/ems-fd-state";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
 import { useTranslations } from "use-intl";
-import type { PostDispatchStatusUnmergeUnitById } from "@snailycad/types/api";
+import { PostDispatchStatusUnmergeUnitById } from "@snailycad/types/api";
 import useFetch from "lib/useFetch";
 import { useGenerateCallsign } from "hooks/useGenerateCallsign";
 import { makeUnitName } from "lib/utils";
@@ -125,7 +125,7 @@ export function DeputyColumn({
     ...dispatchCodes,
   ];
 
-  const canContextMenuBeOpened = isEligiblePage ? canBeOpened ?? false : false;
+  const canContextMenuBeOpened = isEligiblePage ? (canBeOpened ?? false) : false;
 
   return (
     <ContextMenu>

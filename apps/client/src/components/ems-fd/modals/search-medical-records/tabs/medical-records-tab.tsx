@@ -1,5 +1,5 @@
-import type { MedicalRecord, Value } from "@snailycad/types";
-import type {
+import { MedicalRecord, Value } from "@snailycad/types";
+import {
   DeleteCitizenMedicalRecordsData,
   PostEmsFdMedicalRecordsSearchData,
 } from "@snailycad/types/api";

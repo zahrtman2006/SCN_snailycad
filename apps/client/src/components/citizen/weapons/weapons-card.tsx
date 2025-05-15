@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Button, FullDate, Status } from "@snailycad/ui";
-import type { Weapon } from "@snailycad/types";
+import { Weapon } from "@snailycad/types";
 import { ModalIds } from "types/modal-ids";
 import { useModal } from "state/modalState";
 import { RegisterWeaponModal } from "./register-weapon-modal";
@@ -11,7 +11,7 @@ import { Table, useTableState } from "components/shared/Table";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { useAsyncTable } from "hooks/shared/table/use-async-table";
 import { useCitizen } from "context/CitizenContext";
-import type { DeleteCitizenWeaponData, GetCitizenWeaponsData } from "@snailycad/types/api";
+import { DeleteCitizenWeaponData, GetCitizenWeaponsData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import { SearchArea } from "components/shared/search/search-area";
 

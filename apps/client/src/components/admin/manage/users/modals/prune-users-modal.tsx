@@ -12,7 +12,7 @@ import { Modal } from "components/modal/Modal";
 import { useAsyncTable } from "hooks/shared/table/use-async-table";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
-import type { GetManageUsersInactiveUsers } from "@snailycad/types/api";
+import { GetManageUsersInactiveUsers } from "@snailycad/types/api";
 import useFetch from "lib/useFetch";
 import { toastMessage } from "lib/toastMessage";
 import { useTranslations } from "use-intl";

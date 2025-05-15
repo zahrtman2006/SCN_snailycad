@@ -1,4 +1,4 @@
-import { type cad, Feature, type User } from "@prisma/client";
+import { cad, Feature, User } from "@prisma/client";
 import { LICENSE_SCHEMA } from "@snailycad/schemas";
 import { UseBeforeEach, Context, BodyParams, PathParams } from "@tsed/common";
 import { Controller } from "@tsed/di";
@@ -11,7 +11,7 @@ import { IsAuth } from "middlewares/auth/is-auth";
 import { updateCitizenLicenseCategories } from "lib/citizen/licenses/update-citizen-license-categories";
 import { isFeatureEnabled } from "lib/upsert-cad";
 import { shouldCheckCitizenUserId } from "lib/citizen/has-citizen-access";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { citizenInclude } from "./CitizenController";
 import { IsFeatureEnabled } from "middlewares/is-enabled";
 

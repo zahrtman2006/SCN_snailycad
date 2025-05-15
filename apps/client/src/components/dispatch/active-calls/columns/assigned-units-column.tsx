@@ -1,12 +1,12 @@
 import * as React from "react";
-import type { AssignedUnit, CombinedLeoUnit, EmsFdDeputy, Officer } from "@snailycad/types";
+import { AssignedUnit, CombinedLeoUnit, EmsFdDeputy, Officer } from "@snailycad/types";
 import { isUnitCombined, isUnitCombinedEmsFd } from "@snailycad/utils";
 import { Droppable, Draggable } from "@snailycad/ui";
 import { useActiveDispatchers } from "hooks/realtime/use-active-dispatchers";
 import { useGenerateCallsign } from "hooks/useGenerateCallsign";
 import { makeUnitName } from "lib/utils";
 import { useTranslations } from "next-intl";
-import { type Full911Call, useDispatchState } from "state/dispatch/dispatch-state";
+import { Full911Call, useDispatchState } from "state/dispatch/dispatch-state";
 import { DndActions } from "types/dnd-actions";
 import { classNames } from "lib/classNames";
 

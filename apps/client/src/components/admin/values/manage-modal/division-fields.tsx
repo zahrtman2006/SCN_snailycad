@@ -4,7 +4,7 @@ import { useFormikContext } from "formik";
 import { useTranslations } from "use-intl";
 import { ValueSelectField } from "components/form/inputs/value-select-field";
 import { ValueType } from "@snailycad/types";
-import type { ManageValueFormValues } from "../ManageValueModal";
+import { ManageValueFormValues } from "../ManageValueModal";
 import { FormField } from "components/form/FormField";
 
 export function DivisionFields() {

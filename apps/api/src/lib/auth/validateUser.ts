@@ -1,6 +1,6 @@
-import { Rank, WhitelistStatus, type User } from "@snailycad/types";
-import type { GetUserData } from "@snailycad/types/api";
-import type { Req } from "@tsed/common";
+import { Rank, WhitelistStatus, User } from "@snailycad/types";
+import { GetUserData } from "@snailycad/types/api";
+import { Req } from "@tsed/common";
 import { NotFound, Unauthorized } from "@tsed/exceptions";
 import { GetSessionUserErrors } from "./getSessionUser";
 

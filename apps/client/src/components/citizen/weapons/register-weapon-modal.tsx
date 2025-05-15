@@ -1,5 +1,5 @@
 import { useTranslations } from "use-intl";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { useRouter } from "next/router";
 import { WEAPON_SCHEMA } from "@snailycad/schemas";
 import { FormField } from "components/form/FormField";
@@ -12,8 +12,8 @@ import { ModalIds } from "types/modal-ids";
 import {
   ValueLicenseType,
   ValueType,
-  type Weapon,
-  type WeaponValue,
+  Weapon,
+  WeaponValue,
   WhitelistStatus,
 } from "@snailycad/types";
 import { handleValidate } from "lib/handleValidate";
@@ -22,7 +22,7 @@ import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { filterLicenseType, filterLicenseTypes } from "lib/utils";
 import { toastMessage } from "lib/toastMessage";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
-import type { PostCitizenWeaponData, PutCitizenWeaponData } from "@snailycad/types/api";
+import { PostCitizenWeaponData, PutCitizenWeaponData } from "@snailycad/types/api";
 import { ValueSelectField } from "components/form/inputs/value-select-field";
 
 interface Props {
@@ -89,10 +89,10 @@ export function RegisterWeaponModal({ weapon, onClose, onCreate, onUpdate }: Pro
   }
 
   const INITIAL_VALUES = {
-    model: CUSTOM_TEXTFIELD_VALUES ? weapon?.model.value.value ?? "" : weapon?.modelId ?? "",
+    model: CUSTOM_TEXTFIELD_VALUES ? (weapon?.model.value.value ?? "") : (weapon?.modelId ?? ""),
     modelName: weapon?.model.value.value ?? "",
     registrationStatus: weapon?.registrationStatusId ?? "",
-    citizenId: isDisabled ? citizen.id : weapon?.citizenId ?? "",
+    citizenId: isDisabled ? citizen.id : (weapon?.citizenId ?? ""),
     serialNumber: weapon?.serialNumber ?? "",
     reApplyForDmv: weapon?.bofStatus === WhitelistStatus.DECLINED ? false : undefined,
     name: isDisabled

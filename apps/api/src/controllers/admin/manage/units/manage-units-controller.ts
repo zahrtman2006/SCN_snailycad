@@ -2,10 +2,10 @@
 import {
   Feature,
   WhitelistStatus,
-  type cad,
-  type MiscCadSettings,
+  cad,
+  MiscCadSettings,
   DiscordWebhookType,
-  type Officer,
+  Officer,
 } from "@prisma/client";
 import { UPDATE_UNIT_SCHEMA, UPDATE_UNIT_CALLSIGN_SCHEMA } from "@snailycad/schemas";
 import {
@@ -14,7 +14,7 @@ import {
   Context,
   QueryParams,
   MultipartFile,
-  type PlatformMulterFile,
+  PlatformMulterFile,
 } from "@tsed/common";
 import { Controller } from "@tsed/di";
 import { BadRequest, NotFound } from "@tsed/exceptions";
@@ -31,9 +31,9 @@ import { UsePermissions, Permissions } from "middlewares/use-permissions";
 import { Socket } from "services/socket-service";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
 import { manyToManyHelper } from "lib/data/many-to-many";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { isFeatureEnabled } from "lib/upsert-cad";
-import { type AllowedFileExtension, allowedFileExtensions } from "@snailycad/config";
+import { AllowedFileExtension, allowedFileExtensions } from "@snailycad/config";
 import { validateImageURL } from "lib/images/validate-image-url";
 import generateBlurPlaceholder from "lib/images/generate-image-blur-data";
 import fs from "node:fs/promises";
@@ -48,14 +48,9 @@ import {
   combinedEmsFdUnitProperties,
 } from "utils/leo/includes";
 import { getTranslator } from "~/utils/get-translator";
-import { type APIEmbed } from "discord-api-types/v10";
+import { APIEmbed } from "discord-api-types/v10";
 import { sendRawWebhook, sendDiscordWebhook } from "~/lib/discord/webhooks";
-import {
-  type Citizen,
-  type EmsFdDeputy,
-  type LeoWhitelistStatus,
-  type User,
-} from "@snailycad/types";
+import { Citizen, EmsFdDeputy, LeoWhitelistStatus, User } from "@snailycad/types";
 import { generateCallsign } from "@snailycad/utils";
 import { hasPermission } from "@snailycad/permissions";
 

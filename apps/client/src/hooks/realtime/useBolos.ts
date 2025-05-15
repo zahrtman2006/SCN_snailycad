@@ -2,7 +2,7 @@ import * as React from "react";
 import { useListener } from "@casperiv/use-socket.io";
 import { SocketEvents } from "@snailycad/config";
 import { useDispatchState } from "state/dispatch/dispatch-state";
-import type { Bolo } from "@snailycad/types";
+import { Bolo } from "@snailycad/types";
 
 export function useBolos() {
   const { bolos, setBolos } = useDispatchState((s) => ({

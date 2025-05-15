@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ExclamationCircleFill } from "react-bootstrap-icons";
-import { type VariantProps, cva } from "class-variance-authority";
+import { VariantProps, cva } from "class-variance-authority";
 
 type AlertVariantsProps = VariantProps<typeof alertVariants>;
 
@@ -40,7 +40,7 @@ export function Alert(props: AlertProps) {
       ) : null}
       {props.message ? (
         <div className="flex items-center gap-2">
-          {!props.title ? props.icon ?? <ExclamationCircleFill /> : null}
+          {!props.title ? (props.icon ?? <ExclamationCircleFill />) : null}
           <p>{props.message}</p>
         </div>
       ) : null}

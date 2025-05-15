@@ -10,7 +10,7 @@ import { Socket } from "services/socket-service";
 import { incidentInclude } from "./IncidentController";
 import { UsePermissions, Permissions } from "middlewares/use-permissions";
 import { officerOrDeputyToUnit } from "lib/leo/officerOrDeputyToUnit";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 
 @Controller("/incidents/events")
 @UseBeforeEach(IsAuth)

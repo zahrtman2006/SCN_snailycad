@@ -1,11 +1,5 @@
-import type {
-  CombinedEmsFdUnit,
-  CombinedLeoUnit,
-  EmsFdDeputy,
-  Officer,
-  User,
-} from "@snailycad/types";
-import type { PointTuple, LatLngLiteral, Icon, Marker } from "leaflet";
+import { CombinedEmsFdUnit, CombinedLeoUnit, EmsFdDeputy, Officer, User } from "@snailycad/types";
+import { PointTuple, LatLngLiteral, Icon, Marker } from "leaflet";
 
 export interface Player {
   weapon?: string;

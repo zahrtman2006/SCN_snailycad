@@ -9,7 +9,7 @@ import { ModalIds } from "types/modal-ids";
 import { CustomFieldResults } from "./CustomFieldResults";
 import { handleValidate } from "lib/handleValidate";
 import { CUSTOM_FIELD_SEARCH_SCHEMA } from "@snailycad/schemas";
-import type { GetManageCustomFieldsData, PostSearchCustomFieldData } from "@snailycad/types/api";
+import { GetManageCustomFieldsData, PostSearchCustomFieldData } from "@snailycad/types/api";
 import { useQuery } from "@tanstack/react-query";
 
 export type CustomFieldResults = PostSearchCustomFieldData<true>;

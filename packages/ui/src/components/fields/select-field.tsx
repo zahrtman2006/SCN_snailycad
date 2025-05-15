@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { AriaSelectProps } from "@react-types/select";
+import { AriaSelectProps } from "@react-types/select";
 import { Item } from "@react-stately/collections";
 import { cn } from "mxcn";
 import { Popover } from "../overlays/popover";

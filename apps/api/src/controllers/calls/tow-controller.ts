@@ -15,20 +15,20 @@ import { IsAuth } from "middlewares/auth/is-auth";
 import { Socket } from "services/socket-service";
 import { validateSchema } from "lib/data/validate-schema";
 import {
-  type Citizen,
+  Citizen,
   DiscordWebhookType,
   Feature,
-  type Prisma,
-  type RegisteredVehicle,
-  type User,
-  type Value,
-  type VehicleValue,
+  Prisma,
+  RegisteredVehicle,
+  User,
+  Value,
+  VehicleValue,
 } from "@prisma/client";
 import { canManageInvariant } from "lib/auth/getSessionUser";
 import { Permissions, UsePermissions } from "middlewares/use-permissions";
 import { officerOrDeputyToUnit } from "lib/leo/officerOrDeputyToUnit";
 import { sendDiscordWebhook, sendRawWebhook } from "lib/discord/webhooks";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { shouldCheckCitizenUserId } from "lib/citizen/has-citizen-access";
 import { IsFeatureEnabled } from "middlewares/is-enabled";
 import { getTranslator } from "utils/get-translator";

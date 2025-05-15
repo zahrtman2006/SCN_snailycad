@@ -5,7 +5,7 @@ import { Form, Formik } from "formik";
 import { UPDATE_USER_SCHEMA } from "@snailycad/schemas";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { Rank, WhitelistStatus } from "@snailycad/types";
 import { AdminLayout } from "components/admin/AdminLayout";
 import {
@@ -28,7 +28,7 @@ import { usePermission, Permissions } from "hooks/usePermission";
 import dynamic from "next/dynamic";
 import { SettingsFormField } from "components/form/SettingsFormField";
 import { ApiTokenArea } from "components/admin/manage/users/api-token-area";
-import type {
+import {
   GetCustomRolesData,
   GetManageUserByIdData,
   PostManageUserAcceptDeclineData,

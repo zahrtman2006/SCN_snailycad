@@ -1,6 +1,6 @@
 import { UPDATE_UNIT_CALLSIGN_SCHEMA } from "@snailycad/schemas";
-import { type DivisionValue, WhitelistStatus, ValueType } from "@snailycad/types";
-import type { PutManageUnitCallsignData } from "@snailycad/types/api";
+import { DivisionValue, WhitelistStatus, ValueType } from "@snailycad/types";
+import { PutManageUnitCallsignData } from "@snailycad/types/api";
 import { isUnitOfficer } from "@snailycad/utils";
 import { Button, FormRow, Loader, TextField } from "@snailycad/ui";
 import { CallSignPreview } from "components/leo/CallsignPreview";
@@ -11,7 +11,7 @@ import { Form, Formik } from "formik";
 import { handleValidate } from "lib/handleValidate";
 import useFetch from "lib/useFetch";
 import { useTranslations } from "next-intl";
-import type { Unit } from "src/pages/admin/manage/units";
+import { Unit } from "src/pages/admin/manage/units";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
 import { Permissions, usePermission } from "hooks/usePermission";

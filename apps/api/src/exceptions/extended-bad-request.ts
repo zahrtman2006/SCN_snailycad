@@ -1,4 +1,4 @@
-import type { ResponseErrorObject } from "@tsed/common";
+import { ResponseErrorObject } from "@tsed/common";
 import { BadRequest } from "@tsed/exceptions";
 
 interface ErrorMessage {

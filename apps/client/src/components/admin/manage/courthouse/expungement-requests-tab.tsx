@@ -5,10 +5,7 @@ import { useTranslations } from "next-intl";
 import { getTitles } from "components/courthouse/expungement-requests/request-expungement-modal";
 import { Button, FullDate, Status, TabsContent } from "@snailycad/ui";
 import useFetch from "lib/useFetch";
-import type {
-  GetManageExpungementRequests,
-  PutManageExpungementRequests,
-} from "@snailycad/types/api";
+import { GetManageExpungementRequests, PutManageExpungementRequests } from "@snailycad/types/api";
 import { useInvalidateQuery } from "hooks/use-invalidate-query";
 import { CallDescription } from "components/dispatch/active-calls/CallDescription";
 

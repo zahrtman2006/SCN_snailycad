@@ -1,12 +1,12 @@
 import { Modal } from "components/modal/Modal";
 import { Button, Loader, SelectField } from "@snailycad/ui";
 import useFetch from "lib/useFetch";
-import { type BaseCitizen, type Record, ReleaseType } from "@snailycad/types";
+import { BaseCitizen, Record, ReleaseType } from "@snailycad/types";
 import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
 import { useTranslations } from "next-intl";
-import { Form, Formik, type FormikHelpers } from "formik";
-import type { DeleteReleaseJailedCitizenData } from "@snailycad/types/api";
+import { Form, Formik, FormikHelpers } from "formik";
+import { DeleteReleaseJailedCitizenData } from "@snailycad/types/api";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
 
 interface Props {

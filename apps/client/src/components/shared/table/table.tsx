@@ -2,12 +2,12 @@ import * as React from "react";
 import {
   getCoreRowModel,
   getSortedRowModel,
-  type RowData,
+  RowData,
   useReactTable,
-  type Header,
+  Header,
   getFilteredRowModel,
-  type Row,
-  type AccessorKeyColumnDef,
+  Row,
+  AccessorKeyColumnDef,
 } from "@tanstack/react-table";
 import { TableRow } from "./table-row";
 import { TablePagination } from "./table-pagination";
@@ -16,7 +16,7 @@ import { TableHeader } from "./table-header";
 import { useAuth } from "context/AuthContext";
 import { TableActionsAlignment } from "@snailycad/types";
 import { orderColumnsByTableActionsAlignment } from "lib/table/orderColumnsByTableActionsAlignment";
-import type { useTableState } from "hooks/shared/table/use-table-state";
+import { useTableState } from "hooks/shared/table/use-table-state";
 import { ReactSortable } from "react-sortablejs";
 import { useMounted } from "@casperiv/useful";
 import { createTableDragDropColumn } from "lib/table/create-table-dnd-column";

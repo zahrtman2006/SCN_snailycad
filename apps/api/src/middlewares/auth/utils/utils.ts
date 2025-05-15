@@ -1,7 +1,7 @@
-import type { cad, User } from "@prisma/client";
-import { DISABLED_API_TOKEN_ROUTES, type Method } from "@snailycad/config";
-import type { GetUserData } from "@snailycad/types/api";
-import type { Req } from "@tsed/common";
+import { cad, User } from "@prisma/client";
+import { DISABLED_API_TOKEN_ROUTES, Method } from "@snailycad/config";
+import { GetUserData } from "@snailycad/types/api";
+import { Req } from "@tsed/common";
 import { userProperties } from "lib/auth/getSessionUser";
 import { updateMemberRolesLogin } from "lib/discord/auth";
 import { prisma } from "lib/data/prisma";

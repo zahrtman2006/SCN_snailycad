@@ -1,6 +1,6 @@
 import * as React from "react";
 import { RecordType } from "@snailycad/types";
-import type { PostEmsFdDeclareCitizenById } from "@snailycad/types/api";
+import { PostEmsFdDeclareCitizenById } from "@snailycad/types/api";
 import {
   Button,
   DropdownMenu,

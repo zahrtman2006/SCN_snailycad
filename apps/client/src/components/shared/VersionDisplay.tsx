@@ -1,5 +1,5 @@
 import { useMounted } from "@casperiv/useful";
-import type { cad } from "@snailycad/types";
+import { cad } from "@snailycad/types";
 
 interface Props {
   cad: Pick<cad, "version"> | null;

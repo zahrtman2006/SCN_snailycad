@@ -13,7 +13,7 @@ import { toastMessage } from "lib/toastMessage";
 import { ModalIds } from "types/modal-ids";
 import { useTranslations } from "use-intl";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
-import type {
+import {
   PutTowCallsData,
   PutTaxiCallsData,
   PostTaxiCallsData,

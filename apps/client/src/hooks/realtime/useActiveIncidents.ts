@@ -1,6 +1,6 @@
 import { useListener } from "@casperiv/use-socket.io";
 import { SocketEvents } from "@snailycad/config";
-import type { LeoIncident } from "@snailycad/types";
+import { LeoIncident } from "@snailycad/types";
 import { useDispatchState } from "state/dispatch/dispatch-state";
 
 export function useActiveIncidents() {

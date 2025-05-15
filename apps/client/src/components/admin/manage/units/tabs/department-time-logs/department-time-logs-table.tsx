@@ -6,7 +6,7 @@ import { useGenerateCallsign } from "hooks/useGenerateCallsign";
 import { Table, useAsyncTable, useTableState } from "components/shared/Table";
 import { useDebouncedValue } from "hooks/shared/use-debounced-value";
 import { SearchArea } from "components/shared/search/search-area";
-import type {
+import {
   GetDepartmentTimeLogsDepartmentsData,
   GetDepartmentTimeLogsUnitsData,
 } from "@snailycad/types/api";

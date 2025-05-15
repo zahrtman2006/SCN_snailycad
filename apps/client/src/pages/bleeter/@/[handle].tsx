@@ -1,5 +1,5 @@
 import { defaultPermissions } from "@snailycad/permissions";
-import type { GetBleeterProfileByHandleData } from "@snailycad/types/api";
+import { GetBleeterProfileByHandleData } from "@snailycad/types/api";
 import { Button, Loader } from "@snailycad/ui";
 import { Layout } from "components/Layout";
 import { BleeterPostsList } from "components/bleeter/list/posts-list";
@@ -19,7 +19,7 @@ import { classNames } from "lib/classNames";
 import { getTranslations } from "lib/getTranslation";
 import useFetch from "lib/useFetch";
 import { requestAll } from "lib/utils";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { useRouter } from "next/router";
 import { PatchCheckFill } from "react-bootstrap-icons";
 import { useModal } from "state/modalState";
@@ -69,11 +69,11 @@ export default function BleeterProfilePage(props: BleeterProfilePageProps) {
 
   const followingCount = followingData.isInitialLoading
     ? props.data.followingCount
-    : followingData.following?.length ?? props.data.followingCount;
+    : (followingData.following?.length ?? props.data.followingCount);
 
   const followersCount = followersData.isInitialLoading
     ? props.data.followersCount
-    : followersData.followers?.length ?? props.data.followersCount;
+    : (followersData.followers?.length ?? props.data.followersCount);
 
   return (
     <Layout className="dark:text-white">

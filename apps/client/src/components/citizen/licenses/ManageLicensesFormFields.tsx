@@ -1,5 +1,5 @@
 import {
-  type Citizen,
+  Citizen,
   DriversLicenseCategoryType,
   ValueLicenseType,
   ValueType,
@@ -10,7 +10,7 @@ import { useFormikContext } from "formik";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { useTranslations } from "next-intl";
 import { filterLicenseType, filterLicenseTypes } from "lib/utils";
-import type { LicenseInitialValues } from "./manage-licenses-modal";
+import { LicenseInitialValues } from "./manage-licenses-modal";
 import { FormRow, DatePickerField, SwitchField, SelectField } from "@snailycad/ui";
 import { ValueSelectField } from "components/form/inputs/value-select-field";
 

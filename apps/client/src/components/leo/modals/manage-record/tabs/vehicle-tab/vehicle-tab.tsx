@@ -8,7 +8,7 @@ import {
   SelectField,
 } from "@snailycad/ui";
 import { useFormikContext } from "formik";
-import type { VehicleSearchResult } from "state/search/vehicle-search-state";
+import { VehicleSearchResult } from "state/search/vehicle-search-state";
 import { useTranslations } from "use-intl";
 
 interface VehicleTabProps {

@@ -6,11 +6,11 @@ import { IsAuth } from "middlewares/auth/is-auth";
 import { UPDATE_EMPLOYEE_SCHEMA, FIRE_EMPLOYEE_SCHEMA } from "@snailycad/schemas";
 import { NotFound } from "@tsed/exceptions";
 import { prisma } from "lib/data/prisma";
-import { type cad, EmployeeAsEnum, type User, WhitelistStatus } from "@prisma/client";
+import { cad, EmployeeAsEnum, User, WhitelistStatus } from "@prisma/client";
 import { validateBusinessAcceptance } from "utils/businesses";
 import { validateSchema } from "lib/data/validate-schema";
 import { ExtendedBadRequest } from "~/exceptions/extended-bad-request";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { Feature, IsFeatureEnabled } from "middlewares/is-enabled";
 
 @UseBeforeEach(IsAuth)

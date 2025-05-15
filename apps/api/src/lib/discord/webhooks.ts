@@ -1,7 +1,7 @@
-import type { DiscordWebhookType } from "@prisma/client";
+import { DiscordWebhookType } from "@prisma/client";
 import {
-  type RESTGetAPIWebhookResult,
-  type RESTPostAPIWebhookWithTokenJSONBody,
+  RESTGetAPIWebhookResult,
+  RESTPostAPIWebhookWithTokenJSONBody,
   Routes,
 } from "discord-api-types/v10";
 import { prisma } from "lib/data/prisma";

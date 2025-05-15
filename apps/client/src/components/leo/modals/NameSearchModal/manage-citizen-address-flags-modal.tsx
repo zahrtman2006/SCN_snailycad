@@ -1,4 +1,4 @@
-import type { Value } from "@snailycad/types";
+import { Value } from "@snailycad/types";
 import { Button, SelectField } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
@@ -8,7 +8,7 @@ import useFetch from "lib/useFetch";
 import { useTranslations } from "next-intl";
 import { useNameSearch } from "state/search/name-search-state";
 import { ModalIds } from "types/modal-ids";
-import type { PutSearchActionsCitizenAddressFlagsData } from "@snailycad/types/api";
+import { PutSearchActionsCitizenAddressFlagsData } from "@snailycad/types/api";
 
 export function ManageCitizenAddressFlagsModal() {
   const modalState = useModal();

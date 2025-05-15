@@ -1,4 +1,4 @@
-import type { Call911, Call911Event, AssignedUnit } from "@snailycad/types";
+import { Call911, Call911Event, AssignedUnit } from "@snailycad/types";
 import { shallow } from "zustand/shallow";
 import { createWithEqualityFn } from "zustand/traditional";
 

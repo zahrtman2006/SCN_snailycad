@@ -3,7 +3,7 @@ import { Layout } from "components/Layout";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
 import { requestAll } from "lib/utils";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { useTranslations } from "use-intl";
 import { useModal } from "state/modalState";
 import { Alert, Button } from "@snailycad/ui";
@@ -11,7 +11,7 @@ import { ModalIds } from "types/modal-ids";
 import { useLeoState } from "state/leo-state";
 import { Title } from "components/shared/Title";
 import { usePermission, Permissions } from "hooks/usePermission";
-import type { GetActiveOfficerData, GetIncidentsData } from "@snailycad/types/api";
+import { GetActiveOfficerData, GetIncidentsData } from "@snailycad/types/api";
 import { IncidentsTable } from "components/leo/incidents/incidents-table";
 import Link from "next/link";
 

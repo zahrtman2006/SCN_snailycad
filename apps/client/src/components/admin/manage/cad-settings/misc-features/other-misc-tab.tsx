@@ -5,11 +5,11 @@ import { useTranslations } from "use-intl";
 import { Loader, Input, Button } from "@snailycad/ui";
 import { useAuth } from "context/AuthContext";
 import useFetch from "lib/useFetch";
-import { JailTimeScale, type MiscCadSettings } from "@snailycad/types";
+import { JailTimeScale, MiscCadSettings } from "@snailycad/types";
 import { SettingsFormField } from "components/form/SettingsFormField";
 import { Select } from "components/form/Select";
 import { toastMessage } from "lib/toastMessage";
-import type { PutCADMiscSettingsData } from "@snailycad/types/api";
+import { PutCADMiscSettingsData } from "@snailycad/types/api";
 import { TabsContent } from "@radix-ui/react-tabs";
 import { SettingsTabs } from "components/admin/cad-settings/layout";
 

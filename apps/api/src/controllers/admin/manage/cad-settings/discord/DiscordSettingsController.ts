@@ -1,15 +1,15 @@
 import process from "node:process";
 import { BodyParams, Context, Controller, UseBeforeEach } from "@tsed/common";
 import { ContentType, Get, Post } from "@tsed/schema";
-import { type RESTGetAPIGuildRolesResult, Routes } from "discord-api-types/v10";
+import { RESTGetAPIGuildRolesResult, Routes } from "discord-api-types/v10";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { prisma } from "lib/data/prisma";
-import { type cad, type DiscordRole } from "@prisma/client";
+import { cad, DiscordRole } from "@prisma/client";
 import { BadRequest } from "@tsed/exceptions";
 import { DISCORD_SETTINGS_SCHEMA } from "@snailycad/schemas";
 import { validateSchema } from "lib/data/validate-schema";
 import { manyToManyHelper } from "lib/data/many-to-many";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { Permissions } from "@snailycad/permissions";
 import { UsePermissions } from "middlewares/use-permissions";
 import { performDiscordRequest } from "lib/discord/performDiscordRequest";

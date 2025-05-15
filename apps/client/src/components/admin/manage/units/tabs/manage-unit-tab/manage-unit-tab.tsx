@@ -1,7 +1,7 @@
 import * as React from "react";
 import { getUnitDepartment } from "lib/utils";
 import { useTranslations } from "use-intl";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import { useValues } from "context/ValuesContext";
 import {
   Loader,
@@ -20,12 +20,12 @@ import Link from "next/link";
 import toast from "react-hot-toast";
 import { useRouter } from "next/router";
 import { isUnitOfficer } from "@snailycad/utils";
-import type { GetManageUnitByIdData, PutManageUnitData } from "@snailycad/types/api";
+import { GetManageUnitByIdData, PutManageUnitData } from "@snailycad/types/api";
 import { QualificationsTable } from "../../QualificationsTable";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { usePermission, Permissions } from "hooks/usePermission";
 import { ImageSelectInput, validateFile } from "components/form/inputs/ImageSelectInput";
-import { ValueType, type User, WhitelistStatus } from "@snailycad/types";
+import { ValueType, User, WhitelistStatus } from "@snailycad/types";
 import { ValueSelectField } from "components/form/inputs/value-select-field";
 
 interface Props {
@@ -96,7 +96,7 @@ export function ManageUnitTab({ unit: data }: Props) {
     rank: unit.rankId,
     position: unit.position ?? "",
     suspended: unit.suspended,
-    badgeNumberString: BADGE_NUMBERS ? unit.badgeNumberString ?? "" : undefined,
+    badgeNumberString: BADGE_NUMBERS ? (unit.badgeNumberString ?? "") : undefined,
   };
 
   return (

@@ -8,7 +8,7 @@ import { ModalIds } from "types/modal-ids";
 import { useTranslations } from "use-intl";
 import { Table, useTableState } from "components/shared/Table";
 import { formatCitizenAddress } from "lib/utils";
-import type { PostDispatchAddressSearchData } from "@snailycad/types/api";
+import { PostDispatchAddressSearchData } from "@snailycad/types/api";
 
 export function AddressSearchModal() {
   const modalState = useModal();

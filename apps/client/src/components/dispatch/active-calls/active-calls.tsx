@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useRouter } from "next/router";
-import { type Full911Call, useDispatchState } from "state/dispatch/dispatch-state";
-import { type AssignedUnit, WhitelistStatus } from "@snailycad/types";
+import { Full911Call, useDispatchState } from "state/dispatch/dispatch-state";
+import { AssignedUnit, WhitelistStatus } from "@snailycad/types";
 import { useTranslations } from "use-intl";
 import useFetch from "lib/useFetch";
 import { useLeoState } from "state/leo-state";
@@ -15,7 +15,7 @@ import { defaultPermissions } from "@snailycad/permissions";
 import { Droppable, FullDate, Status } from "@snailycad/ui";
 import { DndActions } from "types/dnd-actions";
 import { AssignedUnitsColumn } from "./columns/assigned-units-column";
-import type { Get911CallsData, Post911CallAssignUnAssign } from "@snailycad/types/api";
+import { Get911CallsData, Post911CallAssignUnAssign } from "@snailycad/types/api";
 import { useMounted } from "@casperiv/useful";
 import { CallDescription } from "./CallDescription";
 import { ActiveCallsHeader } from "./active-calls-header";

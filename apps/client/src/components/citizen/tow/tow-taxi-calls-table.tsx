@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { TaxiCall, TowCall } from "@snailycad/types";
+import { TaxiCall, TowCall } from "@snailycad/types";
 import { Button, FullDate } from "@snailycad/ui";
 import { Table, useAsyncTable, useTableState } from "components/shared/Table";
 import { useTranslations } from "next-intl";
@@ -7,7 +7,7 @@ import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
 import dynamic from "next/dynamic";
 import { usePermission, Permissions } from "hooks/usePermission";
-import type { GetTaxiCallsData, GetTowCallsData } from "@snailycad/types/api";
+import { GetTaxiCallsData, GetTowCallsData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import { CallDescription } from "components/dispatch/active-calls/CallDescription";
 import { SearchArea } from "components/shared/search/search-area";
@@ -122,7 +122,7 @@ export function TowTaxiCallsTable({ initialData, type, noCallsText }: Props) {
             description: <CallDescription nonCard data={call} />,
             caller: call.creator
               ? `${call.creator.name} ${call.creator.surname}`
-              : call.name ?? leo("dispatch"),
+              : (call.name ?? leo("dispatch")),
             assignedUnit: assignedUnit(call),
             createdAt: <FullDate>{call.createdAt}</FullDate>,
             actions: (

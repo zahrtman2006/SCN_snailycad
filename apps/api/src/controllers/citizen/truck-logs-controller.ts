@@ -1,4 +1,4 @@
-import { type User } from "@prisma/client";
+import { User } from "@prisma/client";
 import { CREATE_TRUCK_LOG_SCHEMA } from "@snailycad/schemas";
 import { Controller } from "@tsed/di";
 import { NotFound } from "@tsed/exceptions";
@@ -9,7 +9,7 @@ import { IsAuth } from "middlewares/auth/is-auth";
 import { UseBeforeEach } from "@tsed/platform-middlewares";
 import { validateSchema } from "lib/data/validate-schema";
 import { shouldCheckCitizenUserId } from "lib/citizen/has-citizen-access";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { citizenInclude } from "./CitizenController";
 import { Feature, IsFeatureEnabled } from "middlewares/is-enabled";
 

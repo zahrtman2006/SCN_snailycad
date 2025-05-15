@@ -1,5 +1,5 @@
 import * as React from "react";
-import type {
+import {
   AssignedUnit,
   Call911Event,
   IncidentEvent,
@@ -15,8 +15,8 @@ import { classNames } from "lib/classNames";
 import { Button, FullDate } from "@snailycad/ui";
 import { Pencil, X } from "react-bootstrap-icons";
 import { AlertModal } from "components/modal/AlertModal";
-import type { Delete911CallEventByIdData, DeleteIncidentEventByIdData } from "@snailycad/types/api";
-import type { Full911Call } from "state/dispatch/dispatch-state";
+import { Delete911CallEventByIdData, DeleteIncidentEventByIdData } from "@snailycad/types/api";
+import { Full911Call } from "state/dispatch/dispatch-state";
 import { makeUnitName } from "lib/utils";
 import { useGenerateCallsign } from "hooks/useGenerateCallsign";
 

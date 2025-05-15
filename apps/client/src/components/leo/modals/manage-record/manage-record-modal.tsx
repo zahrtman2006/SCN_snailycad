@@ -16,25 +16,19 @@ import { FormField } from "components/form/FormField";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
 import { useValues } from "context/ValuesContext";
-import { Form, Formik, useFormikContext, type FormikHelpers } from "formik";
+import { Form, Formik, useFormikContext, FormikHelpers } from "formik";
 import { handleValidate } from "lib/handleValidate";
 import useFetch from "lib/useFetch";
 import { ModalIds } from "types/modal-ids";
 import { useTranslations } from "use-intl";
-import {
-  RecordType,
-  type PenalCode,
-  type Record,
-  PaymentStatus,
-  PublishStatus,
-} from "@snailycad/types";
+import { RecordType, PenalCode, Record, PaymentStatus, PublishStatus } from "@snailycad/types";
 import { toastMessage } from "lib/toastMessage";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
-import type { PostRecordsData, PutRecordsByIdData } from "@snailycad/types/api";
+import { PostRecordsData, PutRecordsByIdData } from "@snailycad/types/api";
 import { AddressPostalSelect } from "components/form/select/PostalSelect";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
 import dynamic from "next/dynamic";
-import type { BusinessSearchResult } from "state/search/business-search-state";
+import { BusinessSearchResult } from "state/search/business-search-state";
 import { Editor, dataToSlate } from "components/editor/editor";
 import { useInvalidateQuery } from "hooks/use-invalidate-query";
 import { useMutation } from "@tanstack/react-query";

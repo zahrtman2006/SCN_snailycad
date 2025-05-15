@@ -2,17 +2,13 @@ import * as React from "react";
 import { Button, Loader, TextField } from "@snailycad/ui";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
-import { Form, Formik, type FormikHelpers } from "formik";
+import { Form, Formik, FormikHelpers } from "formik";
 import useFetch from "lib/useFetch";
 import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
 import { useAuth } from "context/AuthContext";
 import { toastMessage } from "lib/toastMessage";
-import type {
-  DeleteDisable2FAData,
-  PostEnable2FAData,
-  PostVerify2FAData,
-} from "@snailycad/types/api";
+import { DeleteDisable2FAData, PostEnable2FAData, PostVerify2FAData } from "@snailycad/types/api";
 import Image from "next/image";
 
 enum Steps {

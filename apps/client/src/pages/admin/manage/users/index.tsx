@@ -1,14 +1,14 @@
 import { useTranslations } from "use-intl";
 import { getSessionUser } from "lib/auth";
 import { getTranslations } from "lib/getTranslation";
-import type { GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 import { WhitelistStatus } from "@snailycad/types";
 import { AdminLayout } from "components/admin/AdminLayout";
 import { requestAll } from "lib/utils";
 import { Title } from "components/shared/Title";
 import { Permissions, usePermission } from "hooks/usePermission";
 import { AllUsersTab } from "components/admin/manage/users/tabs/all-users-tab";
-import type { GetManageUsersData } from "@snailycad/types/api";
+import { GetManageUsersData } from "@snailycad/types/api";
 import { TabList, Button } from "@snailycad/ui";
 import { ModalIds } from "types/modal-ids";
 import { useModal } from "state/modalState";

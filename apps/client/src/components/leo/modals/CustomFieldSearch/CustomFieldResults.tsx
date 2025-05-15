@@ -4,11 +4,11 @@ import { Button } from "@snailycad/ui";
 import { Table, useTableState } from "components/shared/Table";
 import { useModal } from "state/modalState";
 import { useTranslations } from "next-intl";
-import { type NameSearchResult, useNameSearch } from "state/search/name-search-state";
-import { useVehicleSearch, type VehicleSearchResult } from "state/search/vehicle-search-state";
-import { useWeaponSearch, type WeaponSearchResult } from "state/search/weapon-search-state";
+import { NameSearchResult, useNameSearch } from "state/search/name-search-state";
+import { useVehicleSearch, VehicleSearchResult } from "state/search/vehicle-search-state";
+import { useWeaponSearch, WeaponSearchResult } from "state/search/weapon-search-state";
 import { ModalIds } from "types/modal-ids";
-import type { CustomFieldResults } from "./CustomFieldSearch";
+import { CustomFieldResults } from "./CustomFieldSearch";
 
 interface Props {
   results: CustomFieldResults;

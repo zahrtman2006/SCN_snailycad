@@ -1,6 +1,6 @@
 import { Permissions } from "@snailycad/permissions";
-import type { EmsFdIncident, IncidentInvolvedUnit, LeoIncident } from "@snailycad/types";
-import type { DeleteIncidentByIdData } from "@snailycad/types/api";
+import { EmsFdIncident, IncidentInvolvedUnit, LeoIncident } from "@snailycad/types";
+import { DeleteIncidentByIdData } from "@snailycad/types/api";
 import { Button, FullDate, Loader } from "@snailycad/ui";
 import { isUnitCombined, isUnitCombinedEmsFd } from "@snailycad/utils";
 import { CallDescription } from "components/dispatch/active-calls/CallDescription";

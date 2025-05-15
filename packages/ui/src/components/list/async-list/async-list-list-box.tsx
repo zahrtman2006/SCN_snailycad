@@ -1,6 +1,6 @@
 import * as React from "react";
-import type { AriaListBoxOptions } from "@react-aria/listbox";
-import type { ListState } from "@react-stately/list";
+import { AriaListBoxOptions } from "@react-aria/listbox";
+import { ListState } from "@react-stately/list";
 import { useListBox } from "@react-aria/listbox";
 import { AsyncListFieldOption } from "./async-list-option";
 

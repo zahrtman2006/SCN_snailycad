@@ -1,4 +1,4 @@
-import type { User } from "@snailycad/types";
+import { User } from "@snailycad/types";
 import { Forbidden } from "@tsed/exceptions";
 import { prisma } from "lib/data/prisma";
 import { GetSessionUserErrors, userProperties } from "./getSessionUser";

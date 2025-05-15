@@ -2,24 +2,19 @@ import process from "node:process";
 import { BodyParams, Context, Controller, UseBeforeEach } from "@tsed/common";
 import { ContentType, Get, Post } from "@tsed/schema";
 import {
-  type APITextChannel,
+  APITextChannel,
   ChannelType,
-  type RESTGetAPIGuildChannelsResult,
-  type RESTGetAPIWebhookResult,
+  RESTGetAPIGuildChannelsResult,
+  RESTGetAPIWebhookResult,
   Routes,
 } from "discord-api-types/v10";
 import { IsAuth } from "middlewares/auth/is-auth";
 import { prisma } from "lib/data/prisma";
-import {
-  type cad,
-  type DiscordWebhook,
-  type DiscordWebhookType,
-  type MiscCadSettings,
-} from "@prisma/client";
+import { cad, DiscordWebhook, DiscordWebhookType, MiscCadSettings } from "@prisma/client";
 import { BadRequest } from "@tsed/exceptions";
 import { DISCORD_WEBHOOKS_SCHEMA } from "@snailycad/schemas";
 import { validateSchema } from "lib/data/validate-schema";
-import type * as APITypes from "@snailycad/types/api";
+import * as APITypes from "@snailycad/types/api";
 import { resolve } from "node:path";
 import { encodeFromFile } from "@snailycad/image-data-uri";
 import { Permissions, UsePermissions } from "middlewares/use-permissions";

@@ -6,7 +6,7 @@ import { Select } from "components/form/Select";
 import { Modal } from "components/modal/Modal";
 import { useModal } from "state/modalState";
 import { useValues } from "context/ValuesContext";
-import { Formik, type FormikHelpers } from "formik";
+import { Formik, FormikHelpers } from "formik";
 import { handleValidate } from "lib/handleValidate";
 import useFetch from "lib/useFetch";
 import { ModalIds } from "types/modal-ids";
@@ -16,7 +16,7 @@ import { CallSignPreview } from "components/leo/CallsignPreview";
 import { useFeatureEnabled } from "hooks/useFeatureEnabled";
 import { UnitQualificationsTable } from "components/leo/qualifications/UnitQualificationsTable";
 import { CitizenSuggestionsField } from "components/shared/CitizenSuggestionsField";
-import type {
+import {
   PostMyDeputiesData,
   PostMyDeputyByIdData,
   PutMyDeputyByIdData,
@@ -113,7 +113,7 @@ export function ManageDeputyModal({ deputy, onClose, onUpdate, onCreate }: Props
     callsign: deputy?.callsign ?? "",
     callsign2: deputy?.callsign2 ?? "",
     division: deputy?.divisionId ?? "",
-    badgeNumberString: BADGE_NUMBERS ? deputy?.badgeNumberString ?? "" : undefined,
+    badgeNumberString: BADGE_NUMBERS ? (deputy?.badgeNumberString ?? "") : undefined,
     image: undefined,
   };
 

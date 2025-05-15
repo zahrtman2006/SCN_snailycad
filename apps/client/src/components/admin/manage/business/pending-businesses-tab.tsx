@@ -3,7 +3,7 @@ import { Table, useAsyncTable, useTableState } from "components/shared/Table";
 import useFetch from "lib/useFetch";
 import { useTranslations } from "next-intl";
 import { WhitelistStatus } from "@snailycad/types";
-import type { GetManageBusinessesData, PutManageBusinessesData } from "@snailycad/types/api";
+import { GetManageBusinessesData, PutManageBusinessesData } from "@snailycad/types/api";
 import { useInvalidateQuery } from "hooks/use-invalidate-query";
 
 type Business = GetManageBusinessesData["businesses"][number];

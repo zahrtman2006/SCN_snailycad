@@ -2,19 +2,19 @@ import { useLicenseLabels } from "components/admin/values/manage-modal/license-f
 import { yesOrNoText } from "lib/utils";
 import { useTranslations } from "next-intl";
 import {
-  type StatusValue,
+  StatusValue,
   StatusValueType,
   ValueType,
-  type DepartmentValue,
-  type DivisionValue,
-  type VehicleValue,
-  type Value,
+  DepartmentValue,
+  DivisionValue,
+  VehicleValue,
+  Value,
   ShouldDoType,
-  type QualificationValue,
-  type CallTypeValue,
-  type AnyValue,
-  type AddressValue,
-  type DriversLicenseCategoryValue,
+  QualificationValue,
+  CallTypeValue,
+  AnyValue,
+  AddressValue,
+  DriversLicenseCategoryValue,
 } from "@snailycad/types";
 import {
   SHOULD_DO_LABELS,
@@ -25,7 +25,7 @@ import { DEPARTMENT_LABELS } from "components/admin/values/manage-modal/departme
 import { isBaseValue, hasValueObj } from "@snailycad/utils";
 import { useImageUrl } from "hooks/useImageUrl";
 import { makeDefaultWhatPages } from "./utils";
-import type { ColumnDef } from "@tanstack/react-table";
+import { ColumnDef } from "@tanstack/react-table";
 import { ImageWrapper } from "components/shared/image-wrapper";
 import { CallDescription } from "components/dispatch/active-calls/CallDescription";
 

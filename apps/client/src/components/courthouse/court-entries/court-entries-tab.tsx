@@ -3,11 +3,11 @@ import { useModal } from "state/modalState";
 import { useTranslations } from "next-intl";
 import { ModalIds } from "types/modal-ids";
 import { Table, useAsyncTable, useTableState } from "components/shared/Table";
-import type { CourtEntry } from "@snailycad/types";
+import { CourtEntry } from "@snailycad/types";
 import { ManageCourtEntry } from "./manage-court-entry-modal";
 import { AlertModal } from "components/modal/AlertModal";
 import useFetch from "lib/useFetch";
-import type { DeleteCourtEntriesData, GetCourtEntriesData } from "@snailycad/types/api";
+import { DeleteCourtEntriesData, GetCourtEntriesData } from "@snailycad/types/api";
 import { useTemporaryItem } from "hooks/shared/useTemporaryItem";
 import { CallDescription } from "components/dispatch/active-calls/CallDescription";
 

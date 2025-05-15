@@ -6,7 +6,7 @@ import { Form, Formik } from "formik";
 import useFetch from "lib/useFetch";
 import { ModalIds } from "types/modal-ids";
 import { useTranslations } from "use-intl";
-import type { PostDispatchAopData } from "@snailycad/types/api";
+import { PostDispatchAopData } from "@snailycad/types/api";
 
 export function ManageAreaOfPlayModal() {
   const { state, execute } = useFetch();

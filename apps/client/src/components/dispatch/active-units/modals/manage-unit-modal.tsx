@@ -5,22 +5,17 @@ import { useModal } from "state/modalState";
 import { ModalIds } from "types/modal-ids";
 import { Form, Formik } from "formik";
 import useFetch from "lib/useFetch";
-import type { ActiveOfficer } from "state/leo-state";
+import { ActiveOfficer } from "state/leo-state";
 import { useValues } from "context/ValuesContext";
 import { useDispatchState } from "state/dispatch/dispatch-state";
-import type { ActiveDeputy } from "state/ems-fd-state";
+import { ActiveDeputy } from "state/ems-fd-state";
 import { makeUnitName } from "lib/utils";
-import {
-  type CombinedLeoUnit,
-  StatusValueType,
-  type StatusValue,
-  ValueType,
-} from "@snailycad/types";
+import { CombinedLeoUnit, StatusValueType, StatusValue, ValueType } from "@snailycad/types";
 import { classNames } from "lib/classNames";
 import { useUnitStatusChange } from "hooks/shared/useUnitsStatusChange";
 import { isUnitCombined } from "@snailycad/utils";
 import { useGenerateCallsign } from "hooks/useGenerateCallsign";
-import type { PostDispatchStatusUnmergeUnitById } from "@snailycad/types/api";
+import { PostDispatchStatusUnmergeUnitById } from "@snailycad/types/api";
 import { ValueSelectField } from "components/form/inputs/value-select-field";
 
 interface Props {

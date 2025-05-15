@@ -1,11 +1,11 @@
 import * as React from "react";
 import { useTranslations } from "use-intl";
-import type { User } from "@snailycad/types";
+import { User } from "@snailycad/types";
 import { Table, useTableState } from "components/shared/Table";
 import useFetch from "lib/useFetch";
 import { useAsyncTable } from "hooks/shared/table/use-async-table";
 import { Button, TabsContent } from "@snailycad/ui";
-import type { GetManageUsersData, PostManageUserAcceptDeclineData } from "@snailycad/types/api";
+import { GetManageUsersData, PostManageUserAcceptDeclineData } from "@snailycad/types/api";
 import { SearchArea } from "components/shared/search/search-area";
 
 export function PendingUsersTab(props: GetManageUsersData) {
